@@ -166,7 +166,7 @@ hide: &hide true
 proxy-providers:
   Sub1:
     <<: *provider
-    url: "https://resgghdjsjjsjs.com"
+    url: https://liangxin.xyz/api/v1/liangxin?OwO=fd57f8485b542d0047d7a0f00588db19
     # 此处填入你的订阅1链接
     path: ./proxy_providers/sub1.yaml
 
