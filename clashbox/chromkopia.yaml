@@ -113,10 +113,10 @@ proxy-groups:
   - {name: TikTok, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png', proxies: [日本节点, 韩国节点, 新加坡节点, 美国节点, 其他手动], type: select}
   - {name: Twitter, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/x.png', proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, 美国节点, 其他手动], type: select}
   - {name: Telegram, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/telegram.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, 其他手动], type: select}
-  - {name: Netflix, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/netflix.png', proxies: [Proxy, 香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, 美国节点, 其他手动, DIRECT, REJECT], type: select}
-  - {name: Disney, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/disney.PNG', proxies: [Proxy, 香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, 美国节点, 其他手动, DIRECT, REJECT], type: select}
-  - {name: Spotify, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spotify.png', proxies: [Proxy, 香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, 美国节点, 其他手动, DIRECT, REJECT], type: select}
-  - {name: PayPal, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/paypal.png', proxies: [Proxy, 香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, 美国节点, 其他手动, DIRECT, REJECT], type: select}
+  - {name: Netflix, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/netflix.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, 其他手动, DIRECT], type: select}
+  - {name: Disney, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/disney.PNG', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, 其他手动, DIRECT], type: select}
+  - {name: Spotify, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spotify.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, 其他手动, DIRECT], type: select}
+  - {name: PayPal, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/paypal.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, 其他手动, DIRECT], type: select}
   - {name: Speedtest, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/speetest.png', proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, DIRECT], type: select}
   - {name: Final, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/somuchfun.png', proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, 美国节点, DIRECT], type: select}
   # 策略组（按区域分组 - 二合一全能入口：自动 + 故转 + 节点平铺）
