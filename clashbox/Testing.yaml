@@ -678,6 +678,19 @@ rules:
   - RULE-SET,Spotify,国际媒体,🇺🇸 美国
   - RULE-SET,TikTok,国际媒体
   - RULE-SET,GlobalMedia,国际媒体
+  
+    # UHD & 媒体域名 
+  - DOMAIN-SUFFIX,trakt.tv,国际媒体
+  - DOMAIN-SUFFIX,uhdnow.com,国际媒体
+  - DOMAIN-SUFFIX,opensubtitles.com,国际媒体
+  - DOMAIN-SUFFIX,vercel.app,国际媒体
+  - DOMAIN-SUFFIX,ii00.cc,国际媒体
+  - DOMAIN-SUFFIX,wptv.ii00.cc,国际媒体
+  - DOMAIN-SUFFIX,cfptv.ii00.cc,国际媒体
+  - DOMAIN-SUFFIX,wgtv.ii00.cc,国际媒体
+  - DOMAIN-SUFFIX,cfgtv.ii00.cc,国际媒体
+
+
 
   # 游戏平台
   - RULE-SET,Game,游戏平台
