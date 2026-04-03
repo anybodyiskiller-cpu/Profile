@@ -25,6 +25,9 @@ Anchor_CL: &Anchor_CL {type: http, interval: 86400, behavior: classical, format:
 # ※※※※※※※※※※※※※※※ 节点订阅 ※※※※※※※※※※※※※※※
 proxy-providers:
   良心云: {!!merge <<: *Anchor_PR, url: 'https://liangxin.xyz/api/v1/liangxin?OwO=fd57f8485b542d0047d7a0f00588db19', override: {additional-prefix: '[机场] '}, benchmark-url: 'https://www.g.cn/generate_204', filter: '^(?!.*(到期|过期|剩余|网址|官网|邮箱|订阅|套餐|流量|说明|重置)).*$', interval: 86400}
+  寿司云:
+    interval: 86400
+    url: https://sub.eieiie.com:9999/sushi/cb9019b36ff63e3ed711b23fbfe5c8d1?flag=ssyun
 # ※※※※※※※※※※※※※※※ 核心配置 ※※※※※※※※※※※※※※※
 mixed-port: 7893
 mode: rule
@@ -111,8 +114,8 @@ proxy-groups:
   - {name: ChatGPT, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/chatgpt.png', proxies: [Proxy, 香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, 美国节点, Home  Broadband], type: select}
   - {name: GitHub, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/github.png', proxies: [Proxy, 香港节点, 台湾节点, 日本节点, 新加坡节点, DIRECT], type: select}
   - {name: TV, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tv.png', proxies: [Proxy, 香港节点, 日本节点, 新加坡节点, 美国节点, DIRECT], type: select}
-  - {name: Apple, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/app-store.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, 美国节点, DIRECT], type: select}
-  - {name: Intelligent, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/apple-intelligence.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, DIRECT], type: select}
+  - {name: Apple, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appstore.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, 美国节点, DIRECT], type: select}
+  - {name: Intelligent, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/chatgpt.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, DIRECT], type: select}
   - {name: TikTok, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png', proxies: [日本节点, 韩国节点, 新加坡节点, 美国节点], type: select}
   - {name: Twitter, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/x.png', proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, 美国节点], type: select}
   - {name: Telegram, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/telegram.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点], type: select}
@@ -125,26 +128,26 @@ proxy-groups:
   - filter: null
     name: Home  Broadband
     type: select
-    use: [良心云]
+    use: [良心云, 寿司云]
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/vodafone.png
   # 区域节点组
   - name: 香港节点
     type: url-test
     include-all: true
     filter: ^(?i)(?=.*(香港|🇭🇰|\bHK\b|Hong(?:\s?Kong)?|HKG)).*$
-    use: [良心云]
+    use: [良心云, 寿司云]
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/hong-kong.png
   - name: 台湾节点
     type: url-test
     include-all: true
     filter: ^(?i)(?=.*(台湾|台灣|🇹🇼|\bTW\b|\bTPE\b|\bTSA\b|\bKHH\b|taiwan|TPE|TSA|KHH)).*$
-    use: [良心云]
+    use: [良心云, 寿司云]
     icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/taiwan(4).png
   - name: 日本节点
     type: url-test
     include-all: true
     filter: ^(?i)(?=.*(日本|🇯🇵|\bJP\b|Japan|NRT|HND|KIX|CTS|FUK)).*$
-    use: [良心云]
+    use: [良心云, 寿司云]
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/japan.png
   - name: 韩国节点
     type: url-test
@@ -156,13 +159,13 @@ proxy-groups:
     type: load-balance
     include-all: true
     filter: ^(?i)(?=.*(新加坡|🇸🇬|\bSG\b|Singapore|SIN|XSP)).*$
-    use: [良心云]
+    use: [良心云, 寿司云]
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/singapore.png
   - name: 美国节点
     type: url-test
     include-all: true
     filter: ^(?i)(?=.*(美国|美國|🇺🇸|\bUS\b|\bUSA\b|SJC|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD)).*$
-    use: [良心云]
+    use: [良心云, 寿司云]
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/united-states.png
 # ※※※※※※※※※※※※※※※ 规则匹配 ※※※※※※※※※※※※※※※
 rule-providers:
