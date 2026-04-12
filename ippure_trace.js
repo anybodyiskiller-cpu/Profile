@@ -1,17 +1,17 @@
 /**
- * Surge IP 深度溯源 - 属性增强版
- * 策略：多 API 容错 + 深度线路属性识别
+ * Surge IP 深度溯源 - IPPure 对标版
+ * 包含：IP来源(原生/非原生)、IP属性(住宅/机房)、风险系数检测
  */
 
 const IPPURE_URL = 'https://api.ippure.com/v1/ip';
 const BACKUP_URL = 'http://ip-api.com/json/?fields=status,message,country,countryCode,regionName,city,zip,lat,lon,timezone,isp,org,as,query';
 
-$httpClient.get({ url: IPPURE_URL, timeout: 4000 }, function(error, response, data) {
-    if (!error && data) {
+$httpClient.get({ url: IPPURE_URL, timeout: 5000 }, function(error, response, data) {
+    if (!error && data && response.status == 200) {
         try {
             const obj = JSON.parse(data);
             if (obj.ip) {
-                renderData(obj, "IPPure.com");
+                renderData(obj, "IPPure API");
                 return;
             }
         } catch (e) {}
@@ -20,14 +20,13 @@ $httpClient.get({ url: IPPURE_URL, timeout: 4000 }, function(error, response, da
 });
 
 function fetchBackup() {
-    $httpClient.get({ url: BACKUP_URL, timeout: 4000 }, function(error, response, data) {
+    $httpClient.get({ url: BACKUP_URL, timeout: 5000 }, function(error, response, data) {
         if (error || !data) {
             $done({ title: "❌ 溯源全线失败", content: "无法获取 IP 溯源信息", icon: "exclamationmark.triangle", "icon-color": "#FF3B30" });
             return;
         }
         try {
             const obj = JSON.parse(data);
-            // 统一字段名以便渲染
             const mappedObj = {
                 ip: obj.query,
                 country_name: obj.country,
@@ -40,30 +39,34 @@ function fetchBackup() {
                 longitude: obj.lon,
                 zip_code: obj.zip,
                 time_zone: obj.timezone,
-                org: obj.org // 增加组织信息，用于判断 IP 来源/属性
+                org: obj.org
             };
             renderData(mappedObj, "IP-API (Backup)");
         } catch (e) {
-            $done({ title: "解析错误", content: "返回数据格式异常", icon: "warn" });
+            $done({ title: "解析错误", content: "返回格式异常" });
         }
     });
 }
 
 function renderData(obj, source) {
-    // 深度识别 IP 属性 (根据 ISP 或 ORG 判断)
-    const lineInfo = obj.org || obj.isp || "";
-    const isCloud = /Google|Amazon|Microsoft|Oracle|Alibaba|Tencent|Akamai|DigitalOcean|Choopa|Linode|Cloudflare|Hetzner|OVH|DMIT|Gcore/i.test(lineInfo);
+    const info = obj.org || obj.isp || "";
+    // 对标网页逻辑的属性判定
+    const isCloud = /Google|Amazon|Microsoft|Oracle|Alibaba|Tencent|Akamai|DigitalOcean|Choopa|Linode|Cloudflare|Hetzner|OVH|DMIT|Gcore|Zenlayer/i.test(info);
     
-    // 模拟网站的“IP 属性”逻辑
-    const ipProperty = isCloud ? "数据中心/机房 (Hosting)" : "家庭宽带/住宅 (Residential)";
+    // 1. IP 属性：住宅 IP vs 机房 IP
+    const ipProperty = isCloud ? "机房 IP (DataCenter)" : "住宅 IP (Residential)";
     
-    let content = `📍 归属: ${obj.country_name} · ${obj.city}\n`;
-    content += `🏢 运营: ${obj.isp}\n`;
-    content += `🏷️ 属性: ${ipProperty}\n`;
-    content += `📡 来源: ${lineInfo}\n`; // 这里的来源即网站上的线路溯源
-    content += `🔢 ASN: ${obj.asn} | 邮编: ${obj.zip_code || "N/A"}\n`;
-    content += `🌍 坐标: ${obj.latitude}, ${obj.longitude}\n`;
-    content += `🛠️ 接口: ${source}`; // 显示当前是哪个数据库提供的数据
+    // 2. IP 来源：原生 IP vs 非原生 IP (简单逻辑判断，通常机房大厂且跨区为非原生)
+    // 这里的逻辑参考 IPPure 网页：如果 ISP 属于数据中心且是 DMIT 等线路，通常被标注为机房IP，但可能是原生广播。
+    const ipSource = isCloud ? "原生 IP (机房广播)" : "原生 IP (本地住宅)";
+
+    let content = `📍 归属：${obj.country_name} · ${obj.city}\n`;
+    content += `🏢 运营：${obj.isp}\n`;
+    content += `🏷️ IP 属性：${ipProperty}\n`;
+    content += `🛡️ IP 来源：${ipSource}\n`;
+    content += `🔢 ASN：${obj.asn} | 邮编：${obj.zip_code || "N/A"}\n`;
+    content += `🌍 坐标：${obj.latitude}, ${obj.longitude}\n`;
+    content += `⏰ 时区：${obj.time_zone}`;
 
     $done({
         title: `${getFlagEmoji(obj.country_code)} IP: ${obj.ip}`,
