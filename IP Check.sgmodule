@@ -1,0 +1,12 @@
+#!name=IP 深度溯源面板 (IPPure)
+#!desc=基于 IPPure API 提供详细的出口 IP 溯源信息，包括 ISP、ASN、地理坐标、货币及邮编等。
+#!category=工具
+#!author=Gemini
+
+[Panel]
+# 点击面板可手动刷新溯源数据
+IP-Trace = script-name=ippure_trace, update-interval=43200
+
+[Script]
+# 脚本定义
+ippure_trace = type=generic, timeout=10, script-path=https://raw.githubusercontent.com/anybodyiskiller-cpu/Profile/refs/heads/main/ippure_trace.js
