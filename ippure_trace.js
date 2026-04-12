@@ -1,71 +1,80 @@
 /**
- * Surge IP 深度溯源面板 V2
- * 修复了 Unknown 显示问题，并增加了请求头模拟
+ * Surge IP 深度溯源 - 终极修复版
+ * 策略：多 API 自动容错（IPPure + ip-api）
  */
 
-const requestInfo = {
-    url: 'https://api.ippure.com/v1/ip',
-    headers: {
-        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
-        'Accept': 'application/json'
-    },
-    timeout: 5000
-};
+const IPPURE_URL = 'https://api.ippure.com/v1/ip';
+const BACKUP_URL = 'http://ip-api.com/json/?fields=status,message,country,countryCode,regionName,city,zip,lat,lon,timezone,isp,as,query';
 
-$httpClient.get(requestInfo, function(error, response, data) {
-    if (error || !data) {
-        renderPanel("❌ 溯源请求超时", "请检查当前节点是否能访问 ippure.com\n或尝试手动刷新面板。", "#FF3B30", "exclamationmark.icloud");
-        return;
+// 尝试主 API (IPPure)
+$httpClient.get({ url: IPPURE_URL, timeout: 4000 }, function(error, response, data) {
+    if (!error && data) {
+        try {
+            const obj = JSON.parse(data);
+            if (obj.ip) {
+                renderIPPure(obj);
+                return;
+            }
+        } catch (e) {}
     }
-
-    try {
-        const obj = JSON.parse(data);
-        
-        // 关键修复：确保即使字段缺失也不显示 Unknown
-        const ip = obj.ip || "获取中...";
-        const country = obj.country_name || "未知国家";
-        const region = obj.region_name || "";
-        const city = obj.city || "";
-        const isp = obj.isp || "未知运营商";
-        const asn = obj.asn || "N/A";
-        const lat = obj.latitude || "N/A";
-        const lon = obj.longitude || "N/A";
-        const zip = obj.zip_code || "未知";
-        const currency = obj.currency_name ? `${obj.currency_name} (${obj.currency_code})` : "N/A";
-        const callCode = obj.calling_code ? `+${obj.calling_code}` : "N/A";
-        const tz = obj.time_zone || "N/A";
-        const flag = getFlagEmoji(obj.country_code);
-
-        // 智能类型识别
-        const isCloud = /Google|Amazon|Microsoft|Oracle|Alibaba|Tencent|Akamai|DigitalOcean|Choopa|Linode|Cloudflare|Hetzner|OVH/i.test(isp);
-        const typeTag = isCloud ? "☁️ DataCenter (数据中心)" : "🏠 Residential (住宅/原生)";
-
-        let content = `📍 归属: ${country} ${region} ${city}\n`;
-        content += `🏢 运营: ${isp}\n`;
-        content += `🏷️ 类型: ${typeTag}\n`;
-        content += `🔢 ASN: ${asn} | 邮编: ${zip}\n`;
-        content += `🌍 坐标: ${lat}, ${lon} | 📞 ${callCode}\n`;
-        content += `💴 货币: ${currency} | ⏰ 时区: ${tz}`;
-
-        renderPanel(`${flag} IP: ${ip}`, content, isCloud ? "#FF9500" : "#34C759", "target");
-
-    } catch (e) {
-        renderPanel("⚠️ 解析异常", "API 返回了非标准 JSON 格式数据", "#FF9500", "doc.text.magnifyingglass");
-    }
+    
+    // 如果 IPPure 失败，自动切换到备份 API
+    console.log("IPPure 接口失效，正在尝试备用接口...");
+    fetchBackup();
 });
 
-function renderPanel(title, content, color, icon) {
+function fetchBackup() {
+    $httpClient.get({ url: BACKUP_URL, timeout: 4000 }, function(error, response, data) {
+        if (error || !data) {
+            $done({ title: "❌ 溯源全线失败", content: "所有溯源接口均无法连接，请检查节点。", icon: "exclamationmark.triangle", "icon-color": "#FF3B30" });
+            return;
+        }
+        try {
+            const obj = JSON.parse(data);
+            renderBackup(obj);
+        } catch (e) {
+            $done({ title: "数据解析错误", content: "返回数据格式异常", icon: "warn", "icon-color": "#FF9500" });
+        }
+    });
+}
+
+// 处理 IPPure 数据
+function renderIPPure(obj) {
+    const isCloud = /Google|Amazon|Microsoft|Oracle|Alibaba|Tencent|Akamai|DigitalOcean|Choopa|Linode|Cloudflare/i.test(obj.isp);
+    let content = `📍 归属: ${obj.country_name || ""} ${obj.region_name || ""} ${obj.city || ""}\n`;
+    content += `🏢 运营: ${obj.isp || "未知"}\n`;
+    content += `🏷️ 类型: ${isCloud ? "☁️ DataCenter" : "🏠 Residential"}\n`;
+    content += `🔢 ASN: ${obj.asn || "N/A"} | 邮编: ${obj.zip_code || "未知"}\n`;
+    content += `🌍 坐标: ${obj.latitude}, ${obj.longitude}\n`;
+    content += `💴 货币: ${obj.currency_code || "N/A"} | ⏰ 时区: ${obj.time_zone || "N/A"}`;
+    
     $done({
-        title: title,
+        title: `${getFlagEmoji(obj.country_code)} IP: ${obj.ip}`,
         content: content,
-        icon: icon,
-        "icon-color": color
+        icon: "target",
+        "icon-color": isCloud ? "#FF9500" : "#34C759"
+    });
+}
+
+// 处理备份接口数据
+function renderBackup(obj) {
+    const isCloud = /Cloud|Server|Data|Hosting|Akamai/i.test(obj.isp);
+    let content = `📍 归属: ${obj.country} ${obj.regionName} ${obj.city}\n`;
+    content += `🏢 运营: ${obj.isp}\n`;
+    content += `🏷️ 类型: ${isCloud ? "☁️ DataCenter" : "🏠 Residential"}\n`;
+    content += `🔢 ASN: ${obj.as ? obj.as.split(' ')[0] : "N/A"} | 邮编: ${obj.zip || "无"}\n`;
+    content += `🌍 坐标: ${obj.lat}, ${obj.lon}\n`;
+    content += `⏰ 时区: ${obj.timezone} (备用接口)`;
+
+    $done({
+        title: `${getFlagEmoji(obj.countryCode)} IP: ${obj.query}`,
+        content: content,
+        icon: "target",
+        "icon-color": "#5AC8FA"
     });
 }
 
 function getFlagEmoji(countryCode) {
     if (!countryCode) return "🌐";
-    return countryCode.toUpperCase().replace(/./g, char => 
-        String.fromCodePoint(char.charCodeAt(0) + 127397)
-    );
+    return countryCode.toUpperCase().replace(/./g, char => String.fromCodePoint(char.charCodeAt(0) + 127397));
 }
