@@ -1,50 +1,56 @@
 /**
- * Surge IP 深度溯源脚本
- * 接口支持: ippure.com
+ * Surge IP 深度溯源面板 V2
+ * 修复了 Unknown 显示问题，并增加了请求头模拟
  */
 
-const url = 'https://api.ippure.com/v1/ip';
+const requestInfo = {
+    url: 'https://api.ippure.com/v1/ip',
+    headers: {
+        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
+        'Accept': 'application/json'
+    },
+    timeout: 5000
+};
 
-$httpClient.get(url, function(error, response, data) {
-    if (error) {
-        renderPanel("连接失败", "无法访问 IPPure API，请检查网络或代理设置。", "#FF3B30", "exclamationmark.shield.fill");
+$httpClient.get(requestInfo, function(error, response, data) {
+    if (error || !data) {
+        renderPanel("❌ 溯源请求超时", "请检查当前节点是否能访问 ippure.com\n或尝试手动刷新面板。", "#FF3B30", "exclamationmark.icloud");
         return;
     }
 
     try {
         const obj = JSON.parse(data);
-        const ip = obj.ip || "Unknown";
-        const flag = getFlagEmoji(obj.country_code);
         
-        // 1. 地理溯源
-        const location = `${obj.country_name || ""} · ${obj.region_name || ""} · ${obj.city || ""}`;
-        
-        // 2. 网络归属
+        // 关键修复：确保即使字段缺失也不显示 Unknown
+        const ip = obj.ip || "获取中...";
+        const country = obj.country_name || "未知国家";
+        const region = obj.region_name || "";
+        const city = obj.city || "";
         const isp = obj.isp || "未知运营商";
         const asn = obj.asn || "N/A";
-        
-        // 3. 物理环境参数
-        const coords = `经纬: ${obj.latitude || "N/A"}, ${obj.longitude || "N/A"}`;
+        const lat = obj.latitude || "N/A";
+        const lon = obj.longitude || "N/A";
         const zip = obj.zip_code || "未知";
         const currency = obj.currency_name ? `${obj.currency_name} (${obj.currency_code})` : "N/A";
         const callCode = obj.calling_code ? `+${obj.calling_code}` : "N/A";
         const tz = obj.time_zone || "N/A";
+        const flag = getFlagEmoji(obj.country_code);
 
-        // 4. 简单风险识别 (常见的云服务商关键词)
-        const isCloud = /Google|Amazon|Microsoft|Oracle|Alibaba|Tencent|Akamai|DigitalOcean|Choopa/i.test(isp);
-        const typeTag = isCloud ? "☁️ Datacenter (机房)" : "🏠 Residential (住宅/原生)";
+        // 智能类型识别
+        const isCloud = /Google|Amazon|Microsoft|Oracle|Alibaba|Tencent|Akamai|DigitalOcean|Choopa|Linode|Cloudflare|Hetzner|OVH/i.test(isp);
+        const typeTag = isCloud ? "☁️ DataCenter (数据中心)" : "🏠 Residential (住宅/原生)";
 
-        let content = `📍 归属: ${location}\n`;
+        let content = `📍 归属: ${country} ${region} ${city}\n`;
         content += `🏢 运营: ${isp}\n`;
         content += `🏷️ 类型: ${typeTag}\n`;
         content += `🔢 ASN: ${asn} | 邮编: ${zip}\n`;
-        content += `🌍 ${coords} | 📞 ${callCode}\n`;
+        content += `🌍 坐标: ${lat}, ${lon} | 📞 ${callCode}\n`;
         content += `💴 货币: ${currency} | ⏰ 时区: ${tz}`;
 
-        renderPanel(`${flag} IP 溯源: ${ip}`, content, isCloud ? "#FF9500" : "#34C759", "scope");
+        renderPanel(`${flag} IP: ${ip}`, content, isCloud ? "#FF9500" : "#34C759", "target");
 
     } catch (e) {
-        renderPanel("数据异常", "API 返回数据解析失败", "#FF9500", "doc.text.magnifyingglass");
+        renderPanel("⚠️ 解析异常", "API 返回了非标准 JSON 格式数据", "#FF9500", "doc.text.magnifyingglass");
     }
 });
 
