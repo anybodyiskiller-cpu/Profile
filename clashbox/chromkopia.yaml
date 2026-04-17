@@ -153,7 +153,7 @@ proxy-groups:
     use: [良心云]
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/south-korea.png
   - name: 新加坡节点
-    type: load-balance
+    type: url-test
     include-all: true
     filter: ^(?i)(?=.*(新加坡|🇸🇬|\bSG\b|Singapore|SIN|XSP)).*$
     use: [良心云]
