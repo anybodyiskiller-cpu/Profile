@@ -206,11 +206,11 @@ rule-providers:
   twitter_ip: {!!merge <<: *Anchor_IP, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.mrs"}
   cn_ip: {!!merge <<: *Anchor_IP, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
 rules:
-  - DOMAIN-SUFFIX,anybodyiskiller.com,DERICT
+  - DOMAIN-SUFFIX,anybodyiskiller.com,DIRECT
   - DOMAIN-SUFFIX,vercel.app,新加坡节点
   - DOMAIN-SUFFIX,opensubtitles.com,新加坡节点
   - DOMAIN-SUFFIX,uhdnow.com,新加坡节点
-  - DOMAIN-SUFFIX,dandanplay.net,DERICT
+  - DOMAIN-SUFFIX,dandanplay.net,DIRECT
   - DOMAIN-SUFFIX,trakt.tv,新加坡节点
   - DOMAIN-SUFFIX,keeflys.com,Proxy
   # Meta 服务（已提前）
