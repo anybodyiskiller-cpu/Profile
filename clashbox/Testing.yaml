@@ -22,7 +22,7 @@ Anchor_DN: &Anchor_DN {type: http, interval: 86400, behavior: domain, format: mr
 Anchor_CL: &Anchor_CL {type: http, interval: 86400, behavior: classical, format: text, proxy: Proxy}
 # ※※※※※※※※※※※※※※※ 节点订阅 ※※※※※※※※※※※※※※※
 proxy-providers:
-  独角兽: {!!merge <<: *Anchor_PR, url: 'https://8.218.167.131:55356/api/v1/client/subscribe?token=3c8efcd96b1d3718bb4e8e339d9f1f08', override: {additional-prefix: '[良心云] '}, benchmark-url: 'http://connectivitycheck.platform.hicloud.com/generate_204', filter: '^(?!.*(到期|过期|剩余|网址|官网|邮箱|订阅|套餐|流量|说明|重置)).*$', interval: 86400}
+  独角兽: {!!merge <<: *Anchor_PR, url: 'https://8.218.167.131:55356/api/v1/client/subscribe?token=3c8efcd96b1d3718bb4e8e339d9f1f08', override: {additional-prefix: '[独角兽] '}, benchmark-url: 'http://connectivitycheck.platform.hicloud.com/generate_204', filter: '^(?!.*(到期|过期|剩余|网址|官网|邮箱|订阅|套餐|流量|说明|重置)).*$', interval: 86400}
 # ※※※※※※※※※※※※※※※ 核心配置 ※※※※※※※※※※※※※※※
 mixed-port: 7893
 mode: rule
