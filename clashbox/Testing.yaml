@@ -110,7 +110,7 @@ proxy-groups:
   - {name: GitHub, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/github.png', proxies: [Proxy, 香港节点, 台湾节点, 日本节点, 新加坡节点, DIRECT], type: select}
   - {name: TV, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tv.png', proxies: [Proxy, 香港节点, 日本节点, 新加坡节点, 美国节点, DIRECT], type: select}
   - {name: Apple, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appstore.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, 美国节点, DIRECT], type: select}
-  - {name: Intelligent, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/chatgpt.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, DIRECT], type: select}
+  - {name: Intelligent, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/icons/appleintelligence.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, DIRECT], type: select}
   - {name: TikTok, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png', proxies: [DIRECT, 日本节点, 韩国节点, 新加坡节点, 美国节点], type: select}
   - {name: Twitter, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/x.png', proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, 美国节点], type: select}
   - {name: Telegram, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/telegram.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点], type: select}
