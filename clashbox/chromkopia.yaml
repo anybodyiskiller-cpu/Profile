@@ -206,6 +206,7 @@ rule-providers:
   twitter_ip: {!!merge <<: *Anchor_IP, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.mrs"}
   cn_ip: {!!merge <<: *Anchor_IP, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
 rules:
+  - DOMAIN-SUFFIX,tiktokshopglobalselling.com,DIRECT
   - DOMAIN-SUFFIX,emby.anybodyiskiller.shop,DIRECT
   - DOMAIN-SUFFIX,vercel.app,新加坡节点
   - DOMAIN-SUFFIX,opensubtitles.com,新加坡节点
