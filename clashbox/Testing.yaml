@@ -93,7 +93,7 @@ dns:
     - https://dns.alidns.com/dns-query
 # ※※※※※※※※※※※※※※※ 代理策略组 ※※※※※※※※※※※※※※※
 proxy-groups:
-  - {name: Proxy, type: select, include-all: true, proxies: [DIRECT, Home  Broadband, 香港节点, 新加坡节点, 美国节点, 韩国节点, 日本节点, 台湾节点], icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy.png', use: null}
+  - {name: Proxy, type: select, include-all: true, proxies: [ 香港节点, 新加坡节点, 美国节点, 韩国节点, 日本节点, 台湾节点,DIRECT, Home  Broadband], icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy.png', use: null}
   - icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/instagram.PNG
     name: Instagram
     proxies:
