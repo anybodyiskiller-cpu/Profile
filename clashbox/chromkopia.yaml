@@ -94,7 +94,7 @@ dns:
 # ※※※※※※※※※※※※※※※ 代理策略组 ※※※※※※※※※※※※※※※
 proxy-groups:
   - {name: Proxy, type: select, include-all: true, proxies: [DIRECT, Home  Broadband, 香港节点, 新加坡节点], icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy.png', use: [良心云]}
-  - icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/instagram.png
+  - icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/instagram.PNG
     name: Instagram
     proxies:
       - Home  Broadband
