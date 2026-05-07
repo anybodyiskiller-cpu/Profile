@@ -387,7 +387,7 @@ policy_groups:
     name: ʟɪᴀɴɢxɪɴʏᴜɴ
     type: auto_test
     urls:
-    - https://liangxin.xyz/api/v1/liangxin?OwO=4f974da7e89a279517479deba512a429
+    - https://example.invalid/redacted
     filter: ^(?!.*(Clash|Surge)).*$
     update_interval: 0
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/liangxinyun1.png
