@@ -1,6 +1,5 @@
 ipv6: false
 allow_external_connections: true
-vif_only: false
 hide_vpn_icon: true
 hijack_dns:
 - 8.8.8.8:53
@@ -8,9 +7,12 @@ hijack_dns:
 geoip_db_url: https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
 proxy_latency_test_url: http://www.google.com/generate_204
 direct_latency_test_url: http://www.baidu.com
-compat_route: false
 include_all_networks: false
 include_apns: true
+include_cellular_services: true
+include_local_networks: true
+vif_excluded_routes:
+- 239.255.255.250/32
 dns:
   upstreams:
     default:
@@ -31,9 +33,11 @@ dns:
   - domain_wildcard:
       match: ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
       value: 208.54.49.131
+  hosts:
+    myhome.com:
+    - 192.168.1.1
 bypass_tunnel_proxy:
 - 127.0.0.1
-- 192.168.0.0/16
 - 10.0.0.0/8
 - 172.16.0.0/12
 - 100.64.0.0/10
@@ -57,23 +61,23 @@ real_ip_domains:
 - '*.battle.net'
 proxies:
 - anytls:
-    name: ᴀɴʏᴛʟꜱ
-    server: 154.17.20.56
-    port: 8443
+    name: ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
+    server: 27.254.216.47
+    port: 443
     password:[REDACTED]
-    sni: store.apple.com
+    sni: ads.apple.com
     tfo: false
     udp_relay: false
+    prev_hop: sɪɴɢᴀᴘᴏʀᴇ
 policy_groups:
 - select:
     name: ꜰɪɴᴀʟ
     policies:
-    - ʜᴏᴍᴇ ʙʀᴏᴀᴅʙᴀɴᴅ
+    - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
     - ʜᴏɴɢᴋᴏɴɢ
-    - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ꜱɴᴇʟʟ
     - DIRECT
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy4.png
+    - sɪɴɢᴀᴘᴏʀᴇ
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy.png
     hidden: false
 - select:
     name: ᴘʀᴏxʏ
@@ -81,17 +85,25 @@ policy_groups:
     - ᴊᴀᴘᴀɴ
     - ʜᴏɴɢᴋᴏɴɢ
     - sɪɴɢᴀᴘᴏʀᴇ
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy.png
+    - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy4.png
+    hidden: false
+- select:
+    name: sᴜʀɢᴇ ᴘᴏɴᴛᴇ
+    policies:
+    - DEVICE:TV
+    - DEVICE:MAC
+    - DIRECT
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/surge.png
     hidden: false
 - select:
     name: ɪɴꜱᴛᴀɢʀᴀᴍ
     policies:
-    - ʜᴏᴍᴇ ʙʀᴏᴀᴅʙᴀɴᴅ
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ᴀɴʏᴛʟꜱ
-    - ꜱɴᴇʟʟ
+    - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
+    - ᴛʜᴀɪʟᴀɴᴅ-ꜱɴᴇʟʟ
     filter: (🇯🇵|日本|Japan|JP|🇸🇬|新加坡|Singapore|SG)
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/instagram.PNG
     hidden: false
@@ -100,8 +112,8 @@ policy_groups:
     policies:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ꜱɴᴇʟʟ
     - DIRECT
+    flatten: true
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tv.png
     hidden: false
 - select:
@@ -113,32 +125,28 @@ policy_groups:
     - ʜᴏɴɢᴋᴏɴɢ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - ʟɪᴀɴɢxɪɴʏᴜɴ
-    - ꜱɴᴇʟʟ
+    - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
+    flatten: false
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appstore.png
     hidden: false
 - select:
     name: ɢᴏᴏɢʟᴇ
     policies:
-    - ꜱɴᴇʟʟ
     - ᴊᴀᴘᴀɴ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ᴀɴʏᴛʟꜱ
     - sɪɴɢᴀᴘᴏʀᴇ
-    - ʜᴏᴍᴇ ʙʀᴏᴀᴅʙᴀɴᴅ
+    - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/google.png
     hidden: false
 - select:
     name: ʏᴏᴜᴛᴜʙᴇ
     policies:
-    - ꜱɴᴇʟʟ
-    - ᴀɴʏᴛʟꜱ
     - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ᴍᴀᴄᴀᴏ
     - ᴛᴀɪᴡᴀɴ
     - ᴊᴀᴘᴀɴ
     - sɪɴɢᴀᴘᴏʀᴇ
-    - ʜᴏᴍᴇ ʙʀᴏᴀᴅʙᴀɴᴅ
+    flatten: false
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/youtube.png
     hidden: false
 - select:
@@ -160,14 +168,14 @@ policy_groups:
     - DIRECT
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/netflix.png
     hidden: false
-- load_balance:
+- select:
     name: ᴜʜᴅ
     policies:
-    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
-    - ʟɪᴀɴɢxɪɴʏᴜɴ
-    flatten: true
-    filter: SG|新加坡
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/UHD.PNG
+    - sɪɴɢᴀᴘᴏʀᴇ
+    - ᴊᴀᴘᴀɴ
+    - DIRECT
+    filter: JP|日本|Japan|日
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/UHD1.PNG
     hidden: false
 - select:
     name: ᴅɪsɴᴇʏ+
@@ -184,17 +192,16 @@ policy_groups:
     policies:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ꜱɴᴇʟʟ
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/discord.png
     hidden: false
 - select:
     name: ᴛɪᴋᴛᴏᴋ
     policies:
-    - ʜᴏᴍᴇ ʙʀᴏᴀᴅʙᴀɴᴅ
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ꜱɴᴇʟʟ
+    - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
+    - DIRECT
     filter: (新加坡|英国|美国|日本).*(1x|2x)
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png
     hidden: false
@@ -203,6 +210,8 @@ policy_groups:
     policies:
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - DIRECT
+    - ᴊᴀᴘᴀɴ
+    - sɪɴɢᴀᴘᴏʀᴇ
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png
     hidden: false
 - select:
@@ -216,8 +225,6 @@ policy_groups:
     name: ᴛᴇʟᴇɢʀᴀᴍ
     policies:
     - ᴊᴀᴘᴀɴ
-    - ꜱɴᴇʟʟ
-    - ᴀɴʏᴛʟꜱ
     - sɪɴɢᴀᴘᴏʀᴇ
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/telegram.png
     hidden: false
@@ -226,7 +233,6 @@ policy_groups:
     policies:
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - DIRECT
-    - ꜱɴᴇʟʟ
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/xiaohongshu.png
     hidden: false
 - select:
@@ -234,8 +240,6 @@ policy_groups:
     policies:
     - ᴊᴀᴘᴀɴ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ꜱɴᴇʟʟ
-    - ᴀɴʏᴛʟꜱ
     - DIRECT
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/shop.png
     hidden: false
@@ -256,52 +260,39 @@ policy_groups:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
     - ᴛᴀɪᴡᴀɴ
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/steam.png
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/playstation.png
     hidden: false
 - select:
     name: ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
     policies:
     - ᴊᴀᴘᴀɴ
     - sɪɴɢᴀᴘᴏʀᴇ
-    - ꜱɴᴇʟʟ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+    - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appleintelligence.png
     hidden: false
 - select:
     name: x
     policies:
-    - ᴀɴʏᴛʟꜱ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴜᴋʀᴀɪɴᴇ
-    - ʜᴏᴍᴇ ʙʀᴏᴀᴅʙᴀɴᴅ
-    - ꜱɴᴇʟʟ
-    flatten: false
+    - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/x.png
     hidden: false
 - select:
     name: ꜱᴘᴇᴇᴅᴛᴇꜱᴛ
     policies:
     - DIRECT
-    - ꜱɴᴇʟʟ
     - ᴊᴀᴘᴀɴ
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/speetest.png
     hidden: false
 - select:
     name: ɢɪᴛʜᴜʙ
     policies:
-    - DIRECT
-    - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ʜᴏɴɢᴋᴏɴɢ
+    - ᴊᴀᴘᴀɴ
     - sɪɴɢᴀᴘᴏʀᴇ
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/github.png
-    hidden: false
-- auto_test:
-    name: ʜᴏᴍᴇ ʙʀᴏᴀᴅʙᴀɴᴅ
-    policies: []
-    flatten: true
-    filter: (家宽|家庭宽带|Residential|Broadband|ISP).*(?!IPLC|专线|数据中心)
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/just timer.png
     hidden: false
 - smart:
     name: ʜᴏɴɢᴋᴏɴɢ
@@ -315,8 +306,8 @@ policy_groups:
 - smart:
     name: ᴛᴀɪᴡᴀɴ
     policies:
-    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     - ʟɪᴀɴɢxɪɴʏᴜɴ
+    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     flatten: true
     filter: (🇨🇳)|(台)|(Tai)|(TW)
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/taiwan.png
@@ -324,8 +315,8 @@ policy_groups:
 - smart:
     name: ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     policies:
-    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     - ʟɪᴀɴɢxɪɴʏᴜɴ
+    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     flatten: true
     filter: (美国|USA|US)(?!.*(5x|10x))
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/united-states.png
@@ -333,8 +324,8 @@ policy_groups:
 - smart:
     name: ᴊᴀᴘᴀɴ
     policies:
-    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     - ʟɪᴀɴɢxɪɴʏᴜɴ
+    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     flatten: true
     filter: (日本|Japan|JP)(?!.*(5x|10x))
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/japan.png
@@ -342,7 +333,6 @@ policy_groups:
 - smart:
     name: sɪɴɢᴀᴘᴏʀᴇ
     policies:
-    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     - ʟɪᴀɴɢxɪɴʏᴜɴ
     flatten: true
     filter: (新加坡|Singapore|SG)(?!.*(5x|10x))
@@ -351,25 +341,29 @@ policy_groups:
 - smart:
     name: ᴋᴏʀᴇᴀ
     policies:
-    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     - ʟɪᴀɴɢxɪɴʏᴜɴ
+    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     flatten: true
     filter: 韩
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/south-korea.png
     hidden: false
-- auto_test:
+- smart:
     name: ᴍᴀᴄᴀᴏ
-    policies: []
+    policies:
+    - ʟɪᴀɴɢxɪɴʏᴜɴ
+    flatten: true
     filter: 澳门
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/macao.png
     hidden: false
-- auto_test:
+- smart:
     name: ɴᴇᴡ ᴢᴇᴀʟᴀɴᴅ
-    policies: []
+    policies:
+    - ʟɪᴀɴɢxɪɴʏᴜɴ
+    flatten: true
     filter: (🇳🇿|新西兰|NZ|New\s?Zealand)
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/new-zealand.png
     hidden: false
-- auto_test:
+- smart:
     name: ᴜᴋʀᴀɪɴᴇ
     policies: []
     filter: 乌克兰
@@ -377,7 +371,7 @@ policy_groups:
     hidden: false
 - external:
     name: ᴇᴅɢᴇᴛᴜɴɴᴇʟ
-    type: auto_test
+    type: smart
     urls:
     - https://example.invalid/redacted
     update_interval: 0
@@ -385,7 +379,7 @@ policy_groups:
     hidden: false
 - external:
     name: ʟɪᴀɴɢxɪɴʏᴜɴ
-    type: auto_test
+    type: smart
     urls:
     - https://example.invalid/redacted
     filter: ^(?!.*(Clash|Surge)).*$
@@ -396,66 +390,42 @@ rules:
 - cellular:
     match: LTE
     policy: DIRECT
-- domain_keyword:
-    match: meituan
-    policy: REJECT
-- domain_suffix:
-    match: rcuts.com
+- rule_set:
+    match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/Ponte.list
+    policy: sᴜʀɢᴇ ᴘᴏɴᴛᴇ
+- rule_set:
+    match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/angellive.list
+    policy: sɪɴɢᴀᴘᴏʀᴇ
+- rule_set:
+    match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/PersonalDirect.list
     policy: DIRECT
-- domain_suffix:
-    match: sooplive.co.kr
-    policy: ʟɪᴀɴɢxɪɴʏᴜɴ
-- domain_suffix:
-    match: sooplive.com
-    policy: ʟɪᴀɴɢxɪɴʏᴜɴ
 - domain_suffix:
     match: ip-api.com
     policy: ɪɴꜱᴛᴀɢʀᴀᴍ
-- domain:
-    match: ada.6yhy.top
-    policy: DIRECT
-- domain:
-    match: hkes.escapism.us.ci
-    policy: DIRECT
-- domain:
-    match: escapism.us.ci
-    policy: DIRECT
 - rule_set:
     match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/PornHub.list
-    policy: ʜᴏɴɢᴋᴏɴɢ
+    policy: sɪɴɢᴀᴘᴏʀᴇ
 - rule_set:
-    match: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/openai.list
-    policy: ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
-- rule_set:
-    match: https://raw.githubusercontent.com/xpdigital/Apple-Rule/refs/heads/main/Apple-US.list
+    match: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list
     policy: ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
 - rule_set:
     match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Tmdb/Tmdb.list
     policy: ᴜʜᴅ
 - rule_set:
+    match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/UHDSupport.list
+    policy: sɪɴɢᴀᴘᴏʀᴇ
+- rule_set:
     match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/UHD.list
     policy: ᴜʜᴅ
 - domain_suffix:
-    match: assrt.net
-    policy: DIRECT
-- domain_suffix:
-    match: dandanplay.net
-    policy: DIRECT
-- domain_suffix:
     match: amp-api.podcasts.apple.com
     policy: ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-- domain_suffix:
-    match: metowolf.com
-    policy: DIRECT
 - domain:
     match: api.stats.fm
     policy: ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
 - domain_suffix:
     match: jiba-api.hee.ink
     policy: ᴀᴘᴘʟᴇ
-- domain_suffix:
-    match: yhdm.one
-    policy: DIRECT
 - rule_set:
     match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Microsoft/Microsoft.list
     policy: ᴊᴀᴘᴀɴ
@@ -653,50 +623,3 @@ mitm:
     - me-api.jd.com
     - api.m.jd.com
     - osg-open.sgcc.com.cn
-modules:
-- url: https://raw.githubusercontent.com/Aioneas/Surge/main/Module/youtube.aioneas.hide-shorts.sgmodule
-  enabled: true
-- url: https://github.com/BiliUniverse/ADBlock/releases/latest/download/BiliBili.ADBlock.plugin
-  enabled: true
-- url: https://github.com/BiliUniverse/Redirect/releases/latest/download/BiliBili.Redirect.plugin
-  enabled: true
-- url: https://github.com/BiliUniverse/Global/releases/latest/download/BiliBili.Global.plugin
-  compat_arguments:
-    Proxies.HKG: ʜᴏɴɢᴋᴏɴɢ
-    Proxies.TWN: ᴛᴀɪᴡᴀɴ
-  enabled: true
-- url: https://github.com/BiliUniverse/Enhanced/releases/latest/download/BiliBili.Enhanced.plugin
-  enabled: true
-- url: https://github.com/NSRingo/Maps/releases/latest/download/iRingo.Maps.plugin
-  enabled: true
-- url: https://github.com/NSRingo/LocationService/releases/latest/download/iRingo.LocationService.plugin
-  enabled: true
-- url: https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.plugin
-  enabled: true
-- url: https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.plugin
-  enabled: true
-- url: https://github.com/DualSubs/YouTube/releases/latest/download/DualSubs.YouTube.plugin
-  compat_arguments:
-    Type: Translate
-  enabled: true
-- url: https://github.com/DualSubs/Netflix/releases/latest/download/DualSubs.Netflix.plugin
-  enabled: true
-- url: https://github.com/DualSubs/Universal/releases/latest/download/DualSubs.Universal.plugin
-  enabled: true
-- url: https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.surge.sgmodule
-  enabled: true
-- name: 中国移动组件服务
-  url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Component/ChinaMobile.module
-  compat_arguments:
-    禁用获参重写: '#'
-    手机号码: '15669318096'
-    调试模式: '1'
-    静默模式: '1'
-    Scriptable服务模式: '1'
-  enabled: true
-- name: 网上国网组件服务
-  url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Component/WSGW.module
-  enabled: true
-- name: 交管12123组件服务
-  url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Component/12123.module
-  enabled: true
