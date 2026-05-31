@@ -64,7 +64,7 @@ proxies:
     name: ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
     server: 27.254.216.47
     port: 443
-    password:[REDACTED]
+    password: [REDACTED]
     sni: ads.apple.com
     tfo: false
     udp_relay: false
@@ -373,7 +373,7 @@ policy_groups:
     name: ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     type: smart
     urls:
-    - https://example.invalid/redacted
+    - https://88boy.anybodyiskiller.shop/sub?token=[REDACTED]
     update_interval: 0
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/cloudflare.png
     hidden: false
@@ -381,7 +381,7 @@ policy_groups:
     name: ʟɪᴀɴɢxɪɴʏᴜɴ
     type: smart
     urls:
-    - https://example.invalid/redacted
+    - https://liangxin.xyz/api/v1/liangxin?OwO=4f974da7e89a279517479deba512a429
     filter: ^(?!.*(Clash|Surge)).*$
     update_interval: 0
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/liangxinyun1.png
@@ -586,7 +586,7 @@ scriptings:
 - schedule:
     name: 奶茶签到
     cron: 0 10 0 * * ?
-    script_url: https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js
+    script_url: https://example.invalid/redacted
     update_interval: 0
     timeout: 15
 - schedule:
