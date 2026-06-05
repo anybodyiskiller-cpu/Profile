@@ -1,0 +1,236 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: warning
+ipv6: false
+unified-delay: true
+tcp-concurrent: true
+external-controller: 0.0.0.0:9090
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.xboxlive.com"
+    - "*.srv.nintendo.net"
+    - "*.stun.playstation.net"
+proxy-providers:
+  Airport:
+    type: http
+    url: "https://example.invalid/redacted"
+    path: ./providers/airport.yaml
+    interval: 86400
+    health-check:
+      enable: true
+      url: http://www.google.com/generate_204
+      interval: 300
+    benchmark-url: http://www.google.com/generate_204
+proxy-groups:
+  - {name: ꜰɪɴᴀʟ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy4.png', proxies: [ʜᴏɴɢᴋᴏɴɢ, DIRECT, sɪɴɢᴀᴘᴏʀᴇ, ᴘʀᴏxʏ]}
+  - {name: ᴘʀᴏxʏ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy.png', proxies: [ᴊᴀᴘᴀɴ, ʜᴏɴɢᴋᴏɴɢ, sɪɴɢᴀᴘᴏʀᴇ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs]}
+  - {name: ᴀᴘᴘʟᴇ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appstore.png', proxies: [DIRECT, ᴊᴀᴘᴀɴ, sɪɴɢᴀᴘᴏʀᴇ, ʜᴏɴɢᴋᴏɴɢ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs,]}
+  - {name: ɢᴏᴏɢʟᴇ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/google.png', proxies: [ᴊᴀᴘᴀɴ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, sɪɴɢᴀᴘᴏʀᴇ]}
+  - {name: ʏᴏᴜᴛᴜʙᴇ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/youtube.png', proxies: [ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, ᴍᴀᴄᴀᴏ, ᴛᴀɪᴡᴀɴ, ᴊᴀᴘᴀɴ, sɪɴɢᴀᴘᴏʀᴇ]}
+  - {name: ɴᴇᴛғʟɪx, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/netflix.png', proxies: [ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, ʜᴏɴɢᴋᴏɴɢ, ᴛᴀɪᴡᴀɴ, sɪɴɢᴀᴘᴏʀᴇ, DIRECT]}
+  - {name: ᴅɪsɴᴇʏ+, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/disney.PNG', proxies: [ʜᴏɴɢᴋᴏɴɢ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, sɪɴɢᴀᴘᴏʀᴇ, ᴊᴀᴘᴀɴ, ᴛᴀɪᴡᴀɴ]}
+  - {name: ᴛɪᴋᴛᴏᴋ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png', proxies: [sɪɴɢᴀᴘᴏʀᴇ, ᴊᴀᴘᴀɴ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, DIRECT]}
+  - {name: ᴛᴇʟᴇɢʀᴀᴍ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/telegram.png', proxies: [ᴊᴀᴘᴀɴ, sɪɴɢᴀᴘᴏʀᴇ, ᴘʀᴏxʏ]}
+  - {name: ɢɪᴛʜᴜʙ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/github.png', proxies: [ᴊᴀᴘᴀɴ, sɪɴɢᴀᴘᴏʀᴇ, ᴘʀᴏxʏ]}
+  - {name: x, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/x.png', proxies: [ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, sɪɴɢᴀᴘᴏʀᴇ, ᴘʀᴏxʏ]}
+  - {name: ɪɴꜱᴛᴀɢʀᴀᴍ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/instagram.PNG', proxies: [sɪɴɢᴀᴘᴏʀᴇ, ᴊᴀᴘᴀɴ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs]}
+  - {name: ᴅɪꜱᴄᴏʀᴅ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/discord.png', proxies: [sɪɴɢᴀᴘᴏʀᴇ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs]}
+  - {name: ꜱᴘᴏᴛɪꜰʏ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spotify.png', proxies: [ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, sɪɴɢᴀᴘᴏʀᴇ, DIRECT]}
+  - {name: ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/playstation.png', proxies: [DIRECT, ʜᴏɴɢᴋᴏɴɢ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, sɪɴɢᴀᴘᴏʀᴇ, ᴊᴀᴘᴀɴ, ᴛᴀɪᴡᴀɴ]}
+  - {name: ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/chatgpt.png', proxies: [ᴊᴀᴘᴀɴ, sɪɴɢᴀᴘᴏʀᴇ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs]}
+  - {name: ʜᴏɴɢᴋᴏɴɢ, type: url-test, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/hong-kong.png', use: [Airport], filter: "(?i)港|HK|Hong", url: 'http://www.google.com/generate_204', interval: 300}
+  - {name: ᴛᴀɪᴡᴀɴ, type: url-test, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/taiwan.png', use: [Airport], filter: "(?i)台|TW|Taiwan", url: 'http://www.google.com/generate_204', interval: 300}
+  - {name: ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, type: url-test, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/united-states.png', use: [Airport], filter: "(?i)美|US|United", url: 'http://www.google.com/generate_204', interval: 300}
+  - {name: ᴊᴀᴘᴀɴ, type: url-test, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/japan.png', use: [Airport], filter: "(?i)日|JP|Japan", url: 'http://www.google.com/generate_204', interval: 300}
+  - {name: sɪɴɢᴀᴘᴏʀᴇ, type: url-test, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/singapore.png', use: [Airport], filter: "(?i)新|SG|Singapore", url: 'http://www.google.com/generate_204', interval: 300}
+  - {name: ᴍᴀᴄᴀᴏ, type: url-test, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/macao.png', use: [Airport], filter: "(?i)澳|MO|Macao", url: 'http://www.google.com/generate_204', interval: 300}
+rule-anchor:
+  domain: &domain
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+  ipcidr: &ipcidr
+    type: http
+    behavior: ipcidr
+    format: mrs
+    interval: 86400
+rule-providers:
+  ads:
+    !!merge <<: *domain
+    path: ./rules/ads.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs
+  private:
+    !!merge <<: *domain
+    path: ./rules/private.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs
+  cn:
+    !!merge <<: *domain
+    path: ./rules/cn.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs
+  proxy:
+    !!merge <<: *domain
+    path: ./rules/geolocation-not-cn.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs
+  openai:
+    !!merge <<: *domain
+    path: ./rules/openai.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.mrs
+  github:
+    !!merge <<: *domain
+    path: ./rules/github.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs
+  google:
+    !!merge <<: *domain
+    path: ./rules/google.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs
+  youtube:
+    !!merge <<: *domain
+    path: ./rules/youtube.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs
+  apple:
+    !!merge <<: *domain
+    path: ./rules/apple.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs
+  microsoft:
+    !!merge <<: *domain
+    path: ./rules/microsoft.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs
+  tiktok:
+    !!merge <<: *domain
+    path: ./rules/tiktok.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs
+  telegram:
+    !!merge <<: *domain
+    path: ./rules/telegram.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs
+  twitter:
+    !!merge <<: *domain
+    path: ./rules/twitter.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.mrs
+  facebook:
+    !!merge <<: *domain
+    path: ./rules/facebook.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/facebook.mrs
+  instagram:
+    !!merge <<: *domain
+    path: ./rules/instagram.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/instagram.mrs
+  discord:
+    !!merge <<: *domain
+    path: ./rules/discord.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/discord.mrs
+  spotify:
+    !!merge <<: *domain
+    path: ./rules/spotify.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs
+  netflix:
+    !!merge <<: *domain
+    path: ./rules/netflix.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs
+  disney:
+    !!merge <<: *domain
+    path: ./rules/disney.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/disney.mrs
+  steam:
+    !!merge <<: *domain
+    path: ./rules/steam.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs
+  nintendo:
+    !!merge <<: *domain
+    path: ./rules/nintendo.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/nintendo.mrs
+  sony:
+    !!merge <<: *domain
+    path: ./rules/sony.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/sony.mrs
+  geoip-cn:
+    !!merge <<: *ipcidr
+    path: ./rules/geoip-cn.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs
+  geoip-private:
+    !!merge <<: *ipcidr
+    path: ./rules/geoip-private.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs
+  geoip-telegram:
+    !!merge <<: *ipcidr
+    path: ./rules/geoip-telegram.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs
+rules:
+  - DOMAIN-SUFFIX,ip-api.com,ɪɴꜱᴛᴀɢʀᴀᴍ
+  - DOMAIN-SUFFIX,amp-api.podcasts.apple.com,ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - DOMAIN,api.stats.fm,ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - DOMAIN-SUFFIX,chatgpt.com,ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
+  - DOMAIN-SUFFIX,openai.com,ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
+  - DOMAIN-SUFFIX,oaistatic.com,ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
+  - DOMAIN-SUFFIX,oaiusercontent.com,ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
+  - DOMAIN-SUFFIX,anthropic.com,ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
+  - DOMAIN-SUFFIX,claude.ai,ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
+  - DOMAIN-SUFFIX,gemini.google.com,ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
+  - DOMAIN-SUFFIX,copilot.microsoft.com,ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
+  - DOMAIN-SUFFIX,disneyplus.com,ᴅɪsɴᴇʏ+
+  - DOMAIN-SUFFIX,disney-plus.net,ᴅɪsɴᴇʏ+
+  - DOMAIN-SUFFIX,bamgrid.com,ᴅɪsɴᴇʏ+
+  - DOMAIN-SUFFIX,dssott.com,ᴅɪsɴᴇʏ+
+  - DOMAIN-SUFFIX,netflix.com,ɴᴇᴛғʟɪx
+  - DOMAIN-SUFFIX,netflix.net,ɴᴇᴛғʟɪx
+  - DOMAIN-SUFFIX,nflxvideo.net,ɴᴇᴛғʟɪx
+  - DOMAIN-SUFFIX,nflximg.net,ɴᴇᴛғʟɪx
+  - DOMAIN-SUFFIX,youtube.com,ʏᴏᴜᴛᴜʙᴇ
+  - DOMAIN-SUFFIX,ytimg.com,ʏᴏᴜᴛᴜʙᴇ
+  - DOMAIN-SUFFIX,googlevideo.com,ʏᴏᴜᴛᴜʙᴇ
+  - DOMAIN-SUFFIX,tiktok.com,ᴛɪᴋᴛᴏᴋ
+  - DOMAIN-SUFFIX,tiktokcdn.com,ᴛɪᴋᴛᴏᴋ
+  - DOMAIN-SUFFIX,tiktokv.com,ᴛɪᴋᴛᴏᴋ
+  - DOMAIN-SUFFIX,discord.com,ᴅɪꜱᴄᴏʀᴅ
+  - DOMAIN-SUFFIX,discord.gg,ᴅɪꜱᴄᴏʀᴅ
+  - DOMAIN-SUFFIX,spotify.com,ꜱᴘᴏᴛɪꜰʏ
+  - DOMAIN-SUFFIX,scdn.co,ꜱᴘᴏᴛɪꜰʏ
+  - DOMAIN-SUFFIX,playstation.com,ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
+  - DOMAIN-SUFFIX,playstation.net,ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
+  - DOMAIN-SUFFIX,steamcontent.com,ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
+  - DOMAIN-SUFFIX,steampowered.com,ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
+  - RULE-SET,openai,ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
+  - RULE-SET,microsoft,ᴊᴀᴘᴀɴ
+  - RULE-SET,github,ɢɪᴛʜᴜʙ
+  - RULE-SET,spotify,ꜱᴘᴏᴛɪꜰʏ
+  - RULE-SET,youtube,ʏᴏᴜᴛᴜʙᴇ
+  - RULE-SET,google,ɢᴏᴏɢʟᴇ
+  - RULE-SET,apple,ᴀᴘᴘʟᴇ
+  - RULE-SET,tiktok,ᴛɪᴋᴛᴏᴋ
+  - RULE-SET,twitter,x
+  - RULE-SET,facebook,ɪɴꜱᴛᴀɢʀᴀᴍ
+  - RULE-SET,instagram,ɪɴꜱᴛᴀɢʀᴀᴍ
+  - RULE-SET,telegram,ᴛᴇʟᴇɢʀᴀᴍ
+  - RULE-SET,discord,ᴅɪꜱᴄᴏʀᴅ
+  - RULE-SET,steam,ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
+  - RULE-SET,nintendo,ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
+  - RULE-SET,sony,ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
+  - RULE-SET,netflix,ɴᴇᴛғʟɪx
+  - RULE-SET,disney,ᴅɪsɴᴇʏ+
+  - RULE-SET,ads,REJECT
+  - RULE-SET,proxy,ᴘʀᴏxʏ
+  - RULE-SET,cn,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,geoip-private,DIRECT,no-resolve
+  - RULE-SET,geoip-telegram,ᴛᴇʟᴇɢʀᴀᴍ,no-resolve
+  - RULE-SET,geoip-cn,DIRECT,no-resolve
+  - MATCH,ꜰɪɴᴀʟ
