@@ -81,13 +81,6 @@ policy_groups:
     - DIRECT
     hidden: false
 - select:
-    name: sᴜʀɢᴇ ᴘᴏɴᴛᴇ
-    policies:
-    - DEVICE:TV
-    - DEVICE:MAC
-    - DIRECT
-    hidden: false
-- select:
     name: ɪɴꜱᴛᴀɢʀᴀᴍ
     policies:
     - sɪɴɢᴀᴘᴏʀᴇ
@@ -114,7 +107,7 @@ policy_groups:
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - ʟɪᴀɴɢxɪɴʏᴜɴ
     - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
-    flatten: true
+    flatten: false
     hidden: false
 - select:
     name: ɢᴏᴏɢʟᴇ
@@ -129,11 +122,10 @@ policy_groups:
     policies:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
-    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - ᴍᴀᴄᴀᴏ
     - ᴛᴀɪᴡᴀɴ
-    flatten: true
+    flatten: false
     hidden: false
 - select:
     name: ꜱᴘᴏᴛɪꜰʏ
@@ -269,7 +261,6 @@ policy_groups:
     name: ʜᴏɴɢᴋᴏɴɢ
     policies:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
-    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     flatten: true
     filter: (香港|Hong Kong|HK)(?!.*(5x|10x))
     hidden: false
@@ -277,7 +268,6 @@ policy_groups:
     name: ᴛᴀɪᴡᴀɴ
     policies:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
-    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     flatten: true
     filter: (🇨🇳)|(台)|(Tai)|(TW)
     hidden: false
@@ -285,7 +275,6 @@ policy_groups:
     name: ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     policies:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
-    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     flatten: true
     filter: (美国|USA|US)(?!.*(5x|10x))
     hidden: false
@@ -293,7 +282,6 @@ policy_groups:
     name: ᴊᴀᴘᴀɴ
     policies:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
-    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     flatten: true
     filter: (日本|Japan|JP)(?!.*(5x|10x))
     hidden: false
@@ -308,7 +296,6 @@ policy_groups:
     name: ᴋᴏʀᴇᴀ
     policies:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
-    - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     flatten: true
     filter: 韩
     hidden: false
@@ -332,13 +319,6 @@ policy_groups:
     filter: 乌克兰
     hidden: false
 - external:
-    name: ᴇᴅɢᴇᴛᴜɴɴᴇʟ
-    type: smart
-    urls:
-    - https://example.invalid/redacted
-    update_interval: 0
-    hidden: false
-- external:
     name: ʟɪᴀɴɢxɪɴʏᴜɴ
     type: smart
     urls:
@@ -360,6 +340,7 @@ rules:
 - rule_set:
     match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/Ponte.list
     policy: sᴜʀɢᴇ ᴘᴏɴᴛᴇ
+    disabled: true
 - rule_set:
     match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/angellive.list
     policy: sɪɴɢᴀᴘᴏʀᴇ
