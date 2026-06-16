@@ -70,6 +70,7 @@ policy_groups:
     - ʜᴏɴɢᴋᴏɴɢ
     - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
     - DIRECT
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy3.png
     hidden: false
 - select:
     name: ᴘʀᴏxʏ
@@ -79,6 +80,7 @@ policy_groups:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
     - DIRECT
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy.png
     hidden: false
 - select:
     name: ɪɴꜱᴛᴀɢʀᴀᴍ
@@ -88,6 +90,7 @@ policy_groups:
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
     filter: (🇯🇵|日本|Japan|JP|🇸🇬|新加坡|Singapore|SG)
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/instagram.PNG
     hidden: false
 - select:
     name: ᴛᴠ
@@ -96,6 +99,7 @@ policy_groups:
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - ʟɪᴀɴɢxɪɴʏᴜɴ
     flatten: true
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tv.png
     hidden: false
 - select:
     name: ᴀᴘᴘʟᴇ
@@ -108,6 +112,7 @@ policy_groups:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
     - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
     flatten: false
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appstore.png
     hidden: false
 - select:
     name: ɢᴏᴏɢʟᴇ
@@ -116,6 +121,7 @@ policy_groups:
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/google.png
     hidden: false
 - select:
     name: ʏᴏᴜᴛᴜʙᴇ
@@ -126,6 +132,7 @@ policy_groups:
     - ᴍᴀᴄᴀᴏ
     - ᴛᴀɪᴡᴀɴ
     flatten: false
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/youtube.png
     hidden: false
 - select:
     name: ꜱᴘᴏᴛɪꜰʏ
