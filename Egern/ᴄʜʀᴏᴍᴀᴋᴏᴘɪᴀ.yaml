@@ -98,7 +98,7 @@ policy_groups:
     - DIRECT
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - ʟɪᴀɴɢxɪɴʏᴜɴ
-    flatten: true
+    flatten: false
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tv.png
     hidden: false
 - select:
