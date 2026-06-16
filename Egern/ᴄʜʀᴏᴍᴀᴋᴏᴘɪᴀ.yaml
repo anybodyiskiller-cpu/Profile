@@ -141,6 +141,7 @@ policy_groups:
     - ɴᴇᴡ ᴢᴇᴀʟᴀɴᴅ
     - sɪɴɢᴀᴘᴏʀᴇ
     - DIRECT
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spotify.png
     hidden: false
 - select:
     name: ɴᴇᴛғʟɪx
@@ -150,6 +151,7 @@ policy_groups:
     - ᴛᴀɪᴡᴀɴ
     - sɪɴɢᴀᴘᴏʀᴇ
     - DIRECT
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/netflix.png
     hidden: false
 - select:
     name: ᴜʜᴅ
@@ -158,6 +160,7 @@ policy_groups:
     - ᴊᴀᴘᴀɴ
     - DIRECT
     filter: JP|日本|Japan|日
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/UHD1.PNG
     hidden: false
 - select:
     name: ᴅɪsɴᴇʏ+
@@ -167,12 +170,14 @@ policy_groups:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
     - ᴛᴀɪᴡᴀɴ
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/disney.PNG
     hidden: false
 - select:
     name: ᴅɪꜱᴄᴏʀᴅ
     policies:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/discord.png
     hidden: false
 - select:
     name: ᴛɪᴋᴛᴏᴋ
@@ -184,6 +189,7 @@ policy_groups:
     - ᴛʜᴀɪʟᴀɴᴅ
     - DIRECT
     filter: (新加坡|英国|美国|日本).*(1x|2x)
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png
     hidden: false
 - select:
     name: ᴅᴏᴜʏɪɴ
@@ -192,24 +198,28 @@ policy_groups:
     - DIRECT
     - ᴊᴀᴘᴀɴ
     - sɪɴɢᴀᴘᴏʀᴇ
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png
     hidden: false
 - select:
     name: ᴛᴡɪᴛᴄʜ
     policies:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/twitch.png
     hidden: false
 - select:
     name: ᴛᴇʟᴇɢʀᴀᴍ
     policies:
     - ᴊᴀᴘᴀɴ
     - sɪɴɢᴀᴘᴏʀᴇ
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/telegram.png
     hidden: false
 - select:
     name: ʀᴇᴅ ɴᴏᴛᴇ
     policies:
     - DIRECT
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/xiaohongshu.png
     hidden: false
 - select:
     name: ꜱʜᴏᴘ
@@ -217,6 +227,7 @@ policy_groups:
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - ᴊᴀᴘᴀɴ
     - DIRECT
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/shop.png
     hidden: false
 - select:
     name: ᴡᴇᴄʜᴀᴛ
@@ -224,6 +235,7 @@ policy_groups:
     - DIRECT
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - ʜᴏɴɢᴋᴏɴɢ
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/wechat.png
     hidden: false
 - select:
     name: ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
@@ -234,6 +246,7 @@ policy_groups:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
     - ᴛᴀɪᴡᴀɴ
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/playstation.png
     hidden: false
 - select:
     name: ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
@@ -242,6 +255,7 @@ policy_groups:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appleintelligence.png
     hidden: false
 - select:
     name: x
@@ -250,6 +264,7 @@ policy_groups:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴜᴋʀᴀɪɴᴇ
     - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/x.png
     hidden: false
 - select:
     name: ꜱᴘᴇᴇᴅᴛᴇꜱᴛ
@@ -257,12 +272,14 @@ policy_groups:
     - DIRECT
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/speetest.png
     hidden: false
 - select:
     name: ɢɪᴛʜᴜʙ
     policies:
     - ᴊᴀᴘᴀɴ
     - sɪɴɢᴀᴘᴏʀᴇ
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/github.png
     hidden: false
 - smart:
     name: ʜᴏɴɢᴋᴏɴɢ
@@ -270,6 +287,7 @@ policy_groups:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
     flatten: true
     filter: (香港|Hong Kong|HK)(?!.*(5x|10x))
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/hong-kong.png
     hidden: false
 - smart:
     name: ᴛᴀɪᴡᴀɴ
@@ -277,6 +295,7 @@ policy_groups:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
     flatten: true
     filter: (🇨🇳)|(台)|(Tai)|(TW)
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/taiwan.png
     hidden: false
 - smart:
     name: ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
@@ -284,6 +303,7 @@ policy_groups:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
     flatten: true
     filter: (美国|USA|US)(?!.*(5x|10x))
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/united-states.png
     hidden: false
 - smart:
     name: ᴊᴀᴘᴀɴ
@@ -291,6 +311,7 @@ policy_groups:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
     flatten: true
     filter: (日本|Japan|JP)(?!.*(5x|10x))
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/japan.png
     hidden: false
 - smart:
     name: sɪɴɢᴀᴘᴏʀᴇ
@@ -298,6 +319,7 @@ policy_groups:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
     flatten: true
     filter: (新加坡|Singapore|SG)(?!.*(5x|10x))
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/singapore.png
     hidden: false
 - smart:
     name: ᴋᴏʀᴇᴀ
@@ -305,6 +327,7 @@ policy_groups:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
     flatten: true
     filter: 韩
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/south-korea.png
     hidden: false
 - smart:
     name: ᴍᴀᴄᴀᴏ
@@ -312,6 +335,7 @@ policy_groups:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
     flatten: true
     filter: 澳门
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/macao.png
     hidden: false
 - smart:
     name: ɴᴇᴡ ᴢᴇᴀʟᴀɴᴅ
@@ -319,11 +343,13 @@ policy_groups:
     - ʟɪᴀɴɢxɪɴʏᴜɴ
     flatten: true
     filter: (🇳🇿|新西兰|NZ|New\s?Zealand)
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/new-zealand.png
     hidden: false
 - smart:
     name: ᴜᴋʀᴀɪɴᴇ
     policies: []
     filter: 乌克兰
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/ukraine.png
     hidden: false
 - external:
     name: ʟɪᴀɴɢxɪɴʏᴜɴ
@@ -332,6 +358,7 @@ policy_groups:
     - https://liangxin.xyz/api/v1/liangxin?OwO=3cda831044f307178f508274ac3b91dd
     filter: ^(?!.*(?:剩余流量|距离下次重置剩余|套餐到期)).*
     update_interval: 0
+    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/liangxinyun1.png
     hidden: false
 rules:
 - ip_cidr:
