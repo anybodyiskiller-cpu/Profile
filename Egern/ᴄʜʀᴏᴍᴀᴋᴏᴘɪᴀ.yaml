@@ -343,7 +343,7 @@ policy_groups:
     type: smart
     urls:
     - https://liangxin.xyz/api/v1/liangxin?OwO=3cda831044f307178f508274ac3b91dd
-    filter: ^(?!.*(Clash|Surge)).*$
+    filter: ^(?!.*(?:剩余流量|距离下次重置剩余|套餐到期)).*
     update_interval: 0
     hidden: false
 rules:
