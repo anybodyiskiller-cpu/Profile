@@ -342,7 +342,7 @@ policy_groups:
     name: ʟɪᴀɴɢxɪɴʏᴜɴ
     type: smart
     urls:
-    - https://example.invalid/redacted
+    - https://liangxin.xyz/api/v1/liangxin?OwO=3cda831044f307178f508274ac3b91dd
     filter: ^(?!.*(Clash|Surge)).*$
     update_interval: 0
     hidden: false
