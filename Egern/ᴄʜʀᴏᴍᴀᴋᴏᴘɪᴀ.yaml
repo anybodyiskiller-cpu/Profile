@@ -1,5 +1,6 @@
 ipv6: false
 allow_external_connections: true
+vif_only: false
 hide_vpn_icon: false
 hijack_dns:
 - 8.8.8.8:53
@@ -7,6 +8,7 @@ hijack_dns:
 geoip_db_url: https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
 proxy_latency_test_url: http://www.google.com/generate_204
 direct_latency_test_url: http://www.baidu.com
+compat_route: false
 include_all_networks: false
 include_apns: true
 include_cellular_services: true
