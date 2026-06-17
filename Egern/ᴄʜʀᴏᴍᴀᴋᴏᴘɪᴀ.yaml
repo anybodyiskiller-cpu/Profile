@@ -550,49 +550,6 @@ rules:
     no_resolve: true
 - default:
     policy: ꜰɪɴᴀʟ
-scriptings:
-- schedule:
-    name: 极氪签到
-    cron: 0 10 0 * * ?
-    script_url: https://raw.githubusercontent.com/wf021325/qx/master/task/zeekr.js
-    update_interval: 0
-    timeout: 200
-- schedule:
-    name: Bili漫画签到
-    cron: 0 10 0 * * ?
-    script_url: https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js
-    update_interval: 0
-- schedule:
-    name: 奶茶签到
-    cron: 0 10 0 * * ?
-    script_url: https://example.invalid/redacted
-    update_interval: 0
-    timeout: 15
-- schedule:
-    name: 高德签到
-    cron: 0 10 0 * * ?
-    script_url: https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js
-    update_interval: 0
-    timeout: 200
-- schedule:
-    name: 动画疯签到
-    cron: 0 10 0 * * ?
-    script_url: https://raw.githubusercontent.com/NobyDa/Script/master/Bahamut/BahamutDailyBonus.js
-    update_interval: 0
-    timeout: 300
-- http_request:
-    name: 网上国网获取 OpenID
-    match: ^https?:\/\/osg-open\.sgcc\.com\.cn\/osg-open-p0001\/member\/c5\/f05
-    script_url: https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/95598/95598.weapp.js
-    update_interval: 0
-    max_size: 0
-    timeout: 1000
-    body_required: false
-- schedule:
-    name: 网上国网电费查询
-    cron: 5 21 * * *
-    script_url: https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/95598/95598.weapp.js
-    timeout: 60
 mitm:
   ca_p12: '[REDACTED]'
   ca_passphrase: '[REDACTED]'
