@@ -1,6 +1,6 @@
 ipv6: false
 allow_external_connections: true
-hide_vpn_icon: true
+hide_vpn_icon: false
 hijack_dns:
 - 8.8.8.8:53
 - 8.8.4.4:53
@@ -194,10 +194,11 @@ policy_groups:
 - select:
     name: ᴅᴏᴜʏɪɴ
     policies:
-    - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - DIRECT
+    - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - ᴊᴀᴘᴀɴ
     - sɪɴɢᴀᴘᴏʀᴇ
+    flatten: false
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png
     hidden: false
 - select:
