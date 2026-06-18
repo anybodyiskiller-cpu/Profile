@@ -61,6 +61,16 @@ real_ip_domains:
 - '*.battlenet.com'
 - '*.blzstatic.cn'
 - '*.battle.net'
+proxies:
+- snell:
+    name: 泰国
+    server: 27.254.216.47
+    port: 2347
+    psk: tkYe8qOD2wATMrV2
+    version: 5
+    udp_relay: true
+    reuse: false
+    tfo: false
 policy_groups:
 - select:
     name: ꜰɪɴᴀʟ
