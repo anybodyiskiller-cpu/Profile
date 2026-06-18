@@ -555,6 +555,12 @@ rules:
     policy: ꜰɪɴᴀʟ
 scriptings:
 - http_request:
+    name: 达美乐披萨
+    match: ''
+    script_url: https://example.invalid/redacted
+    body_required: false
+    binary_body: false
+- http_request:
     name: 极氪汽车
     match: ''
     script_url: https://raw.githubusercontent.com/wf021325/qx/master/task/zeekr.js
