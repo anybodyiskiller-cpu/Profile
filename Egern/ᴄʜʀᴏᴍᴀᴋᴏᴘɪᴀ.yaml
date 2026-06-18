@@ -61,6 +61,18 @@ real_ip_domains:
 - '*.battlenet.com'
 - '*.blzstatic.cn'
 - '*.battle.net'
+proxies:
+- snell:
+    name: 泰国
+    server: 27.254.216.47
+    port: 8443
+    psk: nEw9n6YR4PkicA2h
+    version: 5
+    udp_relay: true
+    reuse: false
+    obfs: tls
+    obfs_host: ml.apple.com
+    tfo: false
 policy_groups:
 - select:
     name: ꜰɪɴᴀʟ
