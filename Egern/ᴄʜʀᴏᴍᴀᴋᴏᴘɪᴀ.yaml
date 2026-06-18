@@ -560,18 +560,6 @@ scriptings:
     script_url: https://raw.githubusercontent.com/wf021325/qx/master/task/zeekr.js
     body_required: false
     binary_body: false
-- http_request:
-    name: 达美乐披萨
-    match: ''
-    script_url: https://example.invalid/redacted
-    body_required: false
-    binary_body: false
-- http_request:
-    name: 捷停车
-    match: ''
-    script_url: https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js
-    body_required: false
-    binary_body: false
 - http_response:
     name: 亚朵酒店
     match: ''
@@ -585,6 +573,7 @@ scriptings:
     script_url: https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js
     body_required: false
     binary_body: false
+    disabled: true
 - generic:
     name: 海底捞
     script_url: https://example.invalid/redacted
@@ -650,7 +639,7 @@ modules:
     Title1: ʟɪᴀɴɢxɪɴʏᴜɴ
     URL1: https://liangxin.xyz/api/v1/liangxin?OwO=3cda831044f307178f508274ac3b91dd
     Title2: ᴇᴅɢᴇᴛᴜɴɴᴇʟ
-    URL2: https://88boy.anybodyiskiller.shop/sub?token=[REDACTED]]
+    URL2: https://88boy.anybodyiskiller.shop/sub?token=[REDACTED]
   enabled: true
 - url: https://example.invalid/redacted
   enabled: true
