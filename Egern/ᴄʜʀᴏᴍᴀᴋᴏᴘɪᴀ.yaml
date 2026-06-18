@@ -564,7 +564,7 @@ mitm:
     - osg-open.sgcc.com.cn
 modules:
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Component/ChinaMobile.yaml
-  enabled: true
+  enabled: false
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Component/12123.module
   enabled: true
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Dashboard/NetworkInfo.yaml
@@ -616,7 +616,7 @@ modules:
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Component/ChinaMobile.module
   compat_arguments:
     手机号码: '15669318096'
-  enabled: false
+  enabled: true
 - url: https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/CFGPT/CFGPT_new.sgmodule
   enabled: true
 - url: https://github.com/BiliUniverse/ADBlock/releases/latest/download/BiliBili.ADBlock.sgmodule
