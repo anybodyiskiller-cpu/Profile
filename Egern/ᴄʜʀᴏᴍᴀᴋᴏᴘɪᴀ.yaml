@@ -555,6 +555,10 @@ rules:
     policy: ꜰɪɴᴀʟ
 scriptings:
 - schedule:
+    name: 海底捞
+    cron: 0 5 * * *
+    script_url: https://raw.githubusercontent.com/checkToke/yangtai/refs/heads/master/hdl.js
+- schedule:
     name: 华住会
     cron: 0 5 * * *
     script_url: https://raw.githubusercontent.com/checkToke/yangtai/refs/heads/master/hzh.js
