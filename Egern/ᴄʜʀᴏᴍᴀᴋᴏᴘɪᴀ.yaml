@@ -1,7 +1,7 @@
 ipv6: false
 allow_external_connections: true
 vif_only: false
-hide_vpn_icon: false
+hide_vpn_icon: true
 hijack_dns:
 - 8.8.8.8:53
 - 8.8.4.4:53
