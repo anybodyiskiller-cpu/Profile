@@ -566,6 +566,10 @@ modules:
 - url: https://example.invalid/redacted
   enabled: true
 - url: https://example.invalid/redacted
+  enabled: true
+- url: https://example.invalid/redacted
+  enabled: true
+- url: https://example.invalid/redacted
   compat_arguments:
     MY: 'false'
     DT: 'false'
@@ -579,10 +583,6 @@ modules:
     HMPR: 'false'
     PRMST: 'false'
     PRCN: 'false'
-  enabled: true
-- url: https://example.invalid/redacted
-  enabled: true
-- url: https://example.invalid/redacted
   enabled: true
 - url: https://example.invalid/redacted
   enabled: true
