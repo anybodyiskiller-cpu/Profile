@@ -585,7 +585,7 @@ scriptings:
     name: 华住会
     cron: 0 0 9 * * ?
     script_url: https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js
-    disabled: true
+    disabled: false
 - schedule:
     name: 海底捞
     cron: 0 0 9 * * ?
