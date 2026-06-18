@@ -615,6 +615,9 @@ modules:
 - url: https://github.com/BiliUniverse/Redirect/releases/latest/download/BiliBili.Redirect.sgmodule
   enabled: true
 - url: https://github.com/BiliUniverse/Global/releases/latest/download/BiliBili.Global.sgmodule
+  compat_arguments:
+    Proxies.HKG: ʜᴏɴɢᴋᴏɴɢ
+    Proxies.TWN: ᴛᴀɪᴡᴀɴ
   enabled: true
 - url: https://github.com/BiliUniverse/Enhanced/releases/latest/download/BiliBili.Enhanced.sgmodule
   enabled: true
