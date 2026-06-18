@@ -571,6 +571,10 @@ modules:
   enabled: true
 - url: https://example.invalid/redacted
   enabled: true
+- url: https://example.invalid/redacted
+  enabled: true
+- url: https://example.invalid/redacted
+  enabled: true
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Component/ChinaMobile.yaml
   enabled: false
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Component/12123.module
@@ -605,8 +609,6 @@ modules:
   compat_arguments:
     xhs_sticker: 'true'
     PROXY: ʀᴇᴅ ɴᴏᴛᴇ
-  enabled: true
-- url: https://example.invalid/redacted
   enabled: true
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E2%AD%90%EF%B8%8F%20Script%20Hub.official.sgmodule
   enabled: true
