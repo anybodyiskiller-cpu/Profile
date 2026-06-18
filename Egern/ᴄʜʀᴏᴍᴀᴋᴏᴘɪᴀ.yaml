@@ -336,6 +336,8 @@ policy_groups:
     filter: (新加坡|Singapore|SG)(?!.*(5x|10x))
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/singapore.png
     hidden: false
+    priorities:
+      流媒体: 1.0
 - smart:
     name: ᴋᴏʀᴇᴀ
     policies:
