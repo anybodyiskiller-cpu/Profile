@@ -578,6 +578,8 @@ modules:
   enabled: true
 - url: https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adblock4limbo.sgmodule
   enabled: true
+- url: https://raw.githubusercontent.com/Moli-X/Resources/main/Loon/GetCookie.plugin
+  enabled: true
 - url: https://example.invalid/redacted
   compat_arguments:
     ScriptHub通知: 开启通知
