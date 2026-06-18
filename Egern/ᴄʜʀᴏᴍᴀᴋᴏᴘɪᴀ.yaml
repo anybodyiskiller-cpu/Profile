@@ -70,11 +70,12 @@ proxies:
     version: 5
     udp_relay: true
     reuse: false
-    tfo: false
+    tfo: true
 policy_groups:
 - select:
     name: ꜰɪɴᴀʟ
     policies:
+    - 泰国
     - ᴛʜᴀɪʟᴀɴᴅ
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
