@@ -580,7 +580,7 @@ scriptings:
     name: 亚朵酒店
     cron: 0 0 9 * * ?
     script_url: https://example.invalid/redacted
-    disabled: true
+    disabled: false
 - schedule:
     name: 华住会
     cron: 0 0 9 * * ?
