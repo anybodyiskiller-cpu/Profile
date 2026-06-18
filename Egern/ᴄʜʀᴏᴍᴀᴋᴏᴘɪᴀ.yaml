@@ -77,6 +77,7 @@ policy_groups:
 - select:
     name: ꜰɪɴᴀʟ
     policies:
+    - 泰国
     - ᴛʜᴀɪʟᴀɴᴅ
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
@@ -84,6 +85,7 @@ policy_groups:
     - ʜᴏɴɢᴋᴏɴɢ
     - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
     - DIRECT
+    flatten: false
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy3.png
     hidden: false
 - select:
@@ -572,12 +574,14 @@ scriptings:
     script_url: https://example.invalid/redacted
     body_required: false
     binary_body: false
+    disabled: true
 - http_request:
     name: 极氪汽车
     match: ''
     script_url: https://raw.githubusercontent.com/wf021325/qx/master/task/zeekr.js
     body_required: false
     binary_body: false
+    disabled: true
 - http_response:
     name: 亚朵酒店
     match: ''
