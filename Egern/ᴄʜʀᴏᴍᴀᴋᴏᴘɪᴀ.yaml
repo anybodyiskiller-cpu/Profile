@@ -574,6 +574,8 @@ modules:
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Component/12123.module
   enabled: true
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Component/ChinaMobile.module
+  compat_arguments:
+    手机号码: '15669318096'
   enabled: true
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Dashboard/NetworkInfo.module
   enabled: true
