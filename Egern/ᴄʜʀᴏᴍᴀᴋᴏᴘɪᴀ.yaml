@@ -594,6 +594,9 @@ modules:
     PRCN: 'false'
   enabled: true
 - url: https://example.invalid/redacted
+  compat_arguments:
+    xhs_sticker: 'true'
+    PROXY: ʀᴇᴅ ɴᴏᴛᴇ
   enabled: true
 - url: https://example.invalid/redacted
   enabled: true
