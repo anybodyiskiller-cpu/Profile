@@ -579,10 +579,6 @@ modules:
 - url: https://example.invalid/redacted
   enabled: true
 - url: https://example.invalid/redacted
-  enabled: true
-- url: https://example.invalid/redacted
-  enabled: true
-- url: https://example.invalid/redacted
   compat_arguments:
     MY: 'false'
     DT: 'false'
@@ -649,4 +645,8 @@ modules:
     Type: Translate
   enabled: true
 - url: https://github.com/DualSubs/Universal/releases/latest/download/DualSubs.Universal.sgmodule
+  enabled: true
+- url: https://example.invalid/redacted
+  enabled: true
+- url: https://example.invalid/redacted
   enabled: true
