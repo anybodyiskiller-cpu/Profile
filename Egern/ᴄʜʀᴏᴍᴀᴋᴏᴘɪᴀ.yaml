@@ -571,8 +571,10 @@ modules:
   enabled: true
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Dashboard/SubscribeInfo.yaml
   compat_arguments:
-    Title1: 良心云
+    Title1: ʟɪᴀɴɢxɪɴʏᴜɴ
     URL1: https://liangxin.xyz/api/v1/liangxin?OwO=3cda831044f307178f508274ac3b91dd
+    Title2: ᴇᴅɢᴇᴛᴜɴɴᴇʟ
+    URL2: https://88boy.anybodyiskiller.shop/sub?token=[REDACTED]
   enabled: true
 - url: https://example.invalid/redacted
   enabled: true
