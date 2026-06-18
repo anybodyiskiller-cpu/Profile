@@ -617,8 +617,6 @@ modules:
   compat_arguments:
     手机号码: '15669318096'
   enabled: false
-- url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Dashboard/NetworkInfo.module
-  enabled: true
 - url: https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/CFGPT/CFGPT_new.sgmodule
   enabled: true
 - url: https://github.com/BiliUniverse/ADBlock/releases/latest/download/BiliBili.ADBlock.sgmodule
