@@ -555,6 +555,12 @@ rules:
     policy: ꜰɪɴᴀʟ
 scriptings:
 - http_request:
+    name: 达美乐披萨
+    match: ''
+    script_url: https://example.invalid/redacted
+    body_required: false
+    binary_body: false
+- http_request:
     name: 捷停车
     match: ''
     script_url: https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js
@@ -573,7 +579,6 @@ scriptings:
     script_url: https://raw.githubusercontent.com/wf021325/qx/master/task/hzh.js
     body_required: false
     binary_body: false
-    disabled: true
 - generic:
     name: 海底捞
     script_url: https://example.invalid/redacted
