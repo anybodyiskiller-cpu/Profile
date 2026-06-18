@@ -563,6 +563,8 @@ mitm:
     - api.m.jd.com
     - osg-open.sgcc.com.cn
 modules:
+- url: https://example.invalid/redacted
+  enabled: true
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Component/ChinaMobile.yaml
   enabled: false
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Component/12123.module
