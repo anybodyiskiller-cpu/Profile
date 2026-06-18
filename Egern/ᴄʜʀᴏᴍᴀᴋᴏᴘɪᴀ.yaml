@@ -570,6 +570,7 @@ scriptings:
     name: 捷停车
     cron: 0 0 9 * * ?
     script_url: https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js
+    disabled: true
 - schedule:
     name: 达美乐披萨
     cron: 0 0 9 * * ?
