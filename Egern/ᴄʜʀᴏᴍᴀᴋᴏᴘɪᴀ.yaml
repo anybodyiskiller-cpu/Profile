@@ -617,7 +617,7 @@ modules:
 - url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/BiliComicsDailyBonus.sgmodule
   enabled: true
 - url: https://raw.githubusercontent.com/ClydeTime/BiliBili/refs/heads/main/modules/BiliBiliDailyBonus.sgmodule
-  enabled: true
+  enabled: false
 - url: https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.module
   enabled: true
 - url: https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adblock4limbo.sgmodule
