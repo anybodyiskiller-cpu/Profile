@@ -564,6 +564,10 @@ mitm:
     - osg-open.sgcc.com.cn
 modules:
 - url: https://example.invalid/redacted
+  enabled: true
+- url: https://example.invalid/redacted
+  enabled: true
+- url: https://example.invalid/redacted
   compat_arguments:
     ScriptHub通知: 开启通知
   enabled: true
@@ -662,8 +666,4 @@ modules:
     Type: Translate
   enabled: true
 - url: https://github.com/DualSubs/Universal/releases/latest/download/DualSubs.Universal.sgmodule
-  enabled: true
-- url: https://example.invalid/redacted
-  enabled: true
-- url: https://example.invalid/redacted
   enabled: true
