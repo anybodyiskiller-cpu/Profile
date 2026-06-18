@@ -572,6 +572,8 @@ mitm:
     - api.m.jd.com
     - osg-open.sgcc.com.cn
 modules:
+- url: https://raw.githubusercontent.com/Moli-X/Resources/main/Loon/GetCookie.plugin
+  enabled: true
 - url: https://example.invalid/redacted
   enabled: true
 - url: https://example.invalid/redacted
