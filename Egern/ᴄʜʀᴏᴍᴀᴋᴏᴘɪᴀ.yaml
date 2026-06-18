@@ -563,6 +563,17 @@ mitm:
     - api.m.jd.com
     - osg-open.sgcc.com.cn
 modules:
+- url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Component/ChinaMobile.yaml
+  enabled: true
+- url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Component/12123.module
+  enabled: true
+- url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Dashboard/NetworkInfo.yaml
+  enabled: true
+- url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Dashboard/SubscribeInfo.yaml
+  compat_arguments:
+    Title1: 良心云
+    URL1: https://liangxin.xyz/api/v1/liangxin?OwO=3cda831044f307178f508274ac3b91dd
+  enabled: true
 - url: https://example.invalid/redacted
   enabled: true
 - url: https://example.invalid/redacted
@@ -601,11 +612,11 @@ modules:
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Component/WSGW.module
   enabled: true
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Component/12123.module
-  enabled: true
+  enabled: false
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Component/ChinaMobile.module
   compat_arguments:
     手机号码: '15669318096'
-  enabled: true
+  enabled: false
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Dashboard/NetworkInfo.module
   enabled: true
 - url: https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/CFGPT/CFGPT_new.sgmodule
