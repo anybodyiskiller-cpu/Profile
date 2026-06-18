@@ -567,6 +567,10 @@ rules:
     policy: ꜰɪɴᴀʟ
 scriptings:
 - schedule:
+    name: 捷停车
+    cron: 0 0 9 * * ?
+    script_url: https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js
+- schedule:
     name: 达美乐披萨
     cron: 0 0 9 * * ?
     script_url: https://example.invalid/redacted
