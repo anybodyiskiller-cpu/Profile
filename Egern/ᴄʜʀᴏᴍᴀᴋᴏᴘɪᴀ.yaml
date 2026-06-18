@@ -645,6 +645,8 @@ modules:
 - url: https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.sgmodule
   enabled: true
 - url: https://github.com/DualSubs/YouTube/releases/latest/download/DualSubs.YouTube.sgmodule
+  compat_arguments:
+    Type: Translate
   enabled: true
 - url: https://github.com/DualSubs/Universal/releases/latest/download/DualSubs.Universal.sgmodule
   enabled: true
