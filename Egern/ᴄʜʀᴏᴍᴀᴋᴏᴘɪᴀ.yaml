@@ -68,11 +68,9 @@ proxies:
     port: 8443
     psk: nEw9n6YR4PkicA2h
     version: 5
-    udp_relay: true
-    reuse: false
-    obfs: tls
-    obfs_host: ml.apple.com
-    tfo: false
+    udp_relay: false
+    reuse: true
+    tfo: true
 policy_groups:
 - select:
     name: ꜰɪɴᴀʟ
