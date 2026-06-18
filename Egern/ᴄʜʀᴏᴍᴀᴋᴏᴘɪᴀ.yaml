@@ -562,3 +562,44 @@ mitm:
     - me-api.jd.com
     - api.m.jd.com
     - osg-open.sgcc.com.cn
+modules:
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/%E4%BA%AC%E4%B8%9C%E6%AF%94%E4%BB%B7.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Spec/GoogleRewrite/Moore/GoogleRewrite.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.surge.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Component/WSGW.module
+  enabled: true
+- url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Component/12123.module
+  enabled: true
+- url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Component/ChinaMobile.module
+  enabled: true
+- url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Dashboard/NetworkInfo.module
+  enabled: true
+- url: https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/CFGPT/CFGPT_new.sgmodule
+  enabled: true
+- url: https://github.com/BiliUniverse/ADBlock/releases/latest/download/BiliBili.ADBlock.sgmodule
+  enabled: true
+- url: https://github.com/BiliUniverse/Redirect/releases/latest/download/BiliBili.Redirect.sgmodule
+  enabled: true
+- url: https://github.com/BiliUniverse/Global/releases/latest/download/BiliBili.Global.sgmodule
+  enabled: true
+- url: https://github.com/BiliUniverse/Enhanced/releases/latest/download/BiliBili.Enhanced.sgmodule
+  enabled: true
+- url: https://github.com/NSRingo/TV/releases/latest/download/iRingo.TV.sgmodule
+  enabled: true
+- url: https://github.com/NSRingo/Maps/releases/latest/download/iRingo.Maps.sgmodule
+  enabled: true
+- url: https://github.com/NSRingo/LocationService/releases/latest/download/iRingo.LocationService.sgmodule
+  enabled: true
+- url: https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.sgmodule
+  enabled: true
+- url: https://github.com/DualSubs/Netflix/releases/latest/download/DualSubs.Netflix.sgmodule
+  enabled: true
+- url: https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.sgmodule
+  enabled: true
+- url: https://github.com/DualSubs/YouTube/releases/latest/download/DualSubs.YouTube.sgmodule
+  enabled: true
+- url: https://github.com/DualSubs/Universal/releases/latest/download/DualSubs.Universal.sgmodule
+  enabled: true
