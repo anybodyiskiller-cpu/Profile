@@ -630,6 +630,10 @@ modules:
   enabled: true
 - url: https://example.invalid/redacted
   enabled: true
+- url: https://example.invalid/redacted
+  enabled: true
+- url: https://example.invalid/redacted
+  enabled: true
 - url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/BiliComicsExchangePoints.sgmodule
   enabled: true
 - url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/surge-loon-to-egern.yaml
