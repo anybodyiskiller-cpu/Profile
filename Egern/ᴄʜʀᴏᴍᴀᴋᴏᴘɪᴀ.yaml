@@ -35,9 +35,6 @@ dns:
   - domain_wildcard:
       match: ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
       value: 208.54.49.131
-  hosts:
-    myhome.com:
-    - 192.168.1.1
 bypass_tunnel_proxy:
 - 127.0.0.1
 - 10.0.0.0/8
@@ -394,10 +391,6 @@ rules:
 - rule_set:
     match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/PersonalDirect.list
     policy: DIRECT
-- rule_set:
-    match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/Ponte.list
-    policy: sᴜʀɢᴇ ᴘᴏɴᴛᴇ
-    disabled: true
 - rule_set:
     match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/angellive.list
     policy: sɪɴɢᴀᴘᴏʀᴇ
