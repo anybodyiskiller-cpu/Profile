@@ -379,9 +379,15 @@ policy_groups:
     hidden: false
 rules:
 - ip_cidr:
+    match: 140.249.111.38/32
+    policy: ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+    no_resolve: false
+    disabled: false
+- ip_cidr:
     match: 206.212.244.101/32
-    policy: ᴛʜᴀɪʟᴀɴᴅ
+    policy: ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     no_resolve: true
+    disabled: false
 - cellular:
     match: LTE
     policy: DIRECT
