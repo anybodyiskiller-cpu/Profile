@@ -609,7 +609,7 @@ mitm:
     - api.m.jd.com
     - osg-open.sgcc.com.cn
 modules:
-- url: https://example.invalid/redacted
+- url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partT/top-widget.sgmodule
   enabled: true
 - url: https://example.invalid/redacted
   enabled: true
@@ -618,6 +618,10 @@ modules:
 - url: https://example.invalid/redacted
   enabled: true
 - url: https://example.invalid/redacted
+  enabled: true
+- url: https://example.invalid/redacted
+  enabled: true
+- url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partX/XianYu.sgmodule
   enabled: true
 - url: https://example.invalid/redacted
   enabled: true
@@ -646,8 +650,6 @@ modules:
     ScriptHub通知: 开启通知
   enabled: true
 - url: https://raw.githubusercontent.com/DemoJameson/Loon.Plugins/main/trakt_simplified_chinese/trakt_simplified_chinese.sgmodule
-  enabled: true
-- url: https://example.invalid/redacted
   enabled: true
 - url: https://example.invalid/redacted
   enabled: true
