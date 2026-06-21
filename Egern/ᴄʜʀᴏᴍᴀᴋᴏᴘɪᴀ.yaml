@@ -609,13 +609,21 @@ mitm:
     - api.m.jd.com
     - osg-open.sgcc.com.cn
 modules:
+- url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partX/Xiaohongshu.sgmodule
+  enabled: true
+- url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partT/Twitter.sgmodule
+  enabled: true
+- url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partZ/ChinaMobile.sgmodule
+  enabled: true
+- url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partD/DJIStore.sgmodule
+  enabled: true
+- url: https://example.invalid/redacted
+  enabled: true
+- url: https://example.invalid/redacted
+  enabled: true
+- url: https://example.invalid/redacted
+  enabled: true
 - url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partT/top-widget.sgmodule
-  enabled: true
-- url: https://example.invalid/redacted
-  enabled: true
-- url: https://example.invalid/redacted
-  enabled: true
-- url: https://example.invalid/redacted
   enabled: true
 - url: https://example.invalid/redacted
   enabled: true
@@ -699,7 +707,7 @@ modules:
   compat_arguments:
     xhs_sticker: 'true'
     PROXY: ʀᴇᴅ ɴᴏᴛᴇ
-  enabled: true
+  enabled: false
 - url: https://raw.githubusercontent.com/chengkongyiban/Surge/main/modules/QX_to_Surge.sgmodule
   enabled: true
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/%E4%BA%AC%E4%B8%9C%E6%AF%94%E4%BB%B7.sgmodule
