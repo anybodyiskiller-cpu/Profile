@@ -63,7 +63,7 @@ proxies:
     name: 泰国
     server: example.invalid
     port: 0
-    psk: [REDACTED]]
+    psk: [REDACTED]
     version: 5
     udp_relay: true
     reuse: false
