@@ -61,9 +61,9 @@ real_ip_domains:
 proxies:
 - snell:
     name: 泰国
-    server: 27.254.216.47
-    port: 2347
-    psk: tkYe8qOD2wATMrV2
+    server: example.invalid
+    port: 0
+    psk: [REDACTED]]
     version: 5
     udp_relay: true
     reuse: false
@@ -617,27 +617,27 @@ modules:
   enabled: true
 - url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partD/DJIStore.sgmodule
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/WexinMiniPrograms_Remove_ads.lpx
   enabled: true
 - url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partT/top-widget.sgmodule
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/SF-Express_remove_ads.lpx
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/JD_Price.lpx
   enabled: true
 - url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partX/XianYu.sgmodule
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/Umetrip_remove_ads.lpx
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/Tieba_remove_ads.lpx
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/Spotify_lyrics_translation.lpx
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/12306_remove_ads.lpx
   enabled: true
 - url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/BiliComicsExchangePoints.sgmodule
   enabled: true
@@ -653,25 +653,25 @@ modules:
   enabled: true
 - url: https://raw.githubusercontent.com/Moli-X/Resources/main/Loon/GetCookie.plugin
   enabled: false
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx
   compat_arguments:
     ScriptHub通知: 开启通知
   enabled: true
 - url: https://raw.githubusercontent.com/DemoJameson/Loon.Plugins/main/trakt_simplified_chinese/trakt_simplified_chinese.sgmodule
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/Reddit_remove_ads.lpx
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/Weibo_remove_ads.lpx
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/PinDuoDuo_remove_ads.lpx
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/HantingHotels_remove_ads.lpx
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/Damai_remove_ads.lpx
   enabled: true
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Component/ChinaMobile.yaml
   enabled: false
@@ -686,9 +686,9 @@ modules:
     Title2: ᴇᴅɢᴇᴛᴜɴɴᴇʟ
     URL2: https://example.invalid/redacted
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/Taobao_remove_ads.lpx
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://kelee.one/Tool/Loon/Lpx/NeteaseCloudMusic_remove_ads.lpx
   compat_arguments:
     MY: 'false'
     DT: 'false'
@@ -703,7 +703,7 @@ modules:
     PRMST: 'false'
     PRCN: 'false'
   enabled: true
-- url: https://example.invalid/redacted
+- url: https://loonhub.wuyra.com/Lpx/REDnote_remove_ads.lpx
   compat_arguments:
     xhs_sticker: 'true'
     PROXY: ʀᴇᴅ ɴᴏᴛᴇ
