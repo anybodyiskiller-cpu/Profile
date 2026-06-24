@@ -575,7 +575,7 @@ scriptings:
 - schedule:
     name: 达美乐披萨
     cron: 0 0 9 * * ?
-    script_url: https://example.invalid/redacted
+    script_url: https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js
     disabled: true
 - schedule:
     name: 极氪汽车
@@ -585,7 +585,7 @@ scriptings:
 - schedule:
     name: 亚朵酒店
     cron: 0 0 9 * * ?
-    script_url: https://example.invalid/redacted
+    script_url: https://gist.githubusercontent.com/Sliverkiss/2e2093bfd5f524d58c8e90fed9beacfd/raw/e399523e428f3c173ec4b95c892725006c3128ff/adjd.js
     disabled: false
 - schedule:
     name: 华住会
@@ -595,7 +595,7 @@ scriptings:
 - schedule:
     name: 海底捞
     cron: 0 0 9 * * ?
-    script_url: https://example.invalid/redacted
+    script_url: https://gist.githubusercontent.com/Sliverkiss/354e7994f9ee5cc9cc353b6aba320052/raw/hdl.js
     env:
       hdl_data: [REDACTED_TOKEN]
     disabled: false

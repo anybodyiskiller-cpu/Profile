@@ -19,7 +19,7 @@
 
 
 const $ = new Env('同程旅行')
-const BASE_URL = 'https://example.invalid/redacted'
+const BASE_URL = 'https://app.17u.cn/welfarecenter'
 const KEY_SIGNHEADER = 'tongcheng_trip_signheader'
 
 function getTodayDate() {

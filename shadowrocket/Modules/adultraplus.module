@@ -1,4 +1,4 @@
-#!url=https://example.invalid/redacted
+#!url=https://yfamilys.com/module/adultraplus.module
 #!name=APP启动页去广告ultra+
 #!desc=APP启动页去广告融合ultra+
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
@@ -2237,7 +2237,7 @@ zhangshanggongjiao=type=http-response,pattern=^https?:\/\/wx\.mygolbs\.com\/WxBu
 
 zhangshanggongjiao2=type=http-response,pattern=^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/zhangshanggongjiao.js
 
-zheye.min=type=http-response,pattern=^https?:\/\/www\.zhihu\.com\/api\/v4\/comment_v5\/answers\/\d+\/abstract_comment\?,requires-body=1,script-path=https://example.invalid/redacted
+zheye.min=type=http-response,pattern=^https?:\/\/www\.zhihu\.com\/api\/v4\/comment_v5\/answers\/\d+\/abstract_comment\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
 usmile=type=http-response,pattern=^https?:\/\/www\.myusmile\.online\/user\/plaqueTopic\/selectByType,requires-body=1,script-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/usmile.js
 
@@ -2389,51 +2389,51 @@ pupumarket=type=http-response,pattern=^https?:\/\/j1\.pupuapi\.com\/client\/mark
 
 QuDa=type=http-response,pattern=^https?:\/\/iqushangwang\.8quan\.com\/index\.php\/i\/index\/index,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/QuDa.js
 
-netease.adblock=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/yunbei\/account\/entrance\/get,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/yunbei\/account\/entrance\/get,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock2=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/vipnewcenter\/app\/resource\/newaccountpage,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock2=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/vipnewcenter\/app\/resource\/newaccountpage,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock3=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/vip\/cashier\/tspopup\/get,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock3=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/vip\/cashier\/tspopup\/get,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock4=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/side-bar\/mini-program\/music-service\/account,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock4=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/side-bar\/mini-program\/music-service\/account,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock5=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/search\/suggest\/keyword\/get,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock5=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/search\/suggest\/keyword\/get,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock6=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/search\/specialkeyword\/get,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock6=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/search\/specialkeyword\/get,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock7=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/search\/rcmd\/keyword\/get,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock7=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/search\/rcmd\/keyword\/get,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock8=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/search\/default\/keyword\/list,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock8=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/search\/default\/keyword\/list,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock9=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/search\/chart\/list,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock9=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/search\/chart\/list,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock10=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/search\/chart\/detail,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock10=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/search\/chart\/detail,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock11=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/link\/scene\/show\/resource,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock11=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/link\/scene\/show\/resource,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock12=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/link\/position\/show\/resource,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock12=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/link\/position\/show\/resource,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock13=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/link\/page\/rcmd\/resource\/show,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock13=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/link\/page\/rcmd\/resource\/show,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock14=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/link\/page\/discovery\/resource\/show,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock14=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/link\/page\/discovery\/resource\/show,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock15=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/link\/home\/framework\/tab,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock15=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/link\/home\/framework\/tab,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock16=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/ios\/upgrade\/get,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock16=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/ios\/upgrade\/get,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock17=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/delivery\/deliver,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock17=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/delivery\/deliver,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock18=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/delivery\/batch-deliver,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock18=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/delivery\/batch-deliver,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock19=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/creator\/musician\/reminder\/message\/get,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock19=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/creator\/musician\/reminder\/message\/get,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock20=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/batch,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock20=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/batch,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock21=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/ad\/loading\/get,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock21=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/ad\/loading\/get,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock22=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/ad\/loading\/current,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock22=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/ad\/loading\/current,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
-netease.adblock23=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/ad\/get,requires-body=1,script-path=https://example.invalid/redacted
+netease.adblock23=type=http-response,pattern=^https?:\/\/interface(\d)?\.music\.163\.com\/e?api\/ad\/get,requires-body=1,script-path=https://gist.githubusercontent.com/ddgksf2013/4f53b7c6083678df25fecc8ff68b52c4/raw/netease.adblock.js
 
 dianping=type=http-response,pattern=^https?:\/\/img\.meituan\.net\/(?>dpmobile|goodsawardpic)\/,requires-body=1,script-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/dianping.js
 
@@ -2561,25 +2561,25 @@ foliday=type=http-response,pattern=^https?:\/\/apis\.folidaymall\.com\/online\/c
 
 dict=type=http-response,pattern=^https?:\/\/apiproxy\.zuche\.com\/resource\/cardes\/toufang\/marketing,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/dict.js
 
-zheye.min2=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/topstory\/hot-lists(\?|\/),requires-body=1,script-path=https://example.invalid/redacted
+zheye.min2=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/topstory\/hot-lists(\?|\/),requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min3=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/search\/recommend_query,requires-body=1,script-path=https://example.invalid/redacted
+zheye.min3=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/search\/recommend_query,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min4=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/search\/preset_words\?,requires-body=1,script-path=https://example.invalid/redacted
+zheye.min4=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/search\/preset_words\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min5=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/root\/tab\/v2,requires-body=1,script-path=https://example.invalid/redacted
+zheye.min5=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/root\/tab\/v2,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min6=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/people\/,requires-body=1,script-path=https://example.invalid/redacted
+zheye.min6=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/people\/,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min7=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/notifications\/v3\/(message|timeline\/entry\/system_message),requires-body=1,script-path=https://example.invalid/redacted
+zheye.min7=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/notifications\/v3\/(message|timeline\/entry\/system_message),requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min8=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/next-render,requires-body=1,script-path=https://example.invalid/redacted
+zheye.min8=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/next-render,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min9=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/moments_v3\?,requires-body=1,script-path=https://example.invalid/redacted
+zheye.min9=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/moments_v3\?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
 zhihu_openads=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/commercial_api.*launch_v2,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/zhihu_openads.js
 
-zheye.min10=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments?,requires-body=1,script-path=https://example.invalid/redacted
+zheye.min10=type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
 weibo_json17=type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/\d\/video\/tiny_stream_mid_detail,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js
 
@@ -2693,37 +2693,37 @@ freshippo=type=http-response,pattern=^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\
 
 cnftp24=type=http-response,pattern=^https?:\/\/access\.if\.iqiyi\.com\/3f1\/cards\.iqiyi\.com\/(views_category\/3\.0\/category_home|views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js
 
-redbook.ads=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/system_service\/splash_config,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/system_service\/splash_config,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads2=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/system_service\/config\?,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads2=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/system_service\/config\?,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads3=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/trending,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads3=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/trending,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads4=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/notes\?,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads4=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/notes\?,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads5=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/hot_list,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads5=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/hot_list,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads6=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/hint,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads6=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/hint,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads7=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/widgets,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads7=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/widgets,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads8=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/videofeed\?,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads8=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/videofeed\?,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads9=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/video\/save,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads9=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/video\/save,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads10=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/tabfeed,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads10=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/tabfeed,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads11=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/redtube\?,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads11=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/redtube\?,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads12=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/live_photo\/save,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads12=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/live_photo\/save,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads13=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/imagefeed,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads13=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/imagefeed,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads14=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/feed\?,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads14=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/feed\?,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads15=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/homefeed\?,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads15=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/homefeed\?,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
-redbook.ads16=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/homefeed\/categories,requires-body=1,script-path=https://example.invalid/redacted
+redbook.ads16=type=http-response,pattern=^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/homefeed\/categories,requires-body=1,script-path=https://royal-block-f6b1.q00.workers.dev/scripts/redbook.ads.js
 
 cainiao_json=type=http-response,pattern=^https?:\/\/[a-zA-Z0-9_.-]+\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.protocol\.homepage\.get\.cn,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/cainiao_json.js
 
@@ -2855,7 +2855,7 @@ myBlockAds3=type=http-response,pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\
 
 cainiao4=type=http-response,pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cainiao/cainiao.js
 
-goofish=type=http-response,pattern=^https:\/\/g-acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\/,requires-body=1,script-path=https://example.invalid/redacted
+goofish=type=http-response,pattern=^https:\/\/g-acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\/,requires-body=1,script-path=https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/goofish.js?token=[REDACTED]
 
 meiyou_ads=type=http-response,pattern=^https:\/\/config-service\.seeyouyima\.com\/api\/configs\?,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/meiyou/meiyou_ads.js
 
@@ -2867,9 +2867,9 @@ dianyinglieshou=type=http-response,pattern=^https:\/\/app-v1\.ecoliving168\.com\
 
 zhihu4=type=http-response,pattern=^https:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\?,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js
 
-zheye.min11=type=http-response,pattern=^https:\/\/api\.zhihu\.com\/settings\/blocked_users,requires-body=1,script-path=https://example.invalid/redacted
+zheye.min11=type=http-response,pattern=^https:\/\/api\.zhihu\.com\/settings\/blocked_users,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
-zheye.min12=type=http-response,pattern=^https:\/\/api\.zhihu\.com\/questions\/\d+\/feeds?,requires-body=1,script-path=https://example.invalid/redacted
+zheye.min12=type=http-response,pattern=^https:\/\/api\.zhihu\.com\/questions\/\d+\/feeds?,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
 zhihu5=type=http-response,pattern=^https:\/\/api\.zhihu\.com\/questions\/\d+(\/answers|\/feeds|\?include=),requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js
 
@@ -2881,7 +2881,7 @@ zhihu8=type=http-response,pattern=^https:\/\/api\.zhihu\.com\/commercial_api\/ap
 
 zhihu9=type=http-response,pattern=^https:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/header\?,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js
 
-zheye.min13=type=http-response,pattern=^https:\/\/api\.zhihu\.com\/articles\/v\d\/\d+,requires-body=1,script-path=https://example.invalid/redacted
+zheye.min13=type=http-response,pattern=^https:\/\/api\.zhihu\.com\/articles\/v\d\/\d+,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
 zhihu10=type=http-response,pattern=^https:\/\/api\.zhihu\.com\/(moments_v3|topstory\/hot-lists\/total|topstory\/recommend),requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js
 
@@ -2901,27 +2901,27 @@ adrive2=type=http-response,pattern=^https:\/\/api\.alipan\.com\/apps\/v2\/users\
 
 rrtv_json13=type=http-response,pattern=^https:\/\/api.juxingclub.com\/ad\/getAll,requires-body=1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/rrtv_json.js
 
-goofish2=type=http-response,pattern=^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/1\.0,requires-body=1,script-path=https://example.invalid/redacted
+goofish2=type=http-response,pattern=^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/1\.0,requires-body=1,script-path=https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/goofish.js?token=[REDACTED]
 
-goofish3=type=http-response,pattern=^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.nearby\.itemdetail\.enter\/1\.0,requires-body=1,script-path=https://example.invalid/redacted
+goofish3=type=http-response,pattern=^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.nearby\.itemdetail\.enter\/1\.0,requires-body=1,script-path=https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/goofish.js?token=[REDACTED]
 
-goofish4=type=http-response,pattern=^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.flow\.plat\.section,requires-body=1,script-path=https://example.invalid/redacted
+goofish4=type=http-response,pattern=^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.flow\.plat\.section,requires-body=1,script-path=https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/goofish.js?token=[REDACTED]
 
-goofish5=type=http-response,pattern=^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.idle\.user\.page\.my\.adapter\/,requires-body=1,script-path=https://example.invalid/redacted
+goofish5=type=http-response,pattern=^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.idle\.user\.page\.my\.adapter\/,requires-body=1,script-path=https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/goofish.js?token=[REDACTED]
 
 spotify-qx-header=type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/user-customization-service\/v1\/customize$ url script-request-header https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-qx-header.js
 
-zheye.min14=type=http-response,pattern=^https:\/\/(page-info|api)\.zhihu\.com\/answers\/v2\/\d+,requires-body=1,script-path=https://example.invalid/redacted
+zheye.min14=type=http-response,pattern=^https:\/\/(page-info|api)\.zhihu\.com\/answers\/v2\/\d+,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
 maimai_ads=type=http-response,pattern=^https:\/\/(h3\.)?open\.taou\.com\/maimai\/feed\/v6\/detail_recommend_feeds\?,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/maimai/maimai_ads.js
 
 maimai_ads2=type=http-response,pattern=^https:\/\/(h3\.)?open\.taou\.com\/maimai\/(feed|gossip)\/v\d\/(focus_feed|gossip_detail_comment|feed_detail_comment?)\?,requires-body=1,script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/maimai/maimai_ads.js
 
-goofish6=type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/,requires-body=1,script-path=https://example.invalid/redacted
+goofish6=type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/,requires-body=1,script-path=https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/goofish.js?token=[REDACTED]
 
-goofish7=type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\/,requires-body=1,script-path=https://example.invalid/redacted
+goofish7=type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\/,requires-body=1,script-path=https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/goofish.js?token=[REDACTED]
 
-zheye.min15=type=http-response,pattern=^https:\/\/(api|web-render)\.zhihu\.com\/topstory\/recommend,requires-body=1,script-path=https://example.invalid/redacted
+zheye.min15=type=http-response,pattern=^https:\/\/(api|web-render)\.zhihu\.com\/topstory\/recommend,requires-body=1,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
 
 adsense=type=http-response,pattern=^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?),requires-body=1,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/adsense.js
 
