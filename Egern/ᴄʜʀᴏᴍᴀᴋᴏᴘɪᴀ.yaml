@@ -61,9 +61,9 @@ real_ip_domains:
 proxies:
 - snell:
     name: 泰国
-    server: 27.254.216.47
-    port: 2347
-    psk: tkYe8qOD2wATMrV2
+    server: example.invalid
+    port: 0
+    psk: [REDACTED]
     version: 5
     udp_relay: true
     reuse: false
@@ -369,7 +369,7 @@ policy_groups:
     name: ʟɪᴀɴɢxɪɴʏᴜɴ
     type: smart
     urls:
-    - https://liangxin.xyz/api/v1/liangxin?OwO=3cda831044f307178f508274ac3b91dd
+    - https://example.invalid/redacted
     filter: ^(?!.*(?:剩余流量|距离下次重置剩余|套餐到期)).*
     update_interval: 0
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/liangxinyun1.png
@@ -575,7 +575,7 @@ scriptings:
 - schedule:
     name: 达美乐披萨
     cron: 0 0 9 * * ?
-    script_url: https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js
+    script_url: https://example.invalid/redacted
     disabled: true
 - schedule:
     name: 极氪汽车
@@ -585,7 +585,7 @@ scriptings:
 - schedule:
     name: 亚朵酒店
     cron: 0 0 9 * * ?
-    script_url: https://gist.githubusercontent.com/Sliverkiss/2e2093bfd5f524d58c8e90fed9beacfd/raw/e399523e428f3c173ec4b95c892725006c3128ff/adjd.js
+    script_url: https://example.invalid/redacted
     disabled: false
 - schedule:
     name: 华住会
@@ -595,7 +595,7 @@ scriptings:
 - schedule:
     name: 海底捞
     cron: 0 0 9 * * ?
-    script_url: https://gist.githubusercontent.com/Sliverkiss/354e7994f9ee5cc9cc353b6aba320052/raw/hdl.js
+    script_url: https://example.invalid/redacted
     env:
       hdl_data: TOKEN_APP_9cadc79e-8f11-473f-89fb-a8f73f0e7350
     disabled: false
@@ -682,9 +682,9 @@ modules:
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Dashboard/SubscribeInfo.yaml
   compat_arguments:
     Title1: ʟɪᴀɴɢxɪɴʏᴜɴ
-    URL1: https://liangxin.xyz/api/v1/liangxin?OwO=3cda831044f307178f508274ac3b91dd
+    URL1: https://example.invalid/redacted
     Title2: ᴇᴅɢᴇᴛᴜɴɴᴇʟ
-    URL2: https://88boy.anybodyiskiller.shop/sub?token=67c4b17d63c1e17ad86ee66ec696db37
+    URL2: https://example.invalid/redacted
   enabled: true
 - url: https://kelee.one/Tool/Loon/Lpx/Taobao_remove_ads.lpx
   enabled: true
@@ -722,7 +722,7 @@ modules:
   enabled: false
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Component/ChinaMobile.module
   compat_arguments:
-    手机号码: '15669318096'
+    手机号码: '[REDACTED_PHONE]'
   enabled: true
 - url: https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/CFGPT/CFGPT_new.sgmodule
   enabled: true
