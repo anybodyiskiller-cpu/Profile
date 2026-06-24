@@ -618,6 +618,7 @@ modules:
   compat_arguments:
     经度: '139.702445'
     纬度: '35.658999'
+    精度: '25'
   enabled: true
 - url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partX/Xiaohongshu.sgmodule
   enabled: true
