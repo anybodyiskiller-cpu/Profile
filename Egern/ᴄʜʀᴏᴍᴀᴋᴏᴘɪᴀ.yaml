@@ -136,6 +136,7 @@ proxies:
     - 1.1.1.1
     mtu: 1280
     keepalive: 25
+    prev_hop: sɪɴɢᴀᴘᴏʀᴇ
 - wireguard:
     name: WARP优选IP 7
     server: example.invalid
@@ -148,6 +149,7 @@ proxies:
     - 1.1.1.1
     mtu: 1280
     keepalive: 25
+    prev_hop: sɪɴɢᴀᴘᴏʀᴇ
 - wireguard:
     name: WARP优选IP 8
     server: example.invalid
@@ -160,6 +162,7 @@ proxies:
     - 1.1.1.1
     mtu: 1280
     keepalive: 25
+    prev_hop: sɪɴɢᴀᴘᴏʀᴇ
 - wireguard:
     name: WARP优选IP 9
     server: example.invalid
