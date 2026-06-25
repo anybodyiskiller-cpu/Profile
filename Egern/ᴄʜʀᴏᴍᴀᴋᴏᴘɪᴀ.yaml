@@ -83,6 +83,7 @@ proxies:
     - 1.1.1.1
     mtu: 1280
     keepalive: 25
+    prev_hop: sɪɴɢᴀᴘᴏʀᴇ
 - wireguard:
     name: WARP优选IP 3
     server: example.invalid
