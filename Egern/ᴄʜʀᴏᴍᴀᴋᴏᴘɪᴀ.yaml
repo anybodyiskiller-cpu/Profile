@@ -180,6 +180,7 @@ proxies:
     - 1.1.1.1
     mtu: 1280
     keepalive: 25
+    prev_hop: sɪɴɢᴀᴘᴏʀᴇ
 policy_groups:
 - select:
     name: ꜰɪɴᴀʟ
