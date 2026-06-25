@@ -344,7 +344,7 @@ policy_groups:
     name: 你的节点
     type: smart
     urls:
-    - 这里添加订阅
+    - ““““请在这里复制添加订阅链接”””
     filter: ^(?!.*(?:剩余流量|距离下次重置剩余|套餐到期)).*
     update_interval: 0
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/just%20timer.png
