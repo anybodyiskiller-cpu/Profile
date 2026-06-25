@@ -251,7 +251,7 @@ policy_groups:
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴜᴋʀᴀɪɴᴇ
-    - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
+    flatten: false
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/x.png
     hidden: false
 - select:
