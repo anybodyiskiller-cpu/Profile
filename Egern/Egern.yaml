@@ -350,6 +350,10 @@ policy_groups:
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/just%20timer.png
     hidden: false
 rules:
+- ssid:
+    match: 如果已配置网络 这里修改你家wifi名称
+    policy: DIRECT
+    disabled: true
 - rule_set:
     match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/angellive.list
     policy: sɪɴɢᴀᴘᴏʀᴇ
