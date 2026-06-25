@@ -61,9 +61,9 @@ real_ip_domains:
 proxies:
 - snell:
     name: 泰国
-    server: 27.254.216.47
-    port: 2347
-    psk: tkYe8qOD2wATMrV2
+    server: example.invalid
+    port: 0
+    psk: [REDACTED]
     version: 5
     udp_relay: true
     reuse: false
@@ -380,7 +380,7 @@ policy_groups:
     name: ʟɪᴀɴɢxɪɴʏᴜɴ
     type: smart
     urls:
-    - https://liangxin.xyz/api/v1/liangxin?OwO=3cda831044f307178f508274ac3b91dd
+    - https://example.invalid/redacted
     filter: ^(?!.*(?:剩余流量|距离下次重置剩余|套餐到期)).*
     update_interval: 0
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/liangxinyun1.png
@@ -602,11 +602,11 @@ scriptings:
     cron: 0 0 9 * * ?
     script_url: https://gist.githubusercontent.com/Sliverkiss/354e7994f9ee5cc9cc353b6aba320052/raw/hdl.js
     env:
-      hdl_data: TOKEN_APP_9cadc79e-8f11-473f-89fb-a8f73f0e7350
+      hdl_data: [REDACTED_TOKEN]
     disabled: false
 mitm:
-  ca_p12: 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
-  ca_passphrase: '[REDACTED]'
+  ca_p12: [REDACTED]
+  ca_passphrase: [REDACTED]
   hostnames:
     includes:
     - ms.jr.jd.com
@@ -691,9 +691,9 @@ modules:
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Dashboard/SubscribeInfo.yaml
   compat_arguments:
     Title1: ʟɪᴀɴɢxɪɴʏᴜɴ
-    URL1: https://liangxin.xyz/api/v1/liangxin?OwO=3cda831044f307178f508274ac3b91dd
+    URL1: https://example.invalid/redacted
     Title2: ᴇᴅɢᴇᴛᴜɴɴᴇʟ
-    URL2: https://88boy.anybodyiskiller.shop/sub?token=67c4b17d63c1e17ad86ee66ec696db37
+    URL2: https://example.invalid/redacted
   enabled: true
 - url: https://kelee.one/Tool/Loon/Lpx/Taobao_remove_ads.lpx
   enabled: true
@@ -731,7 +731,7 @@ modules:
   enabled: false
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/main/Surge/Module/Component/ChinaMobile.module
   compat_arguments:
-    手机号码: '15669318096'
+    手机号码: '[REDACTED_PHONE]'
   enabled: true
 - url: https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/CFGPT/CFGPT_new.sgmodule
   enabled: true
