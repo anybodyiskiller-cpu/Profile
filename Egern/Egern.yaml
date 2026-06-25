@@ -541,7 +541,6 @@ rules:
     no_resolve: true
 - default:
     policy: ꜰɪɴᴀʟ
-
 modules:
 - url: https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx
   enabled: true
