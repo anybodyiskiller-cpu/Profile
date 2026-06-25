@@ -356,9 +356,6 @@ rules:
 - rule_set:
     match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/angellive.list
     policy: sɪɴɢᴀᴘᴏʀᴇ
-- domain_suffix:
-    match: ip-api.com
-    policy: ɪɴꜱᴛᴀɢʀᴀᴍ
 - rule_set:
     match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/PornHub.list
     policy: sɪɴɢᴀᴘᴏʀᴇ
@@ -368,9 +365,6 @@ rules:
 - rule_set:
     match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Tmdb/Tmdb.list
     policy: ᴜʜᴅ
-- rule_set:
-    match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/UHDSupport.list
-    policy: sɪɴɢᴀᴘᴏʀᴇ
 - rule_set:
     match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/UHD.list
     policy: ᴜʜᴅ
