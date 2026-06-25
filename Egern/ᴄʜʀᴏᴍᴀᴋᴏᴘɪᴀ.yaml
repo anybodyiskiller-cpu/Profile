@@ -366,9 +366,11 @@ policy_groups:
     filter: (🇳🇿|新西兰|NZ|New\s?Zealand)
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/new-zealand.png
     hidden: false
-- smart:
+- external:
     name: ᴜᴋʀᴀɪɴᴇ
-    policies: []
+    type: select
+    urls:
+    - https://example.invalid/redacted
     filter: 乌克兰
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/ukraine.png
     hidden: false
