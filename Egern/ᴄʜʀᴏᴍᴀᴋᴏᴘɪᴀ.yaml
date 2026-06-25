@@ -107,6 +107,7 @@ proxies:
     - 1.1.1.1
     mtu: 1280
     keepalive: 25
+    prev_hop: sɪɴɢᴀᴘᴏʀᴇ
 - wireguard:
     name: WARP优选IP 5
     server: example.invalid
@@ -480,7 +481,16 @@ policy_groups:
 - smart:
     name: ᴜᴋʀᴀɪɴᴇ
     policies:
-    - ʟɪᴀɴɢxɪɴʏᴜɴ
+    - WARP优选IP 1
+    - WARP优选IP 2
+    - WARP优选IP 3
+    - WARP优选IP 4
+    - WARP优选IP 5
+    - WARP优选IP 6
+    - WARP优选IP 7
+    - WARP优选IP 8
+    - WARP优选IP 9
+    - WARP优选IP 10
     flatten: true
     filter: 乌克兰
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/ukraine.png
