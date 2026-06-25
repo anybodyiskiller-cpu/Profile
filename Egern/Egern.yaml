@@ -437,24 +437,13 @@ rules:
 - rule_set:
     match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/WeChat/WeChat.list
     policy: ᴡᴇᴄʜᴀᴛ
-- domain_suffix:
-    match: capi.cashstar.com
-    policy: ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
-- domain_suffix:
-    match: sentry.cashstar.net
-    policy: ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
-- domain_suffix:
-    match: playstation.cashstar.com
-    policy: ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
-- domain_suffix:
-    match: notification.blackhawknetwork.com
-    policy: ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
 - rule_set:
     match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list
     policy: ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
 - rule_set:
-    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PlayStation/PlayStation.list
+    match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/PlayStation.list
     policy: ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
+    disabled: false
 - rule_set:
     match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list
     policy: ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
