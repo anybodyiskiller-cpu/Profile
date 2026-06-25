@@ -59,15 +59,126 @@ real_ip_domains:
 - '*.blzstatic.cn'
 - '*.battle.net'
 proxies:
-- snell:
-    name: 泰国
+- wireguard:
+    name: WARP优选IP 1
     server: example.invalid
     port: 0
-    psk: [REDACTED]
-    version: 5
-    udp_relay: true
-    reuse: false
-    tfo: true
+    private_key: [REDACTED]
+    peer_public_key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    local_ipv4: 172.16.0.2/32
+    local_ipv6: 2606:4700:110:857b:3343:2428:354:4efd/128
+    dns_servers:
+    - 1.1.1.1
+    mtu: 1280
+    keepalive: 25
+- wireguard:
+    name: WARP优选IP 2
+    server: example.invalid
+    port: 0
+    private_key: [REDACTED]
+    peer_public_key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    local_ipv4: 172.16.0.2/32
+    local_ipv6: 2606:4700:110:8a86:be3a:9e82:8d35:f386/128
+    dns_servers:
+    - 1.1.1.1
+    mtu: 1280
+    keepalive: 25
+- wireguard:
+    name: WARP优选IP 3
+    server: example.invalid
+    port: 0
+    private_key: [REDACTED]
+    peer_public_key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    local_ipv4: 172.16.0.2/32
+    local_ipv6: 2606:4700:110:857b:3343:2428:354:4efd/128
+    dns_servers:
+    - 1.1.1.1
+    mtu: 1280
+    keepalive: 25
+- wireguard:
+    name: WARP优选IP 4
+    server: example.invalid
+    port: 0
+    private_key: [REDACTED]
+    peer_public_key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    local_ipv4: 172.16.0.2/32
+    local_ipv6: 2606:4700:110:849c:b6ca:7ee0:704a:38de/128
+    dns_servers:
+    - 1.1.1.1
+    mtu: 1280
+    keepalive: 25
+- wireguard:
+    name: WARP优选IP 5
+    server: example.invalid
+    port: 0
+    private_key: [REDACTED]
+    peer_public_key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    local_ipv4: 172.16.0.2/32
+    local_ipv6: 2606:4700:110:87fd:a682:81cd:4a19:62c9/128
+    dns_servers:
+    - 1.1.1.1
+    mtu: 1280
+    keepalive: 25
+- wireguard:
+    name: WARP优选IP 6
+    server: example.invalid
+    port: 0
+    private_key: [REDACTED]
+    peer_public_key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    local_ipv4: 172.16.0.2/32
+    local_ipv6: 2606:4700:110:8d34:f42:a5e0:296a:627/128
+    dns_servers:
+    - 1.1.1.1
+    mtu: 1280
+    keepalive: 25
+- wireguard:
+    name: WARP优选IP 7
+    server: example.invalid
+    port: 0
+    private_key: [REDACTED]
+    peer_public_key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    local_ipv4: 172.16.0.2/32
+    local_ipv6: 2606:4700:110:88b9:299d:7012:4548:78eb/128
+    dns_servers:
+    - 1.1.1.1
+    mtu: 1280
+    keepalive: 25
+- wireguard:
+    name: WARP优选IP 8
+    server: example.invalid
+    port: 0
+    private_key: [REDACTED]
+    peer_public_key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    local_ipv4: 172.16.0.2/32
+    local_ipv6: 2606:4700:110:87fd:a682:81cd:4a19:62c9/128
+    dns_servers:
+    - 1.1.1.1
+    mtu: 1280
+    keepalive: 25
+- wireguard:
+    name: WARP优选IP 9
+    server: example.invalid
+    port: 0
+    private_key: [REDACTED]
+    peer_public_key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    local_ipv4: 172.16.0.2/32
+    local_ipv6: 2606:4700:110:8c80:bb1b:97:9ca8:d4c5/128
+    dns_servers:
+    - 1.1.1.1
+    mtu: 1280
+    keepalive: 25
+- wireguard:
+    name: WARP优选IP 10
+    server: example.invalid
+    port: 0
+    private_key: [REDACTED]
+    peer_public_key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    local_ipv4: 172.16.0.2/32
+    local_ipv6: 2606:4700:110:8c80:bb1b:97:9ca8:d4c5/128
+    dns_servers:
+    - 1.1.1.1
+    mtu: 1280
+    keepalive: 25
 policy_groups:
 - select:
     name: ꜰɪɴᴀʟ
