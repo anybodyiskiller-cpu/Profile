@@ -142,17 +142,6 @@ policy_groups:
     - DIRECT
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/netflix.png
     hidden: false
-- smart:
-    name: ᴀᴘᴛᴠ
-    policies:
-    - DIRECT
-    - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ᴊᴀᴘᴀɴ
-    - sɪɴɢᴀᴘᴏʀᴇ
-    - ᴋᴏʀᴇᴀ
-    flatten: false
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/aptv.png
-    hidden: false
 - select:
     name: ᴜʜᴅ
     policies:
@@ -364,16 +353,6 @@ policy_groups:
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/just%20timer.png
     hidden: false
 rules:
-- rule_set:
-    match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/APTV.list
-    policy: ᴀᴘᴛᴠ
-    disabled: false
-- cellular:
-    match: LTE
-    policy: DIRECT
-- rule_set:
-    match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/PersonalDirect.list
-    policy: DIRECT
 - rule_set:
     match: https://raw.githubusercontent.com/anybodyiskiller-cpu/rules/refs/heads/main/angellive.list
     policy: sɪɴɢᴀᴘᴏʀᴇ
