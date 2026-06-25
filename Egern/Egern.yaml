@@ -52,7 +52,6 @@ policy_groups:
 - select:
     name: ꜰɪɴᴀʟ
     policies:
-    - ᴛʜᴀɪʟᴀɴᴅ
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
