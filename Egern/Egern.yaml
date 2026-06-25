@@ -57,7 +57,6 @@ policy_groups:
     - ᴊᴀᴘᴀɴ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - ʜᴏɴɢᴋᴏɴɢ
-    - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
     - DIRECT
     flatten: false
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy3.png
@@ -68,8 +67,8 @@ policy_groups:
     - ᴊᴀᴘᴀɴ
     - ʜᴏɴɢᴋᴏɴɢ
     - sɪɴɢᴀᴘᴏʀᴇ
-    - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
     - DIRECT
+    flatten: false
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy.png
     hidden: false
 - select:
@@ -78,7 +77,7 @@ policy_groups:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
+    flatten: false
     filter: (🇯🇵|日本|Japan|JP|🇸🇬|新加坡|Singapore|SG)
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/instagram.PNG
     hidden: false
@@ -109,7 +108,7 @@ policy_groups:
     - ᴊᴀᴘᴀɴ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - sɪɴɢᴀᴘᴏʀᴇ
-    - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
+    flatten: false
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/google.png
     hidden: false
 - select:
