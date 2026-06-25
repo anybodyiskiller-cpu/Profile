@@ -170,12 +170,11 @@ policy_groups:
 - select:
     name: ᴛɪᴋᴛᴏᴋ
     policies:
-    - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ᴛʜᴀɪʟᴀɴᴅ
     - DIRECT
+    flatten: false
     filter: (新加坡|英国|美国|日本).*(1x|2x)
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png
     hidden: false
