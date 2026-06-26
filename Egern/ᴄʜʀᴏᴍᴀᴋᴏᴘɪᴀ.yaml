@@ -603,9 +603,9 @@ mitm:
     - osg-open.sgcc.com.cn
 modules:
 - url: https://gist.githubusercontent.com/Alex0510/79eaef62a56a0ea3f3045f7a3c48a7c5/raw/ShadowLocPro.sgmoudle
-  enabled: true
-- url: https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/modules/wloc.sgmodule
   enabled: false
+- url: https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/modules/wloc.sgmodule
+  enabled: true
 - url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partX/Xiaohongshu.sgmodule
   enabled: true
 - url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partT/Twitter.sgmodule
@@ -737,9 +737,9 @@ modules:
 - url: https://github.com/NSRingo/TV/releases/latest/download/iRingo.TV.sgmodule
   enabled: true
 - url: https://github.com/NSRingo/Maps/releases/latest/download/iRingo.Maps.sgmodule
-  enabled: true
+  enabled: false
 - url: https://github.com/NSRingo/LocationService/releases/latest/download/iRingo.LocationService.sgmodule
-  enabled: true
+  enabled: false
 - url: https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.sgmodule
   enabled: true
 - url: https://github.com/DualSubs/Netflix/releases/latest/download/DualSubs.Netflix.sgmodule
