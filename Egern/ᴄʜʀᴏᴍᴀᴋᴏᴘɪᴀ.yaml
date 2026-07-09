@@ -369,6 +369,7 @@ policy_groups:
     type: smart
     urls:
     - https://example.invalid/redacted
+    - https://example.invalid/redacted
     filter: ^(?!.*(?:剩余流量|距离下次重置剩余|套餐到期)).*
     update_interval: 0
     icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/liangxinyun1.png
