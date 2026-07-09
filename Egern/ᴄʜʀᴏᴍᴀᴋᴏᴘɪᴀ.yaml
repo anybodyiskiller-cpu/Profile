@@ -58,6 +58,16 @@ real_ip_domains:
 - '*.battlenet.com'
 - '*.blzstatic.cn'
 - '*.battle.net'
+proxies:
+- snell:
+    name: ᴅᴍɪᴛ-ᴜꜱ
+    server: 179.253.236.78
+    port: 2345
+    psk: r2vzViHEZegMOZdQ
+    version: 5
+    udp_relay: false
+    reuse: true
+    tfo: true
 policy_groups:
 - select:
     name: ꜰɪɴᴀʟ
