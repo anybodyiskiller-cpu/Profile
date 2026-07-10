@@ -691,6 +691,7 @@ modules:
   enabled: false
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Component/12123.module
   enabled: true
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/jiaoguan12123.png
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Dashboard/NetworkInfo.yaml
   enabled: true
 - url: https://raw.githubusercontent.com/ByteValley/NetTool/refs/heads/main/Egern/Module/Dashboard/SubscribeInfo.yaml
