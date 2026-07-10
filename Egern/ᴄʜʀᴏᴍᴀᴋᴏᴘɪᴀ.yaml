@@ -617,10 +617,13 @@ modules:
   enabled: false
 - url: https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/modules/wloc.sgmodule
   enabled: true
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/maps.png
 - url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partX/Xiaohongshu.sgmodule
   enabled: true
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/xiaohongshu.png
 - url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partT/Twitter.sgmodule
   enabled: true
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/x.png
 - url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partZ/ChinaMobile.sgmodule
   enabled: true
 - url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partD/DJIStore.sgmodule
@@ -631,6 +634,7 @@ modules:
   enabled: true
 - url: https://kelee.one/Tool/Loon/Lpx/WexinMiniPrograms_Remove_ads.lpx
   enabled: true
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/wechat.png
 - url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partT/top-widget.sgmodule
   enabled: true
 - url: https://kelee.one/Tool/Loon/Lpx/SF-Express_remove_ads.lpx
