@@ -643,6 +643,7 @@ modules:
   enabled: true
 - url: https://github.com/fmz200/wool_scripts/raw/main/Surge/module/split/partX/XianYu.sgmodule
   enabled: true
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/xianyu.png
 - url: https://kelee.one/Tool/Loon/Lpx/Umetrip_remove_ads.lpx
   enabled: true
 - url: https://kelee.one/Tool/Loon/Lpx/Tieba_remove_ads.lpx
@@ -661,6 +662,7 @@ modules:
   enabled: false
 - url: https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.module
   enabled: true
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spotify.png
 - url: https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adblock4limbo.sgmodule
   enabled: true
 - url: https://raw.githubusercontent.com/Moli-X/Resources/main/Loon/GetCookie.plugin
@@ -738,6 +740,7 @@ modules:
   enabled: true
 - url: https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/CFGPT/CFGPT_new.sgmodule
   enabled: true
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/chatgpt.png
 - url: https://github.com/BiliUniverse/ADBlock/releases/latest/download/BiliBili.ADBlock.sgmodule
   enabled: true
 - url: https://github.com/BiliUniverse/Redirect/releases/latest/download/BiliBili.Redirect.sgmodule
