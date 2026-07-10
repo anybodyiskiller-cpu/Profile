@@ -31,7 +31,7 @@ dns:
 proxy-providers:
   Airport:
     type: http
-    url: "https://liangxin.xyz/api/v1/liangxin?OwO=4f974da7e89a279517479deba512a429"
+    url: "https://example.invalid/redacted"
     path: ./providers/airport.yaml
     interval: 86400
     health-check:
@@ -40,22 +40,22 @@ proxy-providers:
       interval: 300
     benchmark-url: http://www.google.com/generate_204
 proxy-groups:
-  - {name: ꜰɪɴᴀʟ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy4.png', proxies: [ʜᴏɴɢᴋᴏɴɢ, DIRECT, sɪɴɢᴀᴘᴏʀᴇ, ᴘʀᴏxʏ]}
-  - {name: ᴘʀᴏxʏ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy.png', proxies: [ᴊᴀᴘᴀɴ, ʜᴏɴɢᴋᴏɴɢ, sɪɴɢᴀᴘᴏʀᴇ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs]}
-  - {name: ᴀᴘᴘʟᴇ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appstore.png', proxies: [DIRECT, ᴊᴀᴘᴀɴ, sɪɴɢᴀᴘᴏʀᴇ, ʜᴏɴɢᴋᴏɴɢ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs,]}
-  - {name: ɢᴏᴏɢʟᴇ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/google.png', proxies: [ᴊᴀᴘᴀɴ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, sɪɴɢᴀᴘᴏʀᴇ]}
-  - {name: ʏᴏᴜᴛᴜʙᴇ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/youtube.png', proxies: [ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, ᴍᴀᴄᴀᴏ, ᴛᴀɪᴡᴀɴ, ᴊᴀᴘᴀɴ, sɪɴɢᴀᴘᴏʀᴇ]}
-  - {name: ɴᴇᴛғʟɪx, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/netflix.png', proxies: [ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, ʜᴏɴɢᴋᴏɴɢ, ᴛᴀɪᴡᴀɴ, sɪɴɢᴀᴘᴏʀᴇ, DIRECT]}
-  - {name: ᴅɪsɴᴇʏ+, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/disney.PNG', proxies: [ʜᴏɴɢᴋᴏɴɢ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, sɪɴɢᴀᴘᴏʀᴇ, ᴊᴀᴘᴀɴ, ᴛᴀɪᴡᴀɴ]}
-  - {name: ᴛɪᴋᴛᴏᴋ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png', proxies: [sɪɴɢᴀᴘᴏʀᴇ, ᴊᴀᴘᴀɴ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, DIRECT]}
-  - {name: ᴛᴇʟᴇɢʀᴀᴍ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/telegram.png', proxies: [ᴊᴀᴘᴀɴ, sɪɴɢᴀᴘᴏʀᴇ, ᴘʀᴏxʏ]}
-  - {name: ɢɪᴛʜᴜʙ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/github.png', proxies: [ᴊᴀᴘᴀɴ, sɪɴɢᴀᴘᴏʀᴇ, ᴘʀᴏxʏ]}
-  - {name: x, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/x.png', proxies: [ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, sɪɴɢᴀᴘᴏʀᴇ, ᴘʀᴏxʏ]}
-  - {name: ɪɴꜱᴛᴀɢʀᴀᴍ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/instagram.PNG', proxies: [sɪɴɢᴀᴘᴏʀᴇ, ᴊᴀᴘᴀɴ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs]}
-  - {name: ᴅɪꜱᴄᴏʀᴅ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/discord.png', proxies: [sɪɴɢᴀᴘᴏʀᴇ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs]}
-  - {name: ꜱᴘᴏᴛɪꜰʏ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spotify.png', proxies: [ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, sɪɴɢᴀᴘᴏʀᴇ, DIRECT]}
-  - {name: ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/playstation.png', proxies: [DIRECT, ʜᴏɴɢᴋᴏɴɢ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, sɪɴɢᴀᴘᴏʀᴇ, ᴊᴀᴘᴀɴ, ᴛᴀɪᴡᴀɴ]}
-  - {name: ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/chatgpt.png', proxies: [ᴊᴀᴘᴀɴ, sɪɴɢᴀᴘᴏʀᴇ, ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs]}
+  - {name: ꜰɪɴᴀʟ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy4.png', proxies: [REDACTED_NODE]}
+  - {name: ᴘʀᴏxʏ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy.png', proxies: [REDACTED_NODE]}
+  - {name: ᴀᴘᴘʟᴇ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appstore.png', proxies: [REDACTED_NODE]}
+  - {name: ɢᴏᴏɢʟᴇ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/google.png', proxies: [REDACTED_NODE]}
+  - {name: ʏᴏᴜᴛᴜʙᴇ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/youtube.png', proxies: [REDACTED_NODE]}
+  - {name: ɴᴇᴛғʟɪx, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/netflix.png', proxies: [REDACTED_NODE]}
+  - {name: ᴅɪsɴᴇʏ+, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/disney.PNG', proxies: [REDACTED_NODE]}
+  - {name: ᴛɪᴋᴛᴏᴋ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png', proxies: [REDACTED_NODE]}
+  - {name: ᴛᴇʟᴇɢʀᴀᴍ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/telegram.png', proxies: [REDACTED_NODE]}
+  - {name: ɢɪᴛʜᴜʙ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/github.png', proxies: [REDACTED_NODE]}
+  - {name: x, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/x.png', proxies: [REDACTED_NODE]}
+  - {name: ɪɴꜱᴛᴀɢʀᴀᴍ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/instagram.PNG', proxies: [REDACTED_NODE]}
+  - {name: ᴅɪꜱᴄᴏʀᴅ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/discord.png', proxies: [REDACTED_NODE]}
+  - {name: ꜱᴘᴏᴛɪꜰʏ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spotify.png', proxies: [REDACTED_NODE]}
+  - {name: ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/playstation.png', proxies: [REDACTED_NODE]}
+  - {name: ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ, type: select, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/chatgpt.png', proxies: [REDACTED_NODE]}
   - {name: ʜᴏɴɢᴋᴏɴɢ, type: url-test, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/hong-kong.png', use: [Airport], filter: "(?i)港|HK|Hong", url: 'http://www.google.com/generate_204', interval: 300}
   - {name: ᴛᴀɪᴡᴀɴ, type: url-test, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/taiwan.png', use: [Airport], filter: "(?i)台|TW|Taiwan", url: 'http://www.google.com/generate_204', interval: 300}
   - {name: ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs, type: url-test, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/united-states.png', use: [Airport], filter: "(?i)美|US|United", url: 'http://www.google.com/generate_204', interval: 300}
