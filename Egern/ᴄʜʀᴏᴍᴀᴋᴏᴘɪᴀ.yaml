@@ -654,10 +654,12 @@ modules:
   enabled: true
 - url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/BiliComicsExchangePoints.sgmodule
   enabled: true
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/bilibili.png
 - url: https://raw.githubusercontent.com/IBL3ND/module/refs/heads/main/surge-loon-to-egern.yaml
   enabled: true
 - url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/BiliComicsDailyBonus.sgmodule
   enabled: true
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/bilibili.png
 - url: https://raw.githubusercontent.com/ClydeTime/BiliBili/refs/heads/main/modules/BiliBiliDailyBonus.sgmodule
   enabled: false
 - url: https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.module
