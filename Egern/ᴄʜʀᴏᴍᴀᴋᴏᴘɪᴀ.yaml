@@ -59,30 +59,6 @@ real_ip_domains:
 - '*.blzstatic.cn'
 - '*.battle.net'
 proxies: []
-- vless:
-    name: BR-VLESS+Reality-78
-    server: 179.253.236.78
-    port: 40994
-    user_id: e552c288-dd6e-4368-8be4-0d71f58176ea
-    tfo: false
-    udp_relay: true
-    flow: xtls-rprx-vision
-    transport:
-      tls:
-        sni: developer.apple.com
-        reality:
-          public_key: vpErRnxuI73tkSJcYQQDoeQl8RSga_HbFz78rrq8lkc
-          short_id: f53216dc
-        skip_tls_verify: false
-- snell:
-    name: ᴅᴍɪᴛ-ᴜꜱ
-    server: 179.253.236.78
-    port: 2345
-    psk: r2vzViHEZegMOZdQ
-    version: 5
-    udp_relay: false
-    reuse: true
-    tfo: true
 policy_groups:
 - select:
     name: ꜰɪɴᴀʟ
