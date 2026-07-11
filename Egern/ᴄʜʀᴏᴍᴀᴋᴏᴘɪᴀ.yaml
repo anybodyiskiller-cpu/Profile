@@ -63,7 +63,7 @@ proxies:
     name: BR-VLESS+Reality-78
     server: example.invalid
     port: 0
-    user_id: e552c288-dd6e-4368-8be4-0d71f58176ea
+    user_id: [REDACTED]
     tfo: false
     udp_relay: true
     flow: xtls-rprx-vision
@@ -71,8 +71,8 @@ proxies:
       tls:
         sni: developer.apple.com
         reality:
-          public_key: vpErRnxuI73tkSJcYQQDoeQl8RSga_HbFz78rrq8lkc
-          short_id: f53216dc
+          public_key: [REDACTED]
+          short_id: [REDACTED]
         skip_tls_verify: false
 - snell:
     name: ᴅᴍɪᴛ-ᴜꜱ
