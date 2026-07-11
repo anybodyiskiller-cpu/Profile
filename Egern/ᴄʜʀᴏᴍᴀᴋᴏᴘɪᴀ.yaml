@@ -58,31 +58,7 @@ real_ip_domains:
 - '*.battlenet.com'
 - '*.blzstatic.cn'
 - '*.battle.net'
-proxies:
-- vless:
-    name: BR-VLESS+Reality-78
-    server: example.invalid
-    port: 0
-    user_id: [REDACTED]
-    tfo: false
-    udp_relay: true
-    flow: xtls-rprx-vision
-    transport:
-      tls:
-        sni: developer.apple.com
-        reality:
-          public_key: [REDACTED]
-          short_id: [REDACTED]
-        skip_tls_verify: false
-- snell:
-    name: ᴅᴍɪᴛ-ᴜꜱ
-    server: example.invalid
-    port: 0
-    psk: [REDACTED]
-    version: 5
-    udp_relay: false
-    reuse: true
-    tfo: true
+proxies: []
 policy_groups:
 - select:
     name: ꜰɪɴᴀʟ
