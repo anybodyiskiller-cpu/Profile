@@ -1,4 +1,5 @@
-#SUBSCRIBED https://raw.githubusercontent.com/anybodyiskiller-cpu/Profile/refs/heads/main/clashbox/chromkopia.yaml
+#SUBSCRIBED https://raw.githubusercontent.com/anybodyiskiller-cpu/Profile/refs/heads/main/CLASHBOX/chromkopia.yaml
+#SUBSCRIBED https://raw.githubusercontent.com/anybodyiskiller-cpu/Profile/refs/heads/main/CLASHBOX/chromkopia.yaml
 # ※※※※※※※※※※※※※※※ 锚点区域 ※※※※※※※※※※※※※※※
 # ① 订阅锚点
 Anchor_PR: &Anchor_PR {type: http, interval: 86400, proxy: DIRECT, health-check: {enable: true, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', interval: 300}, filter: "^(?!.*(到期|过期|剩余|网址|官网|邮箱|订阅|套餐|流量|说明|重置)).*$"}
@@ -94,7 +95,7 @@ dns:
     - https://dns.alidns.com/dns-query
 # ※※※※※※※※※※※※※※※ 代理策略组 ※※※※※※※※※※※※※※※
 proxy-groups:
-  - {name: Proxy, type: select, include-all: true, proxies: [DIRECT, Home  Broadband, 香港节点, 新加坡节点], icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy.png', use: [良心云]}
+  - {name: Proxy, type: select, include-all: true, proxies: [REDACTED_NODE], icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy.png', use: [良心云]}
   - icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/instagram.PNG
     name: Instagram
     proxies:
@@ -105,22 +106,22 @@ proxy-groups:
       - 新加坡节点
     type: select
     include-all: null
-  - {name: YouTube, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/youtube.png', proxies: [Proxy, 香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, 美国节点], type: select}
-  - {name: Google, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/google.png', proxies: [Proxy, 香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, 美国节点, Home  Broadband], type: select}
-  - {name: ChatGPT, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/chatgpt.png', proxies: [Proxy, 香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, 美国节点, Home  Broadband], type: select}
-  - {name: GitHub, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/github.png', proxies: [Proxy, 香港节点, 台湾节点, 日本节点, 新加坡节点, DIRECT], type: select}
-  - {name: TV, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tv.png', proxies: [Proxy, 香港节点, 日本节点, 新加坡节点, 美国节点, DIRECT], type: select}
-  - {name: Apple, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appstore.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, 美国节点, DIRECT], type: select}
-  - {name: Intelligent, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/chatgpt.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, DIRECT], type: select}
-  - {name: TikTok, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png', proxies: [DIRECT,日本节点, 韩国节点, 新加坡节点, 美国节点], type: select}
-  - {name: Twitter, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/x.png', proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, 美国节点], type: select}
-  - {name: Telegram, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/telegram.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点], type: select}
-  - {name: Netflix, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/netflix.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, DIRECT], type: select}
-  - {name: Disney, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/disney.PNG', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, DIRECT], type: select}
-  - {name: Spotify, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spotify.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, DIRECT], type: select}
-  - {name: PayPal, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/paypal.png', proxies: [香港节点, 台湾节点, 日本节点, 新加坡节点, DIRECT], type: select}
-  - {name: Speedtest, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/speetest.png', proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, DIRECT], type: select}
-  - {name: Final, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spark.png', proxies: [香港节点, 台湾节点, 日本节点, 韩国节点, 新加坡节点, 美国节点, DIRECT], type: select}
+  - {name: YouTube, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/youtube.png', proxies: [REDACTED_NODE], type: select}
+  - {name: Google, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/google.png', proxies: [REDACTED_NODE], type: select}
+  - {name: ChatGPT, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/chatgpt.png', proxies: [REDACTED_NODE], type: select}
+  - {name: GitHub, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/github.png', proxies: [REDACTED_NODE], type: select}
+  - {name: TV, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tv.png', proxies: [REDACTED_NODE], type: select}
+  - {name: Apple, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appstore.png', proxies: [REDACTED_NODE], type: select}
+  - {name: Intelligent, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/chatgpt.png', proxies: [REDACTED_NODE], type: select}
+  - {name: TikTok, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png', proxies: [REDACTED_NODE], type: select}
+  - {name: Twitter, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/x.png', proxies: [REDACTED_NODE], type: select}
+  - {name: Telegram, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/telegram.png', proxies: [REDACTED_NODE], type: select}
+  - {name: Netflix, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/netflix.png', proxies: [REDACTED_NODE], type: select}
+  - {name: Disney, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/disney.PNG', proxies: [REDACTED_NODE], type: select}
+  - {name: Spotify, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spotify.png', proxies: [REDACTED_NODE], type: select}
+  - {name: PayPal, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/paypal.png', proxies: [REDACTED_NODE], type: select}
+  - {name: Speedtest, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/speetest.png', proxies: [REDACTED_NODE], type: select}
+  - {name: Final, !!merge <<: *Anchor_OB, icon: 'https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spark.png', proxies: [REDACTED_NODE], type: select}
   - filter: null
     name: Home  Broadband
     type: select
