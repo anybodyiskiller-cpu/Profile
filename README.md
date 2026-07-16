@@ -14,10 +14,10 @@
 
 | 目录 | 说明 |
 | --- | --- |
-| `SURGE/` | Surge 配置与模块相关文件 |
-| `LOON/` | Loon 配置文件 |
-| `CLASHBOX/` | ClashBox / Mihomo YAML 配置 |
-| `SHADOWROCKET/` | Shadowrocket 配置备份 |
+| `Surge/` | Surge 配置与模块相关文件 |
+| `Loon/` | Loon 配置文件 |
+| `Clashbox/` | ClashBox / Mihomo YAML 配置 |
+| `Shadowrocket/` | Shadowrocket 配置备份 |
 
 ## 安全说明
 
