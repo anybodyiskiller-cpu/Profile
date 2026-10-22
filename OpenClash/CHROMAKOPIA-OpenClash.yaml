@@ -73,13 +73,6 @@ proxy-groups:
   - ʜᴏɴɢᴋᴏɴɢ
   - sɪɴɢᴀᴘᴏʀᴇ
   - DIRECT
-- name: sᴜʀɢᴇ ᴘᴏɴᴛᴇ
-  type: select
-  hidden: false
-  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/surge.png
-  proxies:
-  - REJECT
-  - DIRECT
 - name: ɪɴꜱᴛᴀɢʀᴀᴍ
   type: select
   hidden: false
@@ -122,7 +115,6 @@ proxy-groups:
   proxies:
   - sɪɴɢᴀᴘᴏʀᴇ
   - ᴊᴀᴘᴀɴ
-  - ᴇᴅɢᴇᴛᴜɴɴᴇʟ
   - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
   - ᴍᴀᴄᴀᴏ
   - ᴛᴀɪᴡᴀɴ
@@ -394,19 +386,6 @@ proxy-groups:
   timeout: 2000
   tolerance: 50
   lazy: true
-  empty-fallback: REJECT
-  include-all: true
-- name: ᴇᴅɢᴇᴛᴜɴɴᴇʟ
-  type: select
-  hidden: false
-  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/cloudflare.png
-  empty-fallback: REJECT
-  include-all: true
-- name: ʟɪᴀɴɢxɪɴʏᴜɴ
-  type: select
-  hidden: false
-  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/refs/heads/main/icons/liangxinyun1.png
-  exclude-filter: "(?i)Clash|Surge"
   empty-fallback: REJECT
   include-all: true
 rule-providers:
@@ -1859,7 +1838,7 @@ rules:
 - RULE-SET,Apple-AI,ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
 - RULE-SET,Whatsapp,ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
 - RULE-SET,PersonalDirect,DIRECT
-- RULE-SET,Ponte,sᴜʀɢᴇ ᴘᴏɴᴛᴇ
+- RULE-SET,Ponte,REJECT
 - RULE-SET,angellive,sɪɴɢᴀᴘᴏʀᴇ
 - RULE-SET,APTV,ᴀᴘᴛᴠ,no-resolve
 - DOMAIN-SUFFIX,ip-api.com,ɪɴꜱᴛᴀɢʀᴀᴍ
