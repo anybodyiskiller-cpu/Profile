@@ -1,0 +1,1890 @@
+# Current OpenClash runtime export: ᴛʀᴀɴᴄᴇ.yaml, 2026-10-24
+# Public sanitized edition: subscription URLs, local nodes, authentication and LAN hosts removed.
+# Populate proxy-providers before using proxy routes. Smart groups require the Smart core.
+---
+mixed-port: 7893
+redir-port: 7892
+tproxy-port: 7895
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+secret: CHANGE_ME_BEFORE_USE
+profile:
+  store-selected: true
+  store-fake-ip: true
+geodata-mode: false
+geox-url:
+  mmdb: https://testingcf.jsdelivr.net/gh/alecthw/mmdb_china_ip_list@release/lite/Country.mmdb
+  geoip: https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat
+  geosite: https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat
+  asn: https://testingcf.jsdelivr.net/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb
+dns:
+  enable: true
+  listen: 0.0.0.0:7874
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  use-system-hosts: true
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 223.6.6.6
+  nameserver:
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  proxy-server-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  fake-ip-filter:
+  - "*.lan"
+  - "*.local"
+  - myhome.com
+  - "*.srv.nintendo.net"
+  - "*.stun.playstation.net"
+  - xbox.*.microsoft.com
+  - "*.xboxlive.com"
+  - "*.battlenet.com.cn"
+  - "*.battlenet.com"
+  - "*.blzstatic.cn"
+  - "*.battle.net"
+  - "+.3gppnetwork.org"
+  nameserver-policy:
+    epdg.epc.mnc260.mcc310.pub.3gppnetwork.org: 208.54.36.131
+    ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org: 208.54.2.99
+    ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org: 208.54.49.131
+  respect-rules: true
+proxy-providers:
+  Provider_C758DB:
+    type: inline
+    interval: 3600
+    proxy: DIRECT
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    override:
+      skip-cert-verify: true
+    payload: []
+proxies: []
+proxy-groups:
+- name: ꜰɪɴᴀʟ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy4.png
+  type: select
+  proxies:
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - ᴊᴀᴘᴀɴ
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - ʜᴏɴɢᴋᴏɴɢ
+  - DIRECT
+- name: ᴘʀᴏxʏ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy.png
+  type: select
+  proxies:
+  - ᴊᴀᴘᴀɴ
+  - ʜᴏɴɢᴋᴏɴɢ
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - DIRECT
+- name: ɪɴꜱᴛᴀɢʀᴀᴍ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/instagram.PNG
+  type: select
+  proxies:
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - ᴊᴀᴘᴀɴ
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+- name: ᴛᴠ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tv.png
+  type: select
+  proxies:
+  - DIRECT
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - ᴊᴀᴘᴀɴ
+  - sɪɴɢᴀᴘᴏʀᴇ
+- name: ᴀᴘᴘʟᴇ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appstore.png
+  type: select
+  proxies:
+  - DIRECT
+  - ᴊᴀᴘᴀɴ
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - ʜᴏɴɢᴋᴏɴɢ
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+- name: ɢᴏᴏɢʟᴇ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/google.png
+  type: select
+  proxies:
+  - ᴊᴀᴘᴀɴ
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - sɪɴɢᴀᴘᴏʀᴇ
+- name: ʏᴏᴜᴛᴜʙᴇ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/youtube.png
+  type: select
+  proxies:
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - ᴊᴀᴘᴀɴ
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - ᴍᴀᴄᴀᴏ
+  - ᴛᴀɪᴡᴀɴ
+- name: ꜱᴘᴏᴛɪꜰʏ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spotify.png
+  type: select
+  proxies:
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - ᴜɴɪᴛᴇᴅ ᴋɪɴɢᴅᴏᴍ
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - DIRECT
+- name: ɴᴇᴛғʟɪx
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/netflix.png
+  type: select
+  proxies:
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - ʜᴏɴɢᴋᴏɴɢ
+  - ᴛᴀɪᴡᴀɴ
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - DIRECT
+- name: ᴀᴘᴛᴠ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/aptv.png
+  type: select
+  proxies:
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - ᴜɴɪᴛᴇᴅ ᴋɪɴɢᴅᴏᴍ
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - ʜᴏɴɢᴋᴏɴɢ
+  - ᴊᴀᴘᴀɴ
+  - ᴋᴏʀᴇᴀ
+  - DIRECT
+- name: ᴜʜᴅ
+  icon: https://emby-icon.vercel.app/icons/UHD.PNG
+  type: select
+  proxies:
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - ᴊᴀᴘᴀɴ
+  - DIRECT
+- name: ᴅɪsɴᴇʏ+
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/disney.PNG
+  type: select
+  proxies:
+  - ʜᴏɴɢᴋᴏɴɢ
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - ᴊᴀᴘᴀɴ
+  - ᴛᴀɪᴡᴀɴ
+- name: ᴅɪꜱᴄᴏʀᴅ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/discord.png
+  type: select
+  proxies:
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+- name: ᴛɪᴋᴛᴏᴋ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktokpro.png
+  type: select
+  proxies:
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - ᴊᴀᴘᴀɴ
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - DIRECT
+- name: ᴅᴏᴜʏɪɴ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png
+  type: select
+  proxies:
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - DIRECT
+  - ᴊᴀᴘᴀɴ
+  - sɪɴɢᴀᴘᴏʀᴇ
+- name: ᴛᴡɪᴛᴄʜ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/twitch.png
+  type: select
+  proxies:
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+- name: ᴛᴇʟᴇɢʀᴀᴍ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/telegram.png
+  type: select
+  proxies:
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - ᴊᴀᴘᴀɴ
+  - sɪɴɢᴀᴘᴏʀᴇ
+- name: ʀᴇᴅ ɴᴏᴛᴇ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/xiaohongshu.png
+  type: select
+  proxies:
+  - DIRECT
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+- name: ꜱʜᴏᴘ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/shop.png
+  type: select
+  proxies:
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - ᴊᴀᴘᴀɴ
+  - DIRECT
+- name: ᴡᴇᴄʜᴀᴛ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/wechat.png
+  type: select
+  proxies:
+  - DIRECT
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - ʜᴏɴɢᴋᴏɴɢ
+- name: ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/steam.png
+  type: select
+  proxies:
+  - DIRECT
+  - ʜᴏɴɢᴋᴏɴɢ
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - ᴊᴀᴘᴀɴ
+  - ᴛᴀɪᴡᴀɴ
+- name: ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appleintelligence.png
+  type: select
+  proxies:
+  - ᴊᴀᴘᴀɴ
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+- name: x
+  icon: https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/X.png
+  type: select
+  proxies:
+  - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  - ᴊᴀᴘᴀɴ
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - ᴋᴏʀᴇᴀ
+  - ᴜᴋʀᴀɪɴᴇ
+- name: ꜱᴘᴇᴇᴅᴛᴇꜱᴛ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/speetest.png
+  type: select
+  proxies:
+  - DIRECT
+  - sɪɴɢᴀᴘᴏʀᴇ
+  - ᴊᴀᴘᴀɴ
+- name: ɢɪᴛʜᴜʙ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/github.png
+  type: select
+  proxies:
+  - ᴊᴀᴘᴀɴ
+  - sɪɴɢᴀᴘᴏʀᴇ
+- name: ʜᴏɴɢᴋᴏɴɢ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/hong-kong.png
+  type: smart
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  use:
+  - Provider_C758DB
+  filter: "(?i)^(?!.*(?:(?:^|[^0-9.])(?:5|10)(?:\\.0+)?\\s*[x×倍]|(?:^|[^A-Za-z])[x×]\\s*(?:5|10)(?:\\.0+)?(?:$|[^0-9.]))).*(?:(?:香港|港区|港區|\U0001F1ED\U0001F1F0|Hong[
+    _-]*Kong|(?:^|[^A-Za-z])(?:HK|HKG)(?:$|[^A-Za-z]))).*$"
+  timeout: 2000
+  lazy: true
+- name: ᴛᴀɪᴡᴀɴ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/taiwan.png
+  type: smart
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  use:
+  - Provider_C758DB
+  filter: "(?i)(?:台湾|台灣|台北|臺北|\U0001F1F9\U0001F1FC|Taiwan|Taipei|(?:^|[^A-Za-z])(?:TW|TWN)(?:$|[^A-Za-z]))"
+  timeout: 2000
+  lazy: true
+- name: ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/united-states.png
+  type: smart
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  use:
+  - Provider_C758DB
+  filter: "(?i)^(?!.*(?:(?:^|[^0-9.])(?:5|10)(?:\\.0+)?\\s*[x×倍]|(?:^|[^A-Za-z])[x×]\\s*(?:5|10)(?:\\.0+)?(?:$|[^0-9.]))).*(?:(?:美国|美國|洛杉矶|洛杉磯|硅谷|矽谷|西雅图|西雅圖|纽约|紐約|\U0001F1FA\U0001F1F8|United[
+    _-]*States|America|Los[ _-]*Angeles|Seattle|(?:^|[^A-Za-z])(?:US|USA|LAX|SJC|SEA|NYC)(?:$|[^A-Za-z]))).*$"
+  timeout: 2000
+  lazy: true
+- name: ᴊᴀᴘᴀɴ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/japan.png
+  type: smart
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  use:
+  - Provider_C758DB
+  filter: "(?i)^(?!.*(?:(?:^|[^0-9.])(?:5|10)(?:\\.0+)?\\s*[x×倍]|(?:^|[^A-Za-z])[x×]\\s*(?:5|10)(?:\\.0+)?(?:$|[^0-9.]))).*(?:(?:日本|东京|東京|大阪|\U0001F1EF\U0001F1F5|Japan|Tokyo|Osaka|(?:^|[^A-Za-z])(?:JP|JPN|NRT|KIX)(?:$|[^A-Za-z]))).*$"
+  timeout: 2000
+  lazy: true
+- name: sɪɴɢᴀᴘᴏʀᴇ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/singapore.png
+  type: smart
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  use:
+  - Provider_C758DB
+  filter: "(?i)^(?!.*(?:(?:^|[^0-9.])(?:5|10)(?:\\.0+)?\\s*[x×倍]|(?:^|[^A-Za-z])[x×]\\s*(?:5|10)(?:\\.0+)?(?:$|[^0-9.]))).*(?:(?:新加坡|狮城|獅城|\U0001F1F8\U0001F1EC|Singapore|(?:^|[^A-Za-z])(?:SG|SGP|SIN)(?:$|[^A-Za-z]))).*$"
+  timeout: 2000
+  lazy: true
+- name: ᴋᴏʀᴇᴀ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/south-korea.png
+  type: smart
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  use:
+  - Provider_C758DB
+  filter: "(?i)(?:韩国|韓國|首尔|首爾|\U0001F1F0\U0001F1F7|South[ _-]*Korea|Korea|Seoul|(?:^|[^A-Za-z])(?:KR|KOR|ICN)(?:$|[^A-Za-z]))"
+  timeout: 2000
+  lazy: true
+- name: ᴍᴀᴄᴀᴏ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/macao.png
+  type: smart
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  use:
+  - Provider_C758DB
+  filter: "(?i)(?:澳门|澳門|\U0001F1F2\U0001F1F4|Macao|Macau|(?:^|[^A-Za-z])(?:MO|MAC)(?:$|[^A-Za-z]))"
+  timeout: 2000
+  lazy: true
+- name: ᴜɴɪᴛᴇᴅ ᴋɪɴɢᴅᴏᴍ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/united-kingdom.png
+  type: smart
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  use:
+  - Provider_C758DB
+  filter: "(?i)(?:英国|英國|伦敦|倫敦|\U0001F1EC\U0001F1E7|United[ _-]*Kingdom|Britain|London|(?:^|[^A-Za-z])(?:UK|GBR|LHR)(?:$|[^A-Za-z]))"
+  timeout: 2000
+  lazy: true
+- name: ᴜᴋʀᴀɪɴᴇ
+  icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/ukraine.png
+  type: smart
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  use:
+  - Provider_C758DB
+  filter: "(?i)(?:乌克兰|烏克蘭|基辅|基輔|\U0001F1FA\U0001F1E6|Ukraine|Kyiv|Kiev|(?:^|[^A-Za-z])(?:UA|UKR|IEV)(?:$|[^A-Za-z]))"
+  timeout: 2000
+  lazy: true
+rule-providers:
+  Apple-AI:
+    type: inline
+    behavior: classical
+    payload:
+    - DOMAIN,guzzoni.apple.com
+    - DOMAIN,mask-api.fe.apple-dns.net
+    - DOMAIN,mask-api.icloud.com
+    - DOMAIN,mask-t.apple-dns.net
+    - DOMAIN,mask.apple-dns.net
+    - DOMAIN,wps.apple.com
+    - DOMAIN-SUFFIX,smoot.apple.com
+    - DOMAIN-SUFFIX,apple-relay.apple.com
+    - DOMAIN-SUFFIX,apple-relay.cloudflare.com
+    - DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+    - DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
+    - DOMAIN-SUFFIX,cp4.cloudflare.com
+    - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+    - DOMAIN-SUFFIX,gateway.icloud.com
+    - DOMAIN-SUFFIX,ls.apple.com
+    - DOMAIN-SUFFIX,mask-h2.icloud.com
+    - DOMAIN-SUFFIX,mask.icloud.com
+    - DOMAIN-SUFFIX,apps.mzstatic.com
+    - DOMAIN-KEYWORD,siri
+  Whatsapp:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Whatsapp/Whatsapp.yaml
+    path: "./rule_provider/Whatsapp.yaml"
+    interval: 86400
+  PersonalDirect:
+    type: inline
+    behavior: classical
+    payload:
+    - DOMAIN-SUFFIX,tiktokshopglobalselling.com
+    - DOMAIN-SUFFIX,anybodyiskiller.shop
+    - DOMAIN-SUFFIX,assrt.net
+    - DOMAIN-SUFFIX,dandanplay.net
+    - DOMAIN-SUFFIX,metowolf.com
+    - DOMAIN-SUFFIX,yhdm.one
+    - DOMAIN-SUFFIX,rcuts.com
+    - DOMAIN-SUFFIX,cdn16.163189.xyz
+    - DOMAIN-SUFFIX,netlify.app
+  Ponte:
+    type: inline
+    behavior: classical
+    payload:
+    - DOMAIN-SUFFIX,myhome.com
+    - IP-CIDR,192.168.0.0/16,no-resolve
+  angellive:
+    type: inline
+    behavior: classical
+    payload:
+    - DOMAIN-SUFFIX,sooplive.com
+    - DOMAIN-SUFFIX,sooplive.co.kr
+  APTV:
+    type: inline
+    behavior: classical
+    payload:
+    - DOMAIN-SUFFIX,aptv.app
+    - DOMAIN-SUFFIX,rc-backup.com
+    - DOMAIN-SUFFIX,wickediptv.xyz
+    - DOMAIN-SUFFIX,netgenx.site
+    - DOMAIN-SUFFIX,vpn-cloud.icu
+    - IP-CIDR,206.212.246.240/32
+    - IP-CIDR,64.112.42.83/32
+    - IP-CIDR,206.212.244.101/32
+    - IP-CIDR,198.255.87.242/32
+    - IP-CIDR,89.187.179.148/32
+    - IP-CIDR,45.155.90.247/32
+    - IP-CIDR,45.155.90.52/32
+    - IP-CIDR,45.155.90.75/32
+    - DOMAIN-SUFFIX,willfonk.com
+    - DOMAIN-SUFFIX,amagi.tv
+    - DOMAIN-SUFFIX,99998888.cc
+    - IP-CIDR,206.212.246.184/32
+    - DOMAIN-SUFFIX,idabest.danng.me
+    - IP-CIDR,149.57.23.105/32
+    - IP-CIDR,181.233.125.85/32
+    - DOMAIN-SUFFIX,plus-26.com
+    - IP-CIDR,181.233.127.75/32
+    - IP-CIDR,181.233.125.54/32
+    - IP-CIDR,206.212.244.23/32
+    - IP-CIDR,115.23.222.106/32
+    - DOMAIN-SUFFIX,tsb-mega.i9.ee
+    - DOMAIN,tsb-mega.i9.ee
+    - DOMAIN-SUFFIX,nocookie.net
+    - IP-CIDR,206.212.246.182/32
+    - DOMAIN-SUFFIX,uelp.org
+    - DOMAIN-SUFFIX,wikimedia.org
+    - DOMAIN-SUFFIX,togglestatic.com
+    - DOMAIN-SUFFIX,lucastv.pro
+    - IP-CIDR,89.187.179.73/32
+    - IP-CIDR,23.237.104.106/32
+    - IP-CIDR,143.244.60.76/32
+    - DOMAIN-SUFFIX,k-20.xyz
+    - IP-CIDR,89.222.120.120/32
+    - IP-CIDR,77.74.123.31/32
+    - DOMAIN-SUFFIX,yingyujieshuo.top
+    - DOMAIN-SUFFIX,sharewithyou.dpdns.org
+    - DOMAIN,cdn.staticres.top
+    - IP-CIDR,41.180.140.146/32
+  PornHub:
+    type: inline
+    behavior: classical
+    payload:
+    - DOMAIN-SUFFIX,8teenxxx.com
+    - DOMAIN-SUFFIX,ahcdn.com
+    - DOMAIN-SUFFIX,bcvcdn.com
+    - DOMAIN-SUFFIX,bongacams.com
+    - DOMAIN-SUFFIX,chaturbate.com
+    - DOMAIN-SUFFIX,dditscdn.com
+    - DOMAIN-SUFFIX,jable.tv
+    - DOMAIN-SUFFIX,livejasmin.com
+    - DOMAIN-SUFFIX,mushroomtrack.com
+    - DOMAIN-SUFFIX,phncdn.com
+    - DOMAIN-SUFFIX,phprcdn.com
+    - DOMAIN-SUFFIX,pornhub.com
+    - DOMAIN-SUFFIX,pornhubpremium.com
+    - DOMAIN-SUFFIX,rdtcdn.com
+    - DOMAIN-SUFFIX,redtube.com
+    - DOMAIN-SUFFIX,sb-cd.com
+    - DOMAIN-SUFFIX,spankbang.com
+    - DOMAIN-SUFFIX,t66y.com
+    - DOMAIN-SUFFIX,xhamster.com
+    - DOMAIN-SUFFIX,xnxx-cdn.com
+    - DOMAIN-SUFFIX,xnxx.com
+    - DOMAIN-SUFFIX,xvideos-cdn.com
+    - DOMAIN-SUFFIX,xvideos.com
+    - DOMAIN-SUFFIX,ypncdn.com
+    - DOMAIN-KEYWORD,img.cc
+    - DOMAIN-KEYWORD,porn
+    - DOMAIN-SUFFIX,missav.ai
+  AIGC:
+    type: inline
+    behavior: classical
+    payload:
+    - DOMAIN-SUFFIX,cursor.com
+    - DOMAIN-SUFFIX,cursor.sh
+    - DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
+    - DOMAIN,ai.google.dev
+    - DOMAIN,aida.googleapis.com
+    - DOMAIN,aisandbox-pa.googleapis.com
+    - DOMAIN,alkalicore-pa.clients6.google.com
+    - DOMAIN,alkalimakersuite-pa.clients6.google.com
+    - DOMAIN,antigravity-unleash.goog
+    - DOMAIN,antigravity.google
+    - DOMAIN,api.github.com
+    - DOMAIN,api.jetbrains.ai
+    - DOMAIN,browser-intake-datadoghq.com
+    - DOMAIN,cdn.usefathom.com
+    - DOMAIN,chat.openai.com.cdn.cloudflare.net
+    - DOMAIN,daily-cloudcode-pa.googleapis.com
+    - DOMAIN,gateway.ai.cloudflare.com
+    - DOMAIN,inference.codeium.com
+    - DOMAIN,jules.google.com
+    - DOMAIN,makersuite.google.com
+    - DOMAIN,openai-api.arkoselabs.com
+    - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+    - DOMAIN,openaicomproductionae4b.blob.core.windows.net
+    - DOMAIN,openrouter.ai
+    - DOMAIN,production-openaicom-storage.azureedge.net
+    - DOMAIN,robinfrontend-pa.googleapis.com
+    - DOMAIN,server.codeium.com
+    - DOMAIN,server.self-serve.windsurf.com
+    - DOMAIN,static.cloudflareinsights.com
+    - DOMAIN-SUFFIX,ai.com
+    - DOMAIN-SUFFIX,aicode.googleapis.com
+    - DOMAIN-SUFFIX,aistudio.google.com
+    - DOMAIN-SUFFIX,algolia.net
+    - DOMAIN-SUFFIX,anthropic.com
+    - DOMAIN-SUFFIX,api.revenuecat.com
+    - DOMAIN-SUFFIX,api.statsig.com
+    - DOMAIN-SUFFIX,apis.google.com
+    - DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+    - DOMAIN-SUFFIX,auth0.com
+    - DOMAIN-SUFFIX,bard.google.com
+    - DOMAIN-SUFFIX,challenges.cloudflare.com
+    - DOMAIN-SUFFIX,chat.com
+    - DOMAIN-SUFFIX,chatgpt.com
+    - DOMAIN-SUFFIX,chatgpt.livekit.cloud
+    - DOMAIN-SUFFIX,chatgpt.site
+    - DOMAIN-SUFFIX,clau.de
+    - DOMAIN-SUFFIX,claude.ai
+    - DOMAIN-SUFFIX,claude.com
+    - DOMAIN-SUFFIX,claudeusercontent.com
+    - DOMAIN-SUFFIX,client-api.arkoselabs.com
+    - DOMAIN-SUFFIX,clients6.google.com
+    - DOMAIN-SUFFIX,clipdrop.co
+    - DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+    - DOMAIN-SUFFIX,cp4.cloudflare.com
+    - DOMAIN-SUFFIX,deepmind.com
+    - DOMAIN-SUFFIX,deepmind.google
+    - DOMAIN-SUFFIX,dify.ai
+    - DOMAIN-SUFFIX,events.statsigapi.net
+    - DOMAIN-SUFFIX,featuregates.org
+    - DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
+    - DOMAIN-SUFFIX,g.ai
+    - DOMAIN-SUFFIX,geller-pa.googleapis.com
+    - DOMAIN-SUFFIX,gemini.google
+    - DOMAIN-SUFFIX,gemini.google.com
+    - DOMAIN-SUFFIX,generativeai.google
+    - DOMAIN-SUFFIX,generativelanguage.googleapis.com
+    - DOMAIN-SUFFIX,grok.com
+    - DOMAIN-SUFFIX,groq.com
+    - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+    - DOMAIN-SUFFIX,guzzoni.apple.com
+    - DOMAIN-SUFFIX,host.livekit.cloud
+    - DOMAIN-SUFFIX,identrust.com
+    - DOMAIN-SUFFIX,intercom.io
+    - DOMAIN-SUFFIX,intercomcdn.com
+    - DOMAIN-SUFFIX,jasper.ai
+    - DOMAIN-SUFFIX,launchdarkly.com
+    - DOMAIN-SUFFIX,makersuite.google.com
+    - DOMAIN-SUFFIX,meta.ai
+    - DOMAIN-SUFFIX,notebooklm.google
+    - DOMAIN-SUFFIX,notebooklm.google.com
+    - DOMAIN-SUFFIX,oaistatic.com
+    - DOMAIN-SUFFIX,oaiusercontent.com
+    - DOMAIN-SUFFIX,observeit.net
+    - DOMAIN-SUFFIX,openai.com
+    - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+    - DOMAIN-SUFFIX,openaicom.imgix.net
+    - DOMAIN-SUFFIX,openart.ai
+    - DOMAIN-SUFFIX,perplexity.ai
+    - DOMAIN-SUFFIX,poe.com
+    - DOMAIN-SUFFIX,pool.ntp.org
+    - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+    - DOMAIN-SUFFIX,segment.io
+    - DOMAIN-SUFFIX,sentry.io
+    - DOMAIN-SUFFIX,smoot.apple.com
+    - DOMAIN-SUFFIX,sora.com
+    - DOMAIN-SUFFIX,stripe.com
+    - DOMAIN-SUFFIX,turn.livekit.cloud
+    - DOMAIN-SUFFIX,x.ai
+    - IP-ASN,20473,no-resolve
+    - IP-CIDR,129.146.3.78/32,no-resolve
+    - IP-CIDR,24.199.123.28/32,no-resolve
+    - IP-CIDR,64.23.132.171/32,no-resolve
+  Tmdb:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tmdb/Tmdb.yaml
+    path: "./rule_provider/Tmdb.yaml"
+    interval: 86400
+  UHDSupport:
+    type: inline
+    behavior: classical
+    payload:
+    - DOMAIN-SUFFIX,trakt.tv
+    - DOMAIN-SUFFIX,opensubtitles.com
+    - DOMAIN-SUFFIX,vercel.app
+    - DOMAIN-SUFFIX,play.chilledmelon.com
+    - DOMAIN-SUFFIX,liangxin.xyz
+    - DOMAIN-SUFFIX,xn--9kqz23b19z.com
+    - DOMAIN-SUFFIX,vercel.com
+  UHD:
+    type: inline
+    behavior: classical
+    payload:
+    - DOMAIN-SUFFIX,uhdnow.com
+    - DOMAIN-SUFFIX,uhdnow.online
+    - DOMAIN-SUFFIX,uhdgo.com
+  Microsoft:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+    path: "./rule_provider/Microsoft.yaml"
+    interval: 86400
+  Tesla:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tesla/Tesla.yaml
+    path: "./rule_provider/Tesla.yaml"
+    interval: 86400
+  Twitch:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml
+    path: "./rule_provider/Twitch.yaml"
+    interval: 86400
+  Speedtest:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest.yaml
+    path: "./rule_provider/Speedtest.yaml"
+    interval: 86400
+  Amazon:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon.yaml
+    path: "./rule_provider/Amazon.yaml"
+    interval: 86400
+  Shopify:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Shopify/Shopify.yaml
+    path: "./rule_provider/Shopify.yaml"
+    interval: 86400
+  Stripe:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Stripe/Stripe.yaml
+    path: "./rule_provider/Stripe.yaml"
+    interval: 86400
+  GitHub:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
+    path: "./rule_provider/GitHub.yaml"
+    interval: 86400
+  Spotify:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
+    path: "./rule_provider/Spotify.yaml"
+    interval: 86400
+  SoundCloud:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SoundCloud/SoundCloud.yaml
+    path: "./rule_provider/SoundCloud.yaml"
+    interval: 86400
+  PayPal:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PayPal/PayPal.yaml
+    path: "./rule_provider/PayPal.yaml"
+    interval: 86400
+  YouTube:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    path: "./rule_provider/YouTube.yaml"
+    interval: 86400
+  Google:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+    path: "./rule_provider/Google.yaml"
+    interval: 86400
+  AppleTV:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleTV/AppleTV.yaml
+    path: "./rule_provider/AppleTV.yaml"
+    interval: 86400
+  Apple_All_No_Resolve:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical_No_Resolve.yaml
+    path: "./rule_provider/Apple_All_No_Resolve.yaml"
+    interval: 86400
+  TikTok:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
+    path: "./rule_provider/TikTok.yaml"
+    interval: 86400
+  Twitter:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
+    path: "./rule_provider/Twitter.yaml"
+    interval: 86400
+  Facebook:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.yaml
+    path: "./rule_provider/Facebook.yaml"
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+    path: "./rule_provider/Telegram.yaml"
+    interval: 86400
+  Discord:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.yaml
+    path: "./rule_provider/Discord.yaml"
+    interval: 86400
+  Reddit:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.yaml
+    path: "./rule_provider/Reddit.yaml"
+    interval: 86400
+  XiaoHongShu:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/XiaoHongShu/XiaoHongShu.yaml
+    path: "./rule_provider/XiaoHongShu.yaml"
+    interval: 86400
+  Douyin:
+    type: inline
+    behavior: classical
+    payload:
+    - DOMAIN-SUFFIX,amemv.com
+    - DOMAIN-SUFFIX,douyinvod.com
+  WeChat:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml
+    path: "./rule_provider/WeChat.yaml"
+    interval: 86400
+  Epic:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.yaml
+    path: "./rule_provider/Epic.yaml"
+    interval: 86400
+  PlayStation:
+    type: inline
+    behavior: classical
+    payload:
+    - DOMAIN-SUFFIX,playstation.com
+    - DOMAIN-SUFFIX,playstation.net
+    - DOMAIN-SUFFIX,playstationnetwork.com
+    - DOMAIN-SUFFIX,sonyentertainmentnetwork.com
+    - DOMAIN-SUFFIX,blackhawknetwork.com
+    - DOMAIN-SUFFIX,cashstar.com
+    - DOMAIN-SUFFIX,cashstar.net
+  Steam:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml
+    path: "./rule_provider/Steam.yaml"
+    interval: 86400
+  Nintendo:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.yaml
+    path: "./rule_provider/Nintendo.yaml"
+    interval: 86400
+  Sony:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Sony/Sony.yaml
+    path: "./rule_provider/Sony.yaml"
+    interval: 86400
+  Bahamut:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut.yaml
+    path: "./rule_provider/Bahamut.yaml"
+    interval: 86400
+  HBO:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.yaml
+    path: "./rule_provider/HBO.yaml"
+    interval: 86400
+  Netflix:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+    path: "./rule_provider/Netflix.yaml"
+    interval: 86400
+  Disney:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml
+    path: "./rule_provider/Disney.yaml"
+    interval: 86400
+  ChinaMedia:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+    path: "./rule_provider/ChinaMedia.yaml"
+    interval: 86400
+  ProxyMedia:
+    type: inline
+    behavior: classical
+    payload:
+    - DOMAIN-SUFFIX,edgedatg.com
+    - DOMAIN-SUFFIX,go.com
+    - DOMAIN-KEYWORD,anthropic
+    - DOMAIN-KEYWORD,claude
+    - DOMAIN-KEYWORD,openai
+    - DOMAIN,ai.google.dev
+    - DOMAIN,aistudio.google.com
+    - DOMAIN,api.githubcopilot.com
+    - DOMAIN,api.groq.com
+    - DOMAIN,api.together.xyz
+    - DOMAIN,bard.google.com
+    - DOMAIN,console.groq.com
+    - DOMAIN,copilot-proxy.githubusercontent.com
+    - DOMAIN,gemini.google.com
+    - DOMAIN,generativelanguage.googleapis.com
+    - DOMAIN,notebooklm.google.com
+    - DOMAIN,sydney.bing.com
+    - DOMAIN-SUFFIX,ai.azure.com
+    - DOMAIN-SUFFIX,anthropic.com
+    - DOMAIN-SUFFIX,auth0.com
+    - DOMAIN-SUFFIX,bard.google.com
+    - DOMAIN-SUFFIX,chatgpt.com
+    - DOMAIN-SUFFIX,claude.ai
+    - DOMAIN-SUFFIX,claude.com
+    - DOMAIN-SUFFIX,claudeusercontent.com
+    - DOMAIN-SUFFIX,client-api.arkoselabs.com
+    - DOMAIN-SUFFIX,copilot.cloud.microsoft
+    - DOMAIN-SUFFIX,copilot.microsoft.com
+    - DOMAIN-SUFFIX,cursor.com
+    - DOMAIN-SUFFIX,cursor.sh
+    - DOMAIN-SUFFIX,events.statsigapi.net
+    - DOMAIN-SUFFIX,featuregates.org
+    - DOMAIN-SUFFIX,gemini.google.com
+    - DOMAIN-SUFFIX,grazie.ai
+    - DOMAIN-SUFFIX,grazie.aws.intellij.net
+    - DOMAIN-SUFFIX,identrust.com
+    - DOMAIN-SUFFIX,intercom.io
+    - DOMAIN-SUFFIX,intercomcdn.com
+    - DOMAIN-SUFFIX,jetbrains.ai
+    - DOMAIN-SUFFIX,makersuite.google.com
+    - DOMAIN-SUFFIX,meta.ai
+    - DOMAIN-SUFFIX,mistral.ai
+    - DOMAIN-SUFFIX,oaistatic.com
+    - DOMAIN-SUFFIX,oaiusercontent.com
+    - DOMAIN-SUFFIX,openai.com
+    - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+    - DOMAIN-SUFFIX,perplexity.ai
+    - DOMAIN-SUFFIX,sora.com
+    - DOMAIN-SUFFIX,x.ai
+    - DOMAIN-KEYWORD,abematv.akamaized.net
+    - DOMAIN-SUFFIX,abema.io
+    - DOMAIN-SUFFIX,abema.tv
+    - DOMAIN-SUFFIX,ameba.jp
+    - DOMAIN-SUFFIX,hayabusa.io
+    - DOMAIN-SUFFIX,c4assets.com
+    - DOMAIN-SUFFIX,channel4.com
+    - DOMAIN-KEYWORD,avoddashs
+    - DOMAIN,atv-ps.amazon.com
+    - DOMAIN,avodmp4s3ww-a.akamaihd.net
+    - DOMAIN,d1v5ir2lpwr8os.cloudfront.net
+    - DOMAIN,d1xfray82862hr.cloudfront.net
+    - DOMAIN,d22qjgkvxw22r6.cloudfront.net
+    - DOMAIN,d25xi40x97liuc.cloudfront.net
+    - DOMAIN,d27xxe7juh1us6.cloudfront.net
+    - DOMAIN,d3196yreox78o9.cloudfront.net
+    - DOMAIN,dmqdd6hw24ucf.cloudfront.net
+    - DOMAIN,ktpx.amazon.com
+    - DOMAIN-SUFFIX,aboutamazon.com
+    - DOMAIN-SUFFIX,aiv-cdn.net
+    - DOMAIN-SUFFIX,aiv-delivery.net
+    - DOMAIN-SUFFIX,amazon.jobs
+    - DOMAIN-SUFFIX,amazontools.com
+    - DOMAIN-SUFFIX,amazontours.com
+    - DOMAIN-SUFFIX,amazonuniversity.jobs
+    - DOMAIN-SUFFIX,amazonvideo.com
+    - DOMAIN-SUFFIX,media-amazon.com
+    - DOMAIN-SUFFIX,pv-cdn.net
+    - DOMAIN-SUFFIX,seattlespheres.com
+    - DOMAIN,gspe1-ssl.ls.apple.com
+    - DOMAIN,np-edge.itunes.apple.com
+    - DOMAIN,play-edge.itunes.apple.com
+    - DOMAIN-SUFFIX,tv.apple.com
+    - DOMAIN-KEYWORD,bbcfmt
+    - DOMAIN-KEYWORD,uk-live
+    - DOMAIN,aod-dash-uk-live.akamaized.net
+    - DOMAIN,aod-hls-uk-live.akamaized.net
+    - DOMAIN,vod-dash-uk-live.akamaized.net
+    - DOMAIN,vod-thumb-uk-live.akamaized.net
+    - DOMAIN-SUFFIX,bbc.co
+    - DOMAIN-SUFFIX,bbc.co.uk
+    - DOMAIN-SUFFIX,bbc.com
+    - DOMAIN-SUFFIX,bbc.net.uk
+    - DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net
+    - DOMAIN-SUFFIX,bbci.co
+    - DOMAIN-SUFFIX,bbci.co.uk
+    - DOMAIN-SUFFIX,bidi.net.uk
+    - DOMAIN,bahamut.akamaized.net
+    - DOMAIN,gamer-cds.cdn.hinet.net
+    - DOMAIN,gamer2-cds.cdn.hinet.net
+    - DOMAIN-SUFFIX,bahamut.com.tw
+    - DOMAIN-SUFFIX,gamer.com.tw
+    - DOMAIN-KEYWORD,voddazn
+    - DOMAIN,d151l6v8er5bdm.cloudfront.net
+    - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net
+    - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net
+    - DOMAIN-SUFFIX,dazn-api.com
+    - DOMAIN-SUFFIX,dazn.com
+    - DOMAIN-SUFFIX,dazndn.com
+    - DOMAIN-SUFFIX,dcblivedazn.akamaized.net
+    - DOMAIN-SUFFIX,indazn.com
+    - DOMAIN-SUFFIX,indaznlab.com
+    - DOMAIN-SUFFIX,sentry.io
+    - DOMAIN-SUFFIX,deezer.com
+    - DOMAIN-SUFFIX,dzcdn.net
+    - DOMAIN-SUFFIX,disco-api.com
+    - DOMAIN-SUFFIX,discovery.com
+    - DOMAIN-SUFFIX,uplynk.com
+    - DOMAIN,cdn.registerdisney.go.com
+    - DOMAIN-SUFFIX,adobedtm.com
+    - DOMAIN-SUFFIX,bam.nr-data.net
+    - DOMAIN-SUFFIX,bamgrid.com
+    - DOMAIN-SUFFIX,braze.com
+    - DOMAIN-SUFFIX,cdn.optimizely.com
+    - DOMAIN-SUFFIX,cdn.registerdisney.go.com
+    - DOMAIN-SUFFIX,cws.conviva.com
+    - DOMAIN-SUFFIX,d9.flashtalking.com
+    - DOMAIN-SUFFIX,disney-plus.net
+    - DOMAIN-SUFFIX,disney-portal.my.onetrust.com
+    - DOMAIN-SUFFIX,disney.demdex.net
+    - DOMAIN-SUFFIX,disney.my.sentry.io
+    - DOMAIN-SUFFIX,disneyplus.bn5x.net
+    - DOMAIN-SUFFIX,disneyplus.com
+    - DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net
+    - DOMAIN-SUFFIX,disneystreaming.com
+    - DOMAIN-SUFFIX,dssott.com
+    - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com
+    - DOMAIN-SUFFIX,js-agent.newrelic.com
+    - DOMAIN,bcbolt446c5271-a.akamaihd.net
+    - DOMAIN,content.jwplatform.com
+    - DOMAIN,edge.api.brightcove.com
+    - DOMAIN,videos-f.jwpsrv.com
+    - DOMAIN-SUFFIX,encoretvb.com
+    - DOMAIN-SUFFIX,fox.com
+    - DOMAIN-SUFFIX,foxdcg.com
+    - DOMAIN-SUFFIX,hbo.com
+    - DOMAIN-SUFFIX,hbogo.com
+    - DOMAIN-SUFFIX,hbomax.com
+    - DOMAIN-SUFFIX,hbomaxcdn.com
+    - DOMAIN-SUFFIX,hbonow.com
+    - DOMAIN-KEYWORD,hbogoasia
+    - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
+    - DOMAIN,bcbolthboa-a.akamaihd.net
+    - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net
+    - DOMAIN,dai3fd1oh325y.cloudfront.net
+    - DOMAIN,hboasia1-i.akamaihd.net
+    - DOMAIN,hboasia2-i.akamaihd.net
+    - DOMAIN,hboasia3-i.akamaihd.net
+    - DOMAIN,hboasia4-i.akamaihd.net
+    - DOMAIN,hboasia5-i.akamaihd.net
+    - DOMAIN,hboasialive.akamaized.net
+    - DOMAIN,hbogoprod-vod.akamaized.net
+    - DOMAIN,hbolb.onwardsmg.com
+    - DOMAIN,hbounify-prod.evergent.com
+    - DOMAIN,players.brightcove.net
+    - DOMAIN,s3-ap-southeast-1.amazonaws.com
+    - DOMAIN-SUFFIX,hboasia.com
+    - DOMAIN-SUFFIX,hbogoasia.com
+    - DOMAIN-SUFFIX,hbogoasia.hk
+    - DOMAIN-SUFFIX,5itv.tv
+    - DOMAIN-SUFFIX,ocnttv.com
+    - DOMAIN-SUFFIX,cws-hulu.conviva.com
+    - DOMAIN-SUFFIX,hulu.com
+    - DOMAIN-SUFFIX,hulu.hb.omtrdc.net
+    - DOMAIN-SUFFIX,hulu.sc.omtrdc.net
+    - DOMAIN-SUFFIX,huluad.com
+    - DOMAIN-SUFFIX,huluim.com
+    - DOMAIN-SUFFIX,hulustream.com
+    - DOMAIN-SUFFIX,happyon.jp
+    - DOMAIN-SUFFIX,hjholdings.jp
+    - DOMAIN-SUFFIX,hulu.jp
+    - DOMAIN-SUFFIX,prod.hjholdings.tv
+    - DOMAIN-SUFFIX,streaks.jp
+    - DOMAIN-SUFFIX,yb.uncn.jp
+    - DOMAIN,itvpnpmobile-a.akamaihd.net
+    - DOMAIN-SUFFIX,itv.com
+    - DOMAIN-SUFFIX,itvstatic.com
+    - DOMAIN-SUFFIX,iwara.tv
+    - DOMAIN-KEYWORD,jooxweb-api
+    - DOMAIN-SUFFIX,joox.com
+    - DOMAIN-KEYWORD,japonx
+    - DOMAIN-KEYWORD,japronx
+    - DOMAIN-SUFFIX,japonx.com
+    - DOMAIN-SUFFIX,japonx.net
+    - DOMAIN-SUFFIX,japonx.tv
+    - DOMAIN-SUFFIX,japonx.vip
+    - DOMAIN-SUFFIX,japronx.com
+    - DOMAIN-SUFFIX,japronx.net
+    - DOMAIN-SUFFIX,japronx.tv
+    - DOMAIN-SUFFIX,japronx.vip
+    - DOMAIN-SUFFIX,kfs.io
+    - DOMAIN-SUFFIX,kkbox.com
+    - DOMAIN-SUFFIX,kkbox.com.tw
+    - DOMAIN,kktv-theater.kk.stream
+    - DOMAIN,theater-kktv.cdn.hinet.net
+    - DOMAIN-SUFFIX,kktv.com.tw
+    - DOMAIN-SUFFIX,kktv.me
+    - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net
+    - DOMAIN-SUFFIX,litv.tv
+    - DOMAIN,d3c7rimkq79yfu.cloudfront.net
+    - DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net
+    - DOMAIN-SUFFIX,linetv.tw
+    - DOMAIN-SUFFIX,profile.line-scdn.net
+    - DOMAIN,d349g9zuie06uo.cloudfront.net
+    - DOMAIN-SUFFIX,channel5.com
+    - DOMAIN-SUFFIX,my5.tv
+    - DOMAIN-KEYWORD,nowtv100
+    - DOMAIN-KEYWORD,rthklive
+    - DOMAIN,mytvsuperlimited.hb.omtrdc.net
+    - DOMAIN,mytvsuperlimited.sc.omtrdc.net
+    - DOMAIN-SUFFIX,mytvsuper.com
+    - DOMAIN-SUFFIX,tvb.com
+    - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
+    - DOMAIN-KEYWORD,dualstack.apiproxy-
+    - DOMAIN-KEYWORD,netflixdnstest
+    - DOMAIN,netflix.com.edgesuite.net
+    - DOMAIN-SUFFIX,fast.com
+    - DOMAIN-SUFFIX,netflix.com
+    - DOMAIN-SUFFIX,netflix.net
+    - DOMAIN-SUFFIX,netflixdnstest0.com
+    - DOMAIN-SUFFIX,netflixdnstest1.com
+    - DOMAIN-SUFFIX,netflixdnstest2.com
+    - DOMAIN-SUFFIX,netflixdnstest3.com
+    - DOMAIN-SUFFIX,netflixdnstest4.com
+    - DOMAIN-SUFFIX,netflixdnstest5.com
+    - DOMAIN-SUFFIX,netflixdnstest6.com
+    - DOMAIN-SUFFIX,netflixdnstest7.com
+    - DOMAIN-SUFFIX,netflixdnstest8.com
+    - DOMAIN-SUFFIX,netflixdnstest9.com
+    - DOMAIN-SUFFIX,nflxext.com
+    - DOMAIN-SUFFIX,nflximg.com
+    - DOMAIN-SUFFIX,nflximg.net
+    - DOMAIN-SUFFIX,nflxso.net
+    - DOMAIN-SUFFIX,nflxvideo.net
+    - IP-CIDR,8.41.4.0/24,no-resolve
+    - IP-CIDR,23.246.0.0/18,no-resolve
+    - IP-CIDR,37.77.184.0/21,no-resolve
+    - IP-CIDR,38.72.126.0/24,no-resolve
+    - IP-CIDR,45.57.0.0/17,no-resolve
+    - IP-CIDR,64.120.128.0/17,no-resolve
+    - IP-CIDR,66.197.128.0/17,no-resolve
+    - IP-CIDR,69.53.224.0/19,no-resolve
+    - IP-CIDR,103.87.204.0/22,no-resolve
+    - IP-CIDR,108.175.32.0/20,no-resolve
+    - IP-CIDR,185.2.220.0/22,no-resolve
+    - IP-CIDR,185.9.188.0/22,no-resolve
+    - IP-CIDR,192.173.64.0/18,no-resolve
+    - IP-CIDR,198.38.96.0/19,no-resolve
+    - IP-CIDR,198.45.48.0/20,no-resolve
+    - IP-CIDR,203.75.84.0/24,no-resolve
+    - IP-CIDR,207.45.72.0/22,no-resolve
+    - IP-CIDR,208.75.76.0/22,no-resolve
+    - DOMAIN-SUFFIX,dmc.nico
+    - DOMAIN-SUFFIX,nicovideo.jp
+    - DOMAIN-SUFFIX,nimg.jp
+    - DOMAIN-KEYWORD,nivod
+    - DOMAIN-SUFFIX,biggggg.com
+    - DOMAIN-SUFFIX,mudvod.tv
+    - DOMAIN-SUFFIX,nbys.tv
+    - DOMAIN-SUFFIX,nbys1.tv
+    - DOMAIN-SUFFIX,nbyy.tv
+    - DOMAIN-SUFFIX,newpppp.com
+    - DOMAIN-SUFFIX,nivod.tv
+    - DOMAIN-SUFFIX,nivodi.tv
+    - DOMAIN-SUFFIX,nivodz.com
+    - DOMAIN-SUFFIX,vod360.net
+    - DOMAIN-KEYWORD,olevod
+    - DOMAIN-SUFFIX,haiwaikan.com
+    - DOMAIN-SUFFIX,iole.tv
+    - DOMAIN-SUFFIX,olehd.com
+    - DOMAIN-SUFFIX,olelive.com
+    - DOMAIN-SUFFIX,olevod.com
+    - DOMAIN-SUFFIX,olevod.io
+    - DOMAIN-SUFFIX,olevod.tv
+    - DOMAIN-SUFFIX,olevodtv.com
+    - DOMAIN-SUFFIX,challenges.cloudflare.com
+    - DOMAIN-SUFFIX,stripe.com
+    - DOMAIN-SUFFIX,pbs.org
+    - DOMAIN-SUFFIX,pandora.com
+    - DOMAIN-SUFFIX,phncdn.com
+    - DOMAIN-SUFFIX,phprcdn.com
+    - DOMAIN-SUFFIX,pornhub.com
+    - DOMAIN-SUFFIX,pornhubpremium.com
+    - DOMAIN-SUFFIX,qobuz.com
+    - DOMAIN-SUFFIX,p-cdn.us
+    - DOMAIN-SUFFIX,sndcdn.com
+    - DOMAIN-SUFFIX,soundcloud.com
+    - DOMAIN-KEYWORD,-spotify-
+    - DOMAIN-KEYWORD,spotify.com
+    - DOMAIN-SUFFIX,pscdn.co
+    - DOMAIN-SUFFIX,scdn.co
+    - DOMAIN-SUFFIX,spoti.fi
+    - DOMAIN-SUFFIX,spotify.com
+    - DOMAIN-SUFFIX,spotifycdn.com
+    - DOMAIN-SUFFIX,spotifycdn.net
+    - DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com
+    - DOMAIN-SUFFIX,tidal.com
+    - DOMAIN-SUFFIX,tidalhifi.com
+    - DOMAIN,hamifans.emome.net
+    - DOMAIN-SUFFIX,skyking.com.tw
+    - DOMAIN-KEYWORD,tiktokcdn
+    - DOMAIN-SUFFIX,byteoversea.com
+    - DOMAIN-SUFFIX,ibytedtos.com
+    - DOMAIN-SUFFIX,ipstatp.com
+    - DOMAIN-SUFFIX,muscdn.com
+    - DOMAIN-SUFFIX,musical.ly
+    - DOMAIN-SUFFIX,tik-tokapi.com
+    - DOMAIN-SUFFIX,tiktok.com
+    - DOMAIN-SUFFIX,tiktokcdn.com
+    - DOMAIN-SUFFIX,tiktokv.com
+    - DOMAIN-KEYWORD,ttvnw
+    - DOMAIN-SUFFIX,ext-twitch.tv
+    - DOMAIN-SUFFIX,jtvnw.net
+    - DOMAIN-SUFFIX,ttvnw.net
+    - DOMAIN-SUFFIX,twitch-ext.rootonline.de
+    - DOMAIN-SUFFIX,twitch.tv
+    - DOMAIN-SUFFIX,twitchcdn.net
+    - PROCESS-NAME,com.viu.pad
+    - PROCESS-NAME,com.viu.phone
+    - PROCESS-NAME,com.vuclip.viu
+    - DOMAIN,api.viu.now.com
+    - DOMAIN,d1k2us671qcoau.cloudfront.net
+    - DOMAIN,d2anahhhmp1ffz.cloudfront.net
+    - DOMAIN,dfp6rglgjqszk.cloudfront.net
+    - DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com
+    - DOMAIN-SUFFIX,d1k2us671qcoau.cloudfront.net
+    - DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net
+    - DOMAIN-SUFFIX,dfp6rglgjqszk.cloudfront.net
+    - DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com
+    - DOMAIN-SUFFIX,viu.com
+    - DOMAIN-SUFFIX,viu.now.com
+    - DOMAIN-SUFFIX,viu.tv
+    - DOMAIN-KEYWORD,youtube
+    - DOMAIN,youtubei.googleapis.com
+    - DOMAIN,yt3.ggpht.com
+    - DOMAIN-SUFFIX,googlevideo.com
+    - DOMAIN-SUFFIX,gvt2.com
+    - DOMAIN-SUFFIX,withyoutube.com
+    - DOMAIN-SUFFIX,youtu.be
+    - DOMAIN-SUFFIX,youtube-nocookie.com
+    - DOMAIN-SUFFIX,youtube.com
+    - DOMAIN-SUFFIX,youtubeeducation.com
+    - DOMAIN-SUFFIX,youtubegaming.com
+    - DOMAIN-SUFFIX,youtubekids.com
+    - DOMAIN-SUFFIX,yt.be
+    - DOMAIN-SUFFIX,ytimg.com
+    - DOMAIN,music.youtube.com
+  Adblock4limbo_surge:
+    type: inline
+    behavior: classical
+    payload:
+    - DOMAIN-SUFFIX,go.mnaspm.com,reject
+    - DOMAIN-SUFFIX,bankingbloatedcaptive.com,reject
+    - DOMAIN-SUFFIX,fmiqcupku.com,reject
+    - DOMAIN-SUFFIX,21e18b62f2.4a41fff8a6.com,reject
+    - DOMAIN-SUFFIX,4a41fff8a6.com,reject
+    - DOMAIN-SUFFIX,js.capndr.com,reject
+    - DOMAIN-SUFFIX,ohjluvpunaxg.com,reject
+    - DOMAIN-SUFFIX,cb260f4651.com,reject
+    - DOMAIN-SUFFIX,mnaspm.com,reject
+    - DOMAIN-SUFFIX,capndr.com,reject
+    - DOMAIN-SUFFIX,ptelastaxo.com,reject
+    - DOMAIN-SUFFIX,ad-nex.com,reject
+    - DOMAIN-SUFFIX,waqool.com,reject
+    - DOMAIN-SUFFIX,img.ad-nex.com,reject
+    - DOMAIN-SUFFIX,js.waqool.com,reject
+    - DOMAIN-SUFFIX,3adtjg.com,reject
+    - DOMAIN-SUFFIX,ig66.vip,reject
+    - DOMAIN-SUFFIX,ig67.vip,reject
+    - DOMAIN-SUFFIX,29b124c44a.com,reject
+    - DOMAIN-SUFFIX,my.rtmark.net,reject
+    - DOMAIN-SUFFIX,vntsm.com,reject
+    - DOMAIN-SUFFIX,pagead2.googlesyndication.com,reject
+    - DOMAIN-SUFFIX,tj.orlandowaggons.com,reject
+    - DOMAIN-SUFFIX,citadelpathstatue.com,reject
+    - DOMAIN-SUFFIX,a.adforcast.com,reject
+    - DOMAIN-SUFFIX,impolo.com,reject
+    - DOMAIN-SUFFIX,578d72001a.com,reject
+    - DOMAIN-SUFFIX,wpadmngr.com,reject
+    - DOMAIN-SUFFIX,cdn.tsyndicate.com,reject
+    - DOMAIN-SUFFIX,youradexchange.com,reject
+    - DOMAIN-SUFFIX,zprofuqkssny.com,reject
+    - DOMAIN-SUFFIX,vjugz.com,reject
+    - DOMAIN-SUFFIX,du0pud0sdlmzf.cloudfront.net,reject
+    - DOMAIN-SUFFIX,effectscouncilman.com,reject
+    - DOMAIN-SUFFIX,histats.com,reject
+    - DOMAIN-SUFFIX,kkjhgfds.top,reject
+    - DOMAIN,25e87c0802f91cf8cgg.6uzxtlv.cn,reject
+    - DOMAIN-SUFFIX,5mgrgsc.cn,reject
+    - DOMAIN-SUFFIX,2700.5mgrgsc.cn,reject
+    - DOMAIN-SUFFIX,6fi3bv9.cn,reject
+    - DOMAIN-SUFFIX,6uzxtlv.cn,reject
+    - DOMAIN-SUFFIX,xn--qrq171dxpq.com,reject
+    - DOMAIN-SUFFIX,clarity.ms,reject
+    - DOMAIN-SUFFIX,5e87c0802f91cf8cgg.6uzxtlv.cn,reject
+    - DOMAIN-SUFFIX,popin.cc,reject
+    - DOMAIN-SUFFIX,double.net,reject
+    - DOMAIN-SUFFIX,spotxchange.com,reject
+    - DOMAIN-SUFFIX,stat.gn01.top,reject
+    - DOMAIN-SUFFIX,ad.vidverto.io,reject
+    - DOMAIN-SUFFIX,googlesyndication.com,reject
+    - DOMAIN-SUFFIX,gn01.top,reject
+    - DOMAIN-SUFFIX,b1sync.zemanta.com,reject
+    - DOMAIN-SUFFIX,tu.xasnjafnvn.com,reject
+    - DOMAIN-SUFFIX,bn.ufitjvn.com,reject
+    - DOMAIN-SUFFIX,v3.fstats.xyz,reject
+    - DOMAIN-SUFFIX,son-in-lawmorbid.com,reject
+    - DOMAIN-SUFFIX,amung.us,reject
+    - DOMAIN-SUFFIX,widgets.amung.us,reject
+    - DOMAIN-SUFFIX,s10.histats.com,reject
+    - DOMAIN-SUFFIX,eyebrowscrambledlater.com,reject
+    - DOMAIN-SUFFIX,a.realsrv.com,reject
+    - DOMAIN-SUFFIX,media.aso1.net,reject
+    - DOMAIN-SUFFIX,js.wpshsdk.com,reject
+    - DOMAIN-SUFFIX,js.wpushsdk.com,reject
+    - DOMAIN-SUFFIX,9e77b6e6e2.2e3f31faae.com,reject
+    - DOMAIN-SUFFIX,playersb.com,reject
+    - DOMAIN-SUFFIX,42yenxh.cn,reject
+    - DOMAIN-SUFFIX,dwyhup.cn,reject
+    - DOMAIN-SUFFIX,netdjs.net,reject
+    - DOMAIN-SUFFIX,pc.stgowan.com,reject
+    - DOMAIN-SUFFIX,tapioni.com,reject
+    - DOMAIN-SUFFIX,107iwh.cn,reject
+    - DOMAIN-SUFFIX,hbhuatie.com,reject
+    - DOMAIN-SUFFIX,qinzhihao.com,reject
+    - DOMAIN-SUFFIX,nby360.com,reject
+    - DOMAIN-SUFFIX,tfosrv.com,reject
+    - DOMAIN-SUFFIX,trafforsrv.com,reject
+    - DOMAIN-SUFFIX,trafficforce.com,reject
+    - DOMAIN-SUFFIX,s.csyfe.com,reject
+    - DOMAIN-SUFFIX,qw2v.changshuohr.net,reject
+    - DOMAIN-SUFFIX,wss.haoyundmn.com,reject
+    - DOMAIN-SUFFIX,trackwilltrk.com,reject
+    - DOMAIN-SUFFIX,rmhfrtnd.com,reject
+    - DOMAIN-SUFFIX,video.ktkjmp.com,reject
+    - DOMAIN-SUFFIX,go.myavlive.com,reject
+    - DOMAIN-SUFFIX,gsjln04hd.com,reject
+    - DOMAIN-SUFFIX,creative.myavlive.com,reject
+    - DOMAIN-SUFFIX,creative.live.missav.com,reject
+    - DOMAIN-SUFFIX,cashewsforlife208.com,reject
+    - DOMAIN-SUFFIX,ingest.sentry,reject
+    - DOMAIN-SUFFIX,phloxsub73ulata.com,reject
+    - DOMAIN-SUFFIX,xxxjmp.com,reject
+    - DOMAIN-SUFFIX,pitrespite.com,reject
+    - DOMAIN-SUFFIX,alexametrics.com,reject
+    - DOMAIN-SUFFIX,designslicensedeep.com,reject
+    - DOMAIN-SUFFIX,a.bestcontentfood.top,reject
+    - DOMAIN-SUFFIX,tsyndicate.com,reject
+    - DOMAIN-SUFFIX,e67repidwnfu7gcha.com,reject
+    - DOMAIN-SUFFIX,mc7clurd09pla4nrtat7ion.com,reject
+    - DOMAIN-SUFFIX,wuzbhjpvsf.com,reject
+    - DOMAIN-SUFFIX,a.shukriya90.com,reject
+    - DOMAIN-SUFFIX,creative.xlviirdr.com,reject
+    - DOMAIN-SUFFIX,realsrv.com,reject
+    - DOMAIN-SUFFIX,asewlfjqwlflkew.com,reject
+    - DOMAIN-SUFFIX,uus52.com,reject
+    - DOMAIN-SUFFIX,uus58.com,reject
+    - DOMAIN-SUFFIX,ddmax20.xyz,reject
+    - DOMAIN-SUFFIX,ads.exosrv.com,reject
+    - DOMAIN-KEYWORD,exosrv,reject
+    - DOMAIN-KEYWORD,asewlfjqwlflkew,reject
+    - DOMAIN-SUFFIX,tyrantdb.com,reject
+    - DOMAIN-SUFFIX,adserve.work,reject
+    - DOMAIN-SUFFIX,horribletrainer.com,reject
+    - DOMAIN-SUFFIX,frozenpayerpregnant.com,reject
+    - DOMAIN-SUFFIX,kugqwiarq.in,reject
+    - DOMAIN-SUFFIX,akhaldqp.in,reject
+    - DOMAIN-SUFFIX,i.5432kk.com,reject
+    - DOMAIN-KEYWORD,brushshopy,reject
+    - DOMAIN-KEYWORD,onenews,reject
+    - DOMAIN-SUFFIX,s96.cnzz.com,reject
+    - DOMAIN-SUFFIX,xn--3bs795g.zone,reject
+    - DOMAIN-SUFFIX,xn--2qux23c9ziyrq.plus,reject
+    - DOMAIN-SUFFIX,xn--2qux23c9ziyrq.club,reject
+    - DOMAIN-SUFFIX,xn--xhq9mt12cf5v.xn--io0a7i,reject
+    - DOMAIN-SUFFIX,xn--3bs795g.link,reject
+    - DOMAIN-SUFFIX,show.suning.beer,reject
+    - DOMAIN-SUFFIX,www.govshenzhen.cn,reject
+    - DOMAIN-SUFFIX,mm9842.com,reject
+    - DOMAIN-KEYWORD,e2wysbacctt1,reject
+    - DOMAIN-SUFFIX,go.xlvirdr.com,reject
+    - DOMAIN-SUFFIX,xlvirdr.com,reject
+    - DOMAIN-SUFFIX,media.dalysv.com,reject
+    - DOMAIN-SUFFIX,creative.mnaspm.com,reject
+    - DOMAIN-SUFFIX,solestudious.com,reject
+    - DOMAIN-SUFFIX,enrichyummy.com,reject
+    - DOMAIN-SUFFIX,maphuahin.com,reject
+    - DOMAIN-SUFFIX,ggsfq.com,reject
+    - DOMAIN-SUFFIX,ad.pornimg.xyz,reject
+    - DOMAIN-SUFFIX,awaitcola.com,reject
+    - DOMAIN-SUFFIX,wine-api.net,reject
+    - DOMAIN-SUFFIX,exosrv.com,reject
+    - DOMAIN-SUFFIX,juicyads.com,reject
+    - DOMAIN-SUFFIX,thumb.fvs.io,reject
+    - DOMAIN-SUFFIX,itnuzleafan.com,reject
+    - DOMAIN-SUFFIX,oawhaursaith.com,reject
+    - DOMAIN-SUFFIX,unreshiramor.com,reject
+    - DOMAIN-SUFFIX,regulationprivilegescan.top,reject
+    - DOMAIN-SUFFIX,in-page-push.com,reject
+    - DOMAIN-SUFFIX,farmcrapsubsist.com,reject
+    - DOMAIN-SUFFIX,jads.co,reject
+    - DOMAIN-SUFFIX,adxadserv.com,reject
+    - DOMAIN-SUFFIX,moatads.com,reject
+    - DOMAIN-SUFFIX,juicyads.in,reject
+    - DOMAIN-SUFFIX,dtscout.com,reject
+    - DOMAIN-SUFFIX,51.la,reject
+    - DOMAIN-SUFFIX,51daeka.com,reject
+    - DOMAIN-SUFFIX,exdynsrv.com,reject
+    - DOMAIN-SUFFIX,d227cncaprzd7y.cloudfront.net,reject
+    - DOMAIN-SUFFIX,d10lumateci472.cloudfront.net,reject
+    - DOMAIN-SUFFIX,dvzk66.cn,reject
+    - DOMAIN-SUFFIX,pu0glv.cn,reject
+    - DOMAIN-KEYWORD,dlads,reject
+    - DOMAIN,dagonghuzhu.com,reject
+    - DOMAIN-KEYWORD,xxshuyuan,reject
+    - DOMAIN-KEYWORD,haowanyou,reject
+    - DOMAIN-KEYWORD,dat8,reject
+    - DOMAIN-KEYWORD,112wan,reject
+    - DOMAIN-KEYWORD,dfkj8,reject
+    - DOMAIN-KEYWORD,mifengv,reject
+    - DOMAIN-KEYWORD,lieyou,reject
+    - DOMAIN-KEYWORD,789htbet,reject
+    - DOMAIN-KEYWORD,mdapp09,reject
+    - DOMAIN-KEYWORD,juruigj,reject
+    - DOMAIN-SUFFIX,etahub.com,reject
+    - DOMAIN-SUFFIX,evtubescms.phncdn.com,reject
+    - DOMAIN-SUFFIX,22c.in,reject
+    - DOMAIN-SUFFIX,imgxxx.shunxincar.cn,reject
+    - DOMAIN-SUFFIX,kk.braincf.com,reject
+    - DOMAIN-SUFFIX,run.haireig.com,reject
+    - DOMAIN-SUFFIX,d.zxptw.cn,reject
+    - DOMAIN-SUFFIX,new.xiongzhangad.com,reject
+    - DOMAIN-SUFFIX,js.users.51.la,reject
+    - DOMAIN-SUFFIX,maxwellsery.com,reject
+    - DOMAIN-SUFFIX,annabelleabe.com,reject
+    - DOMAIN-SUFFIX,jidukeji.com,reject
+    - DOMAIN-SUFFIX,atmib.com,reject
+    - DOMAIN-SUFFIX,bjzysd.net,reject
+    - DOMAIN-SUFFIX,iycwl.com,reject
+    - DOMAIN-SUFFIX,haoyundm.com,reject
+    - DOMAIN-SUFFIX,qqq123987.site,reject
+    - DOMAIN-SUFFIX,qweewq2021.online,reject
+    - DOMAIN-SUFFIX,jianxinshanghai.com,reject
+    - DOMAIN-SUFFIX,js.51toubu.com,reject
+    - DOMAIN-SUFFIX,img.hylmxing.com,reject
+    - DOMAIN-SUFFIX,777.000123456789.space,reject
+    - DOMAIN-SUFFIX,bhichong.com,reject
+    - DOMAIN-SUFFIX,tskdfjksldk.sdhsgcj.com,reject
+    - DOMAIN-SUFFIX,haoyuntj.com,reject
+    - DOMAIN-SUFFIX,bizhixiang.cn,reject
+    - DOMAIN-SUFFIX,jspassport.ssl.qhimg.com,reject
+    - DOMAIN-SUFFIX,ads.superad.cc,reject
+    - DOMAIN-SUFFIX,wpncdn.com,reject
+    - DOMAIN-KEYWORD,toateeli,reject
+    - DOMAIN-KEYWORD,greenplasticdua,reject
+    - DOMAIN-KEYWORD,bongacash,reject
+    - DOMAIN-KEYWORD,bngpt,reject
+    - DOMAIN-KEYWORD,stunninglover,reject
+    - DOMAIN-KEYWORD,jads,reject
+    - DOMAIN-KEYWORD,trwl1,reject
+    - DOMAIN-KEYWORD,o333o,reject
+    - DOMAIN-SUFFIX,x2sfa.javgg.eu,reject
+    - DOMAIN-SUFFIX,xd3r.javgg.eu,reject
+    - DOMAIN-SUFFIX,p242.plainwrk.name,reject
+    - DOMAIN-KEYWORD,histats,reject
+    - DOMAIN-KEYWORD,dtscout,reject
+    - DOMAIN-KEYWORD,adform,reject
+    - DOMAIN-KEYWORD,mathtag,reject
+    - DOMAIN-KEYWORD,pagespeed-mod,reject
+    - DOMAIN-KEYWORD,in-page-push,reject
+    - DOMAIN-SUFFIX,impactserving.com,reject
+    - DOMAIN-SUFFIX,addthis.com,reject
+    - DOMAIN-SUFFIX,magsrv.com,reject
+    - DOMAIN-SUFFIX,creative.kbnmnl.com,reject
+    - DOMAIN-KEYWORD,itabelog,reject
+    - DOMAIN-SUFFIX,xlivrdr.com,reject
+    - DOMAIN-SUFFIX,fanza.cc,reject
+    - DOMAIN-SUFFIX,go.rmhfrtnd.com,reject
+    - DOMAIN-SUFFIX,towableunto.cfd,reject
+    - DOMAIN-SUFFIX,prd.jwpltx.com,reject
+    - DOMAIN-SUFFIX,referrer.disqus.com,reject
+    - DOMAIN-SUFFIX,links.services.disqus.com,reject
+    - DOMAIN-SUFFIX,disqusads.com,reject
+    - DOMAIN,glitter.services.disqus.com,reject
+    - DOMAIN,juggler.services.disqus.com,reject
+    - DOMAIN,tempest.services.disqus.com,reject
+    - DOMAIN,mc.viglink.com,reject
+    - DOMAIN,qa.viglink.com,reject
+    - DOMAIN,ns4.viglink.com,reject
+    - DOMAIN,ns2.viglink.com,reject
+    - DOMAIN,ns3.viglink.com,reject
+    - DOMAIN,apicdn.viglink.com,reject
+    - DOMAIN-SUFFIX,cdn.viglink.com,reject
+    - DOMAIN,nggfe.fdgem.com,reject
+    - DOMAIN,rthmnj.xyz,reject
+    - DOMAIN-SUFFIX,jknmthwd.xyz,reject
+    - DOMAIN,koprtgh.omhoa.com,reject
+    - DOMAIN,hbftgh.ibjkqnhjwd.xyz,reject
+    - DOMAIN,kmopoer.jkbuymjhp.xyz,reject
+    - DOMAIN,kmef.ikjwmfeds.xyz,reject
+    - DOMAIN,hnrtg.iujkegbpo.xyz,reject
+    - DOMAIN-SUFFIX,tcc.qscvli.com,reject
+    - DOMAIN,fg.knlk2md.cn,reject
+    - DOMAIN,tg.gtlpaj.com,reject
+    - DOMAIN-SUFFIX,gtlpaj.com,reject
+    - DOMAIN-SUFFIX,knlk2md.cn,reject
+    - DOMAIN-SUFFIX,7tad.cn,reject
+    - DOMAIN,tc.vpubmi.com,reject
+    - DOMAIN-SUFFIX,qoiw1xw.cn,reject
+    - DOMAIN-SUFFIX,purpleads.io,reject
+    - DOMAIN-SUFFIX,ioacfu.com,reject
+    - DOMAIN-SUFFIX,onerousethelpictures.com,reject
+    - DOMAIN-SUFFIX,exemptambientcream.com,reject
+    - DOMAIN-SUFFIX,catdomepimyth.com,reject
+    - DOMAIN-SUFFIX,farwine.com,reject
+    - DOMAIN-SUFFIX,2xmzazd.cn,reject
+    - DOMAIN-SUFFIX,2qpqwkx.cn,reject
+    - DOMAIN-SUFFIX,server.mch3.com,reject
+    - DOMAIN-KEYWORD,adservice,reject
+    - DOMAIN,ad.51wnl-cq.com,reject
+    - DOMAIN,adextra.51wnl-cq.com,reject
+    - DOMAIN,log.51wnl-cq.com,reject
+    - DOMAIN,r.51wnl-cq.com,reject
+    - DOMAIN-SUFFIX,iadsdk.apple.com,reject
+    - DOMAIN-SUFFIX,ads.internal.unity3d.com,reject
+    - DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com,reject
+    - DOMAIN-SUFFIX,unityads.unity3d.com,reject
+    - DOMAIN,tunion-api.m.taobao.com,reject
+    - DOMAIN-SUFFIX,atm.youku.com,reject
+    - DOMAIN,ad.mobile.youku.com,reject
+    - DOMAIN,adx.op.cp18.ott.cibntv.net,reject
+    - DOMAIN,iyes.youku.com,reject
+    - DOMAIN,pl.cp31.ott.cibntv.net,reject
+    - DOMAIN,optimus-ads.amap.com,reject
+    - DOMAIN,optimus-ads.amap.com.w.alikunlun.com,reject
+    - DOMAIN,adproxy.autohome.com.cn,reject
+    - DOMAIN,rd.autohome.com.cn,reject
+    - DOMAIN,al.autohome.com.cn,reject
+    - DOMAIN,applogapi.autohome.com.cn,reject
+    - DOMAIN,adm0.autoimg.cn,reject
+    - DOMAIN,adm1.autoimg.cn,reject
+    - DOMAIN,adm2.autoimg.cn,reject
+    - DOMAIN,adm3.autoimg.cn,reject
+    - DOMAIN-SUFFIX,duapps.com,reject
+    - DOMAIN-SUFFIX,cpro.baidu.com,reject
+    - DOMAIN-SUFFIX,pos.baidu.com,reject
+    - DOMAIN,afd.baidu.com,reject
+    - DOMAIN,als.baidu.com,reject
+    - DOMAIN,duclick.baidu.com,reject
+    - DOMAIN,mobads.baidu.com,reject
+    - DOMAIN,mobads-logs.baidu.com,reject
+    - DOMAIN,nadvideo2.baidu.com,reject
+    - DOMAIN,nsclick.baidu.com,reject
+    - DOMAIN,t7z.cupid.iqiyi.com,reject
+    - DOMAIN,t7z.cupid.ptqy.gitv.tv,reject
+    - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,reject
+    - DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,reject
+    - DOMAIN,ad.toutiao.com,reject
+    - DOMAIN,dsp.toutiao.com,reject
+    - DOMAIN,pangolin.snssdk.com,reject
+    - DOMAIN,advertise.baicizhan.com,reject
+    - DOMAIN,advertise.baicizhan.org,reject
+    - DOMAIN,adx.yiche.com,reject
+    - DOMAIN,log.ycapp.yiche.com,reject
+    - DOMAIN-SUFFIX,iad.appboy.com,reject
+    - DOMAIN-SUFFIX,iad-03.appboy.com,reject
+    - DOMAIN-SUFFIX,iad-01.braze.com,reject
+    - DOMAIN-SUFFIX,iad-02.braze.com,reject
+    - DOMAIN-SUFFIX,iad-03.braze.com,reject
+    - DOMAIN-SUFFIX,iad-04.braze.com,reject
+    - DOMAIN-SUFFIX,iad-05.braze.com,reject
+    - DOMAIN-SUFFIX,iad-06.braze.com,reject
+    - DOMAIN-SUFFIX,iad-08.braze.com,reject
+    - DOMAIN,adstore-index-1252524079.file.myqcloud.com,reject
+    - DOMAIN,galaxy.bjcathay.com,reject
+    - DOMAIN,mdrecv.app.cntvwb.cn,reject
+    - DOMAIN,sdapprecv.app.cntvwb.cn,reject
+    - DOMAIN,vdapprecv.app.cntvwb.cn,reject
+    - DOMAIN,ad.21cn.com,reject
+    - DOMAIN,ad.k.21cn.com,reject
+    - DOMAIN,admarket.21cn.com,reject
+    - DOMAIN,adshows.21cn.com,reject
+    - DOMAIN,atrace.chelaile.net.cn,reject
+    - DOMAIN,logs.chelaile.net.cn,reject
+    - DOMAIN,dispatcher.360in.com,reject
+    - DOMAIN,ad.360in.com,reject
+    - DOMAIN,exp.360in.com,reject
+    - DOMAIN-SUFFIX,doubleclick.net,reject
+    - DOMAIN-SUFFIX,googleadservices.com,reject
+    - DOMAIN-SUFFIX,googleadsserving.cn,reject
+    - DOMAIN-SUFFIX,googletagservices.com,reject
+    - DOMAIN,ads.youtube.com,reject
+    - DOMAIN-SUFFIX,da.mgtv.com,reject
+    - DOMAIN-SUFFIX,da.hunantv.com,reject
+    - DOMAIN-SUFFIX,log.hunantv.com,reject
+    - DOMAIN-SUFFIX,v2.hunantv.com,reject
+    - DOMAIN,adx.hupu.com,reject
+    - DOMAIN,adx-api.hupu.com,reject
+    - DOMAIN,goblin.hupu.com,reject
+    - DOMAIN,ad.hpplay.cn,reject
+    - DOMAIN,adc.hpplay.cn,reject
+    - DOMAIN,adcdn.hpplay.cn,reject
+    - DOMAIN,adeng.hpplay.cn,reject
+    - DOMAIN,pin.hpplay.cn,reject
+    - DOMAIN,rp.hpplay.cn,reject
+    - DOMAIN,rpt.hpplay.cn,reject
+    - DOMAIN,richmanapi.jxedt.com,reject
+    - DOMAIN,richmanmain.jxedt.com,reject
+    - DOMAIN,richmanrules.jxedt.com,reject
+    - DOMAIN,ad-stat.ksosoft.com,reject
+    - DOMAIN,img.auction-ads.wpscdn.cn,reject
+    - DOMAIN,counter.kingsoft.com,reject
+    - DOMAIN,counter.ksosoft.com,reject
+    - DOMAIN,minfo.wps.cn,reject
+    - DOMAIN,mobad.ijinshan.com,reject
+    - DOMAIN,ups.ksmobile.net,reject
+    - DOMAIN,ws.ksmobile.net,reject
+    - DOMAIN-SUFFIX,e.kuaishou.com,reject
+    - DOMAIN,js-ad.a.yximgs.com,reject
+    - DOMAIN-SUFFIX,webp2p.letv.com,reject
+    - DOMAIN,ark.letv.com,reject
+    - DOMAIN,emma-414870e223.huodonghezi.com,reject
+    - DOMAIN,g3.letv.com,reject
+    - DOMAIN,n.mark.letv.com,reject
+    - DOMAIN,a.wkanx.com,reject
+    - DOMAIN,cwx.lianwangtech.com,reject
+    - DOMAIN,c1wx.lianwangtech.com,reject
+    - DOMAIN-SUFFIX,ads.msn.com,reject
+    - DOMAIN-SUFFIX,ads1.msn.com,reject
+    - DOMAIN-SUFFIX,ads2.msn.com,reject
+    - DOMAIN-SUFFIX,bingads.microsoft.com,reject
+    - DOMAIN-SUFFIX,rads.msn.com,reject
+    - DOMAIN,mobileads.msn.com,reject
+    - DOMAIN,ad.api.moji.com,reject
+    - DOMAIN,adlaunch.moji.com,reject
+    - DOMAIN,ads.mojicdn.com,reject
+    - DOMAIN,v1.log.moji.com,reject
+    - DOMAIN-SUFFIX,ad.cmvideo.cn,reject
+    - DOMAIN,ggc.cmvideo.cn,reject
+    - DOMAIN,ggic03.miguvideo.com,reject
+    - DOMAIN,ggmk.miguvideo.com,reject
+    - DOMAIN,ggv.cmvideo.cn,reject
+    - DOMAIN,ggx.cmvideo.cn,reject
+    - DOMAIN,ggx03.miguvideo.com,reject
+    - DOMAIN-SUFFIX,dsp.youdao.com,reject
+    - DOMAIN-SUFFIX,union.youdao.com,reject
+    - DOMAIN,ad.bn.netease.com,reject
+    - DOMAIN,ad.yixin.im,reject
+    - DOMAIN,admusicpic.music.126.net,reject
+    - DOMAIN,g1.163.com,reject
+    - DOMAIN,gorgon.youdao.com,reject
+    - DOMAIN,iad.g.163.com,reject
+    - DOMAIN,iadmat.nosdn.127.net,reject
+    - DOMAIN,iadmusicmat.music.126.net,reject
+    - DOMAIN,iadmusicmatvideo.music.126.net,reject
+    - DOMAIN,impservice.dictapp.youdao.com,reject
+    - DOMAIN,impservice.youdao.com,reject
+    - DOMAIN,n.3g.163.com,reject
+    - DOMAIN,nex.163.com,reject
+    - DOMAIN,yt-adp.nosdn.127.net,reject
+    - DOMAIN,yt-adp.ws.126.net,reject
+    - DOMAIN,ads.aplus.pptv.com,reject
+    - DOMAIN,ads.aplusapi.pptv.com,reject
+    - DOMAIN,asimgs.pplive.cn,reject
+    - DOMAIN,de.as.pptv.com,reject
+    - DOMAIN,regist.fotoable.com,reject
+    - DOMAIN,cdn.adapi.fotoable.com,reject
+    - DOMAIN,adnew.wifi8.com,reject
+    - DOMAIN,adfile.wifi8.com,reject
+    - DOMAIN,ad-analysis.pconline.com.cn,reject
+    - DOMAIN,iad0ssl.pcauto.com.cn,reject
+    - DOMAIN,iad0ssl.pconline.com.cn,reject
+    - DOMAIN,imgad0.pcauto.com.cn,reject
+    - DOMAIN,imgad0.pconline.com.cn,reject
+    - DOMAIN,ivy.pchouse.com.cn,reject
+    - DOMAIN-SUFFIX,deliver.ifeng.com,reject
+    - DOMAIN,api.newad.ifeng.com,reject
+    - DOMAIN,ifengad.3g.ifeng.com,reject
+    - DOMAIN,ad.qingting.fm,reject
+    - DOMAIN,adlaunch.qingting.fm,reject
+    - DOMAIN,ad-cdn.qingting.fm,reject
+    - DOMAIN-SUFFIX,ads.oppomobile.com,reject
+    - DOMAIN,adsfs.oppomobile.com,reject
+    - DOMAIN-SUFFIX,alitui.weibo.com,reject
+    - DOMAIN-SUFFIX,beacon.sina.com.cn,reject
+    - DOMAIN,adimg.uve.weibo.com,reject
+    - DOMAIN,adimg.vue.weibo.com,reject
+    - DOMAIN,u1.img.mobile.sina.cn,reject
+    - DOMAIN,sax.sina.com.cn,reject
+    - DOMAIN,saxs.sina.com.cn,reject
+    - DOMAIN,saxn.sina.com.cn,reject
+    - DOMAIN-SUFFIX,ad.sohu.com,reject
+    - DOMAIN-SUFFIX,ads.sohu.com,reject
+    - DOMAIN-SUFFIX,aty.sohu.com,reject
+    - DOMAIN,hui.sohu.com,reject
+    - DOMAIN-SUFFIX,pv.sohu.com,reject
+    - DOMAIN,ads.snapchat.com,reject
+    - DOMAIN,adsapi.snapchat.com,reject
+    - DOMAIN-SUFFIX,hoisin.coocaa.com,reject
+    - DOMAIN-SUFFIX,hoisin.coocaatv.com,reject
+    - DOMAIN,data-hoisin.coocaa.com,reject
+    - DOMAIN-SUFFIX,e.qq.com,reject
+    - DOMAIN-SUFFIX,gdt.qq.com,reject
+    - DOMAIN-SUFFIX,l.qq.com,reject
+    - DOMAIN,adsmind.apdcdn.tc.qq.com,reject
+    - DOMAIN,adsmind.gdtimg.com,reject
+    - DOMAIN,adsmind.tc.qq.com,reject
+    - DOMAIN,adsmind.ugdtimg.com,reject
+    - DOMAIN,livep.l.t002.ottcn.com,reject
+    - DOMAIN,pgdt.gtimg.cn,reject
+    - DOMAIN,pgdt.gtimg.com,reject
+    - DOMAIN,pgdt.ugdtimg.com,reject
+    - DOMAIN,splashqqlive.gtimg.com,reject
+    - DOMAIN,wa.gtimg.com,reject
+    - DOMAIN,ad.tencentmusic.com,reject
+    - DOMAIN,adstats.tencentmusic.com,reject
+    - DOMAIN,adserviceretry.kugou.com,reject
+    - DOMAIN,ads.service.kugou.com,reject
+    - DOMAIN,adsfile.bssdlbig.kugou.com,reject
+    - DOMAIN,g.koowo.com,reject
+    - DOMAIN,kgmobilestat.kugou.com,reject
+    - DOMAIN,kgmobilestatbak.kugou.com,reject
+    - DOMAIN,mobilelog.kugou.com,reject
+    - DOMAIN,mobilead.kuwo.cn,reject
+    - DOMAIN,rich.kuwo.cn,reject
+    - DOMAIN,tmead.y.qq.com,reject
+    - DOMAIN,splashimgbssdl.yun.kugou.com,reject
+    - DOMAIN,adsfilebssdlbig.tx.kugou.com,reject
+    - DOMAIN,adm.10jqka.com.cn,reject
+    - DOMAIN,stat.10jqka.com.cn,reject
+    - DOMAIN,admonitor.thepaper.cn,reject
+    - DOMAIN,adpai.thepaper.cn,reject
+    - DOMAIN,imgadpai.thepaper.cn,reject
+    - DOMAIN,adsp.xunlei.com,reject
+    - DOMAIN,etl.xlmc.sandai.net,reject
+    - DOMAIN,adv-adlog.variflight.com,reject
+    - DOMAIN,adv-ads.variflight.com,reject
+    - DOMAIN,app-ad.variflight.com,reject
+    - DOMAIN,adlog.vivo.com.cn,reject
+    - DOMAIN,adreq.vivo.com.cn,reject
+    - DOMAIN,ads-marketing-vivofs.vivo.com.cn,reject
+    - DOMAIN,adsdk.vivo.com.cn,reject
+    - DOMAIN,adsstatic.vivo.com.cn,reject
+    - DOMAIN,adxlog.vivo.com.cn,reject
+    - DOMAIN,vcardsdkservice.vivo.com.cn,reject
+    - DOMAIN-KEYWORD,stsdk.vivo.com.cn,reject
+    - DOMAIN-KEYWORD,stsdk.vivoglobal.com,reject
+    - DOMAIN,ads.viber.com,reject
+    - DOMAIN,ads-d.viber.com,reject
+    - DOMAIN,ads.aws.viber.com,reject
+    - DOMAIN,ad.ximalaya.com,reject
+    - DOMAIN,adbs.ximalaya.com,reject
+    - DOMAIN,adse.ximalaya.com,reject
+    - DOMAIN,adse.wsa.ximalaya.com,reject
+    - DOMAIN,adbehavior.wsa.ximalaya.com,reject
+    - DOMAIN,adbehavior.ximalaya.com,reject
+    - DOMAIN,adsebs.ximalaya.com,reject
+    - DOMAIN,adwbs.ximalaya.com,reject
+    - DOMAIN,ads-img-qc.xhscdn.com,reject
+    - DOMAIN,ads-video-al.xhscdn.com,reject
+    - DOMAIN,ads-video-qc.xhscdn.com,reject
+    - DOMAIN,t-ads.xiaohongshu.com,reject
+    - DOMAIN-SUFFIX,adserver.yahoo.com,reject
+    - DOMAIN-SUFFIX,adspecs.yahoo.com,reject
+    - DOMAIN-SUFFIX,advertising.yahoo.com,reject
+    - DOMAIN-SUFFIX,gemini.yahoo.com,reject
+    - DOMAIN,admarketing.yahoo.net,reject
+    - DOMAIN,ads.auctions.yahoo.com,reject
+    - DOMAIN,ads.finance.yahoo.com,reject
+    - DOMAIN,ads.yahoo.com,reject
+    - DOMAIN,ads.yahoo.de,reject
+    - DOMAIN,appcloud2.in.zhihu.com,reject
+    - DOMAIN,mqtt.zhihu.com,reject
+    - DOMAIN,sugar.zhihu.com,reject
+    - DOMAIN,118.89.204.198,reject
+    - DOMAIN,apppv.zol.com.cn,reject
+    - DOMAIN,pvnapp.zol.com.cn,reject
+  Proxy:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy.yaml
+    path: "./rule_provider/Proxy.yaml"
+    interval: 86400
+  Proxy_Domain:
+    type: http
+    behavior: domain
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Domain.yaml
+    path: "./rule_provider/Proxy_Domain.yaml"
+    interval: 86400
+  China:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.yaml
+    path: "./rule_provider/China.yaml"
+    interval: 86400
+  Download:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
+    path: "./rule_provider/Download.yaml"
+    interval: 86400
+  LAN:
+    type: inline
+    behavior: classical
+    payload:
+    - DOMAIN-SUFFIX,local
+    - DOMAIN-SUFFIX,lan
+    - DOMAIN-SUFFIX,localhost
+    - IP-CIDR,0.0.0.0/8,no-resolve
+    - IP-CIDR,10.0.0.0/8,no-resolve
+    - IP-CIDR,100.64.0.0/10,no-resolve
+    - IP-CIDR,127.0.0.0/8,no-resolve
+    - IP-CIDR,169.254.0.0/16,no-resolve
+    - IP-CIDR,172.16.0.0/12,no-resolve
+    - IP-CIDR,192.168.0.0/16,no-resolve
+    - IP-CIDR,224.0.0.0/4,no-resolve
+    - IP-CIDR,240.0.0.0/4,no-resolve
+    - IP-CIDR6,::1/128,no-resolve
+    - IP-CIDR6,fc00::/7,no-resolve
+    - IP-CIDR6,fe80::/10,no-resolve
+    - IP-CIDR6,ff00::/8,no-resolve
+rules:
+- DOMAIN-SUFFIX,www.redpocket.com,ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+- DOMAIN-SUFFIX,mnc260.mcc310.pub.3gppnetwork.org,ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+- RULE-SET,Apple-AI,ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
+- RULE-SET,Whatsapp,ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+- RULE-SET,PersonalDirect,DIRECT
+- RULE-SET,Ponte,REJECT
+- RULE-SET,angellive,sɪɴɢᴀᴘᴏʀᴇ
+- RULE-SET,APTV,ᴀᴘᴛᴠ,no-resolve
+- DOMAIN-SUFFIX,ip-api.com,ɪɴꜱᴛᴀɢʀᴀᴍ
+- RULE-SET,PornHub,ᴘʀᴏxʏ
+- RULE-SET,AIGC,ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
+- RULE-SET,Tmdb,ᴜʜᴅ
+- RULE-SET,UHDSupport,ᴜʜᴅ
+- RULE-SET,UHD,ᴜʜᴅ
+- DOMAIN-SUFFIX,amp-api.podcasts.apple.com,ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+- DOMAIN,api.stats.fm,ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+- DOMAIN-SUFFIX,jiba-api.hee.ink,ᴀᴘᴘʟᴇ
+- RULE-SET,Microsoft,ᴘʀᴏxʏ
+- RULE-SET,Tesla,DIRECT
+- RULE-SET,Twitch,ᴛᴡɪᴛᴄʜ
+- RULE-SET,Speedtest,ꜱᴘᴇᴇᴅᴛᴇꜱᴛ
+- RULE-SET,Amazon,ꜰɪɴᴀʟ
+- RULE-SET,Shopify,ꜱʜᴏᴘ
+- RULE-SET,Stripe,DIRECT
+- RULE-SET,GitHub,ɢɪᴛʜᴜʙ
+- RULE-SET,Spotify,ꜱᴘᴏᴛɪꜰʏ
+- RULE-SET,SoundCloud,ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+- RULE-SET,PayPal,DIRECT
+- RULE-SET,YouTube,ʏᴏᴜᴛᴜʙᴇ
+- RULE-SET,Google,ɢᴏᴏɢʟᴇ
+- RULE-SET,AppleTV,ᴛᴠ
+- RULE-SET,Apple_All_No_Resolve,ᴀᴘᴘʟᴇ
+- RULE-SET,TikTok,ᴛɪᴋᴛᴏᴋ
+- RULE-SET,Twitter,x
+- RULE-SET,Facebook,ɪɴꜱᴛᴀɢʀᴀᴍ
+- RULE-SET,Telegram,ᴛᴇʟᴇɢʀᴀᴍ
+- RULE-SET,Discord,ᴅɪꜱᴄᴏʀᴅ
+- RULE-SET,Reddit,ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+- RULE-SET,XiaoHongShu,ʀᴇᴅ ɴᴏᴛᴇ
+- RULE-SET,Douyin,ᴅᴏᴜʏɪɴ
+- RULE-SET,WeChat,ᴡᴇᴄʜᴀᴛ
+- RULE-SET,Epic,ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
+- RULE-SET,PlayStation,ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
+- RULE-SET,Steam,ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
+- RULE-SET,Nintendo,ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
+- RULE-SET,Sony,ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
+- RULE-SET,Bahamut,ᴛᴀɪᴡᴀɴ
+- RULE-SET,HBO,ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
+- RULE-SET,Netflix,ɴᴇᴛғʟɪx
+- RULE-SET,Disney,ᴅɪsɴᴇʏ+
+- RULE-SET,ChinaMedia,DIRECT
+- RULE-SET,ProxyMedia,ᴘʀᴏxʏ
+- RULE-SET,Adblock4limbo_surge,REJECT
+- RULE-SET,Proxy,ᴘʀᴏxʏ
+- RULE-SET,Proxy_Domain,ᴘʀᴏxʏ
+- RULE-SET,China,DIRECT
+- RULE-SET,Download,DIRECT
+- IP-CIDR,0.0.0.0/32,REJECT,no-resolve
+- RULE-SET,LAN,DIRECT
+- GEOIP,CN,DIRECT,no-resolve
+- MATCH,ꜰɪɴᴀʟ
+port: 7890
+socks-port: 7891
+external-ui: "/usr/share/openclash/ui"
+external-ui-name: metacubexd
+external-ui-url: https://codeload.github.com/MetaCubeX/metacubexd/zip/refs/heads/gh-pages
+keep-alive-interval: 15
+keep-alive-idle: 600
+experimental:
+  quic-go-disable-gso: true
+ntp:
+  enable: true
+  server: time.apple.com
+  port: 123
+  interval: 30
+  write-to-system: true
