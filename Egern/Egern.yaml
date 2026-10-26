@@ -1,3 +1,5 @@
+# Sanitized sharing template. Replace REDACTED/example.invalid before use.
+---
 ipv6: false
 allow_external_connections: true
 vif_only: false
@@ -32,22 +34,22 @@ bypass_tunnel_proxy:
 - 100.64.0.0/10
 - 17.0.0.0/8
 - localhost
-- '*.local'
-- '*.crashlytics.com'
+- "*.local"
+- "*.crashlytics.com"
 - seed-sequoia.siri.apple.com
 - sequoia.apple.com
 real_ip_domains:
-- '*.srv.nintendo.net'
-- '*.stun.playstation.net'
+- "*.srv.nintendo.net"
+- "*.stun.playstation.net"
 - xbox.*.microsoft.com
-- '*.xboxlive.com*.srv.nintendo.net'
-- '*.stun.playstation.net'
+- "*.xboxlive.com*.srv.nintendo.net"
+- "*.stun.playstation.net"
 - xbox.*.microsoft.com
-- '*.xboxlive.com'
-- '*.battlenet.com.cn'
-- '*.battlenet.com'
-- '*.blzstatic.cn'
-- '*.battle.net'
+- "*.xboxlive.com"
+- "*.battlenet.com.cn"
+- "*.battlenet.com"
+- "*.blzstatic.cn"
+- "*.battle.net"
 policy_groups:
 - select:
     name: ꜰɪɴᴀʟ
@@ -55,20 +57,20 @@ policy_groups:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ʜᴏɴɢᴋᴏɴɢ
+    - REDACTED
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy3.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ᴘʀᴏxʏ
     policies:
     - ᴊᴀᴘᴀɴ
-    - ʜᴏɴɢᴋᴏɴɢ
+    - REDACTED
     - sɪɴɢᴀᴘᴏʀᴇ
     - DIRECT
     flatten: false
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/proxy.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ɪɴꜱᴛᴀɢʀᴀᴍ
@@ -77,8 +79,8 @@ policy_groups:
     - ᴊᴀᴘᴀɴ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     flatten: false
-    filter: (🇯🇵|日本|Japan|JP|🇸🇬|新加坡|Singapore|SG)
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/instagram.PNG
+    filter: "(\U0001F1EF\U0001F1F5|日本|Japan|JP|\U0001F1F8\U0001F1EC|新加坡|Singapore|SG)"
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ᴛᴠ
@@ -87,7 +89,7 @@ policy_groups:
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - 你的节点
     flatten: false
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tv.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ᴀᴘᴘʟᴇ
@@ -95,11 +97,11 @@ policy_groups:
     - DIRECT
     - ᴊᴀᴘᴀɴ
     - sɪɴɢᴀᴘᴏʀᴇ
-    - ʜᴏɴɢᴋᴏɴɢ
+    - REDACTED
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - 你的节点
     flatten: false
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appstore.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ɢᴏᴏɢʟᴇ
@@ -108,7 +110,7 @@ policy_groups:
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - sɪɴɢᴀᴘᴏʀᴇ
     flatten: false
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/google.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ʏᴏᴜᴛᴜʙᴇ
@@ -117,9 +119,9 @@ policy_groups:
     - ᴊᴀᴘᴀɴ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - ᴍᴀᴄᴀᴏ
-    - ᴛᴀɪᴡᴀɴ
+    - REDACTED
     flatten: false
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/youtube.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ꜱᴘᴏᴛɪꜰʏ
@@ -128,17 +130,17 @@ policy_groups:
     - ɴᴇᴡ ᴢᴇᴀʟᴀɴᴅ
     - sɪɴɢᴀᴘᴏʀᴇ
     - DIRECT
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/spotify.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ɴᴇᴛғʟɪx
     policies:
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ʜᴏɴɢᴋᴏɴɢ
-    - ᴛᴀɪᴡᴀɴ
+    - REDACTED
+    - REDACTED
     - sɪɴɢᴀᴘᴏʀᴇ
     - DIRECT
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/netflix.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ᴜʜᴅ
@@ -147,24 +149,24 @@ policy_groups:
     - ᴊᴀᴘᴀɴ
     - DIRECT
     filter: JP|日本|Japan|日
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/UHD1.PNG
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ᴅɪsɴᴇʏ+
     policies:
-    - ʜᴏɴɢᴋᴏɴɢ
+    - REDACTED
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
-    - ᴛᴀɪᴡᴀɴ
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/disney.PNG
+    - REDACTED
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ᴅɪꜱᴄᴏʀᴅ
     policies:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/discord.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ᴛɪᴋᴛᴏᴋ
@@ -174,8 +176,8 @@ policy_groups:
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - DIRECT
     flatten: false
-    filter: (新加坡|英国|美国|日本).*(1x|2x)
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png
+    filter: "(新加坡|英国|美国|日本).*(1x|2x)"
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ᴅᴏᴜʏɪɴ
@@ -185,28 +187,28 @@ policy_groups:
     - ᴊᴀᴘᴀɴ
     - sɪɴɢᴀᴘᴏʀᴇ
     flatten: false
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/tiktok.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ᴛᴡɪᴛᴄʜ
     policies:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/twitch.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ᴛᴇʟᴇɢʀᴀᴍ
     policies:
     - ᴊᴀᴘᴀɴ
     - sɪɴɢᴀᴘᴏʀᴇ
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/telegram.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ʀᴇᴅ ɴᴏᴛᴇ
     policies:
     - DIRECT
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/xiaohongshu.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ꜱʜᴏᴘ
@@ -214,26 +216,26 @@ policy_groups:
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - ᴊᴀᴘᴀɴ
     - DIRECT
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/shop.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ᴡᴇᴄʜᴀᴛ
     policies:
     - DIRECT
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
-    - ʜᴏɴɢᴋᴏɴɢ
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/wechat.png
+    - REDACTED
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
     policies:
     - DIRECT
-    - ʜᴏɴɢᴋᴏɴɢ
+    - REDACTED
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
-    - ᴛᴀɪᴡᴀɴ
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/playstation.png
+    - REDACTED
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ
@@ -242,7 +244,7 @@ policy_groups:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     - ᴛʜᴀɪʟᴀɴᴅ-ᴀɴʏᴛʟꜱ
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/appleintelligence.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: x
@@ -251,7 +253,7 @@ policy_groups:
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴜᴋʀᴀɪɴᴇ
     flatten: false
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/x.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ꜱᴘᴇᴇᴅᴛᴇꜱᴛ
@@ -259,54 +261,54 @@ policy_groups:
     - DIRECT
     - sɪɴɢᴀᴘᴏʀᴇ
     - ᴊᴀᴘᴀɴ
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/speetest.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - select:
     name: ɢɪᴛʜᴜʙ
     policies:
     - ᴊᴀᴘᴀɴ
     - sɪɴɢᴀᴘᴏʀᴇ
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/github.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - smart:
-    name: ʜᴏɴɢᴋᴏɴɢ
+    name: REDACTED
     policies:
     - 你的节点
     flatten: true
-    filter: (香港|Hong Kong|HK)(?!.*(5x|10x))
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/hong-kong.png
+    filter: "(香港|Hong Kong|HK)(?!.*(5x|10x))"
+    icon: https://example.invalid/REDACTED
     hidden: false
 - smart:
-    name: ᴛᴀɪᴡᴀɴ
+    name: REDACTED
     policies:
     - 你的节点
     flatten: true
-    filter: (🇨🇳)|(台)|(Tai)|(TW)
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/taiwan.png
+    filter: "(\U0001F1E8\U0001F1F3)|(台)|(Tai)|(TW)"
+    icon: https://example.invalid/REDACTED
     hidden: false
 - smart:
     name: ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
     policies:
     - 你的节点
     flatten: true
-    filter: (美国|USA|US)(?!.*(5x|10x))
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/united-states.png
+    filter: "(美国|USA|US)(?!.*(5x|10x))"
+    icon: https://example.invalid/REDACTED
     hidden: false
 - smart:
     name: ᴊᴀᴘᴀɴ
     policies:
     - 你的节点
     flatten: true
-    filter: (日本|Japan|JP)(?!.*(5x|10x))
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/japan.png
+    filter: "(日本|Japan|JP)(?!.*(5x|10x))"
+    icon: https://example.invalid/REDACTED
     hidden: false
 - smart:
     name: sɪɴɢᴀᴘᴏʀᴇ
     policies:
     - 你的节点
     flatten: true
-    filter: (新加坡|Singapore|SG)(?!.*(5x|10x))
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/singapore.png
+    filter: "(新加坡|Singapore|SG)(?!.*(5x|10x))"
+    icon: https://example.invalid/REDACTED
     hidden: false
     priorities:
       流媒体: 1.0
@@ -316,7 +318,7 @@ policy_groups:
     - 你的节点
     flatten: true
     filter: 韩
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/south-korea.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - smart:
     name: ᴍᴀᴄᴀᴏ
@@ -324,34 +326,34 @@ policy_groups:
     - 你的节点
     flatten: true
     filter: 澳门
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/macao.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - smart:
     name: ɴᴇᴡ ᴢᴇᴀʟᴀɴᴅ
     policies:
     - 你的节点
     flatten: true
-    filter: (🇳🇿|新西兰|NZ|New\s?Zealand)
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/new-zealand.png
+    filter: "(\U0001F1F3\U0001F1FF|新西兰|NZ|New\\s?Zealand)"
+    icon: https://example.invalid/REDACTED
     hidden: false
 - smart:
     name: ᴜᴋʀᴀɪɴᴇ
     policies: []
     filter: 乌克兰
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/flags/ukraine.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 - external:
     name: 你的节点
     type: smart
     urls:
-    - ““““请在这里复制添加订阅链接”””
-    filter: ^(?!.*(?:剩余流量|距离下次重置剩余|套餐到期)).*
+    - "““““请在这里复制添加订阅链接”””"
+    filter: "^(?!.*(?:剩余流量|距离下次重置剩余|套餐到期)).*"
     update_interval: 0
-    icon: https://raw.githubusercontent.com/anybodyiskiller-cpu/icons-escapism/main/icons/just%20timer.png
+    icon: https://example.invalid/REDACTED
     hidden: false
 rules:
 - ssid:
-    match: 如果已配置网络 这里修改你家wifi名称
+    match: REDACTED
     policy: DIRECT
     disabled: true
 - rule_set:
@@ -459,7 +461,7 @@ rules:
     policy: ᴘʟᴀʏꜱᴛᴀᴛɪᴏɴ
 - rule_set:
     match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list
-    policy: ᴛᴀɪᴡᴀɴ
+    policy: REDACTED
 - rule_set:
     match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/HBO/HBO.list
     policy: ᴜɴɪᴛᴇᴅ sᴛᴀᴛᴇs
@@ -539,8 +541,7 @@ modules:
 - url: https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adblock4limbo.sgmodule
   enabled: true
 - url: https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx
-  compat_arguments:
-    ScriptHub通知: 开启通知
+  compat_arguments: {}
   enabled: true
 - url: https://raw.githubusercontent.com/DemoJameson/Loon.Plugins/main/trakt_simplified_chinese/trakt_simplified_chinese.sgmodule
   enabled: true
@@ -561,19 +562,7 @@ modules:
 - url: https://kelee.one/Tool/Loon/Lpx/Taobao_remove_ads.lpx
   enabled: true
 - url: https://kelee.one/Tool/Loon/Lpx/NeteaseCloudMusic_remove_ads.lpx
-  compat_arguments:
-    MY: 'false'
-    DT: 'false'
-    FX: 'false'
-    PRGG: 'false'
-    PRRK: 'false'
-    PRDRD: 'false'
-    PRSCVPT: 'false'
-    PRST: 'false'
-    PRRR: 'false'
-    HMPR: 'false'
-    PRMST: 'false'
-    PRCN: 'false'
+  compat_arguments: {}
   enabled: true
 - url: https://raw.githubusercontent.com/chengkongyiban/Surge/main/modules/QX_to_Surge.sgmodule
   enabled: true
@@ -590,9 +579,7 @@ modules:
 - url: https://github.com/BiliUniverse/Redirect/releases/latest/download/BiliBili.Redirect.sgmodule
   enabled: true
 - url: https://github.com/BiliUniverse/Global/releases/latest/download/BiliBili.Global.sgmodule
-  compat_arguments:
-    Proxies.HKG: ʜᴏɴɢᴋᴏɴɢ
-    Proxies.TWN: ᴛᴀɪᴡᴀɴ
+  compat_arguments: {}
   enabled: true
 - url: https://github.com/BiliUniverse/Enhanced/releases/latest/download/BiliBili.Enhanced.sgmodule
   enabled: true
@@ -609,8 +596,7 @@ modules:
 - url: https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.sgmodule
   enabled: true
 - url: https://github.com/DualSubs/YouTube/releases/latest/download/DualSubs.YouTube.sgmodule
-  compat_arguments:
-    Type: Translate
+  compat_arguments: {}
   enabled: true
 - url: https://github.com/DualSubs/Universal/releases/latest/download/DualSubs.Universal.sgmodule
   enabled: true
